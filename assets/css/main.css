@@ -339,6 +339,23 @@ header
   color: #2a2a2a;
 }
 
+.dropdown-menu li {
+position: relative;
+}
+.dropdown-menu .dropdown-submenu {
+display: none;
+position: absolute;
+left: 100%;
+top: -7px;
+}
+.dropdown-menu .dropdown-submenu-left {
+right: 100%;
+left: auto;
+}
+.dropdown-menu > li:hover > .dropdown-submenu {
+display: block;
+}
+
 .header-area .main-nav .nav li.submenu ul {
   position: absolute;
   width: 200px;
@@ -652,6 +669,16 @@ banner
 .main-banner .left-content .thumb img {
   width: 100%;
   overflow: hidden;
+}
+
+.main-banner .day {
+  font-family: "Times New Roman";
+  color: #cc3852
+}
+
+.main-banner .place {
+  font-family: "Times New Roman";
+  color: #024886
 }
 
 .main-banner .left-content .inner-content {
