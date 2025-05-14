@@ -2,7 +2,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, install all : npm run install
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -27,4 +29,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy
 
-npm run build => create out folder
+npm run build => create /out folder
+run serve out to serve the file out
+
+## Custom
+
+Lib heroicons installed https://heroicons.com/outline
