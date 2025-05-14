@@ -8,8 +8,25 @@
 
 .main {
   background-color: darkturquoise;
+  padding-top: 2rem;
 }
 
 .footer {
   background-color: red;
+}
+
+.page h1 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-inline: 1rem;
+  }
+  .page h1 {
+    font-size: x-large;
+  }
 }

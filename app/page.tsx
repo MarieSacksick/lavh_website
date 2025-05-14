@@ -6,13 +6,7 @@ export default function Home() {
     <div className={styles.page}>
       <Header />
       <main className={styles.main}>
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-        <div>qsdqsdsq</div>
+        <h1>Littérature à voix haute - Bessin 2024</h1>
       </main>
       <footer className={styles.footer}>This is the footer</footer>
     </div>
