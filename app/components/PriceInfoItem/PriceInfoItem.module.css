@@ -1,0 +1,7 @@
+.container {
+  font-size: small;
+}
+
+.container span {
+  color: var(--primary-color);
+}

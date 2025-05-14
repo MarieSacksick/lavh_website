@@ -7,8 +7,7 @@
 }
 
 .main {
-  background-color: darkturquoise;
-  padding-top: 2rem;
+  background-color: white;
 }
 
 .footer {
@@ -20,13 +19,61 @@
   color: var(--primary-color);
   margin: auto;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.imgPortrait {
+  max-width: 50%;
+  height: auto;
+}
+
+.imgLogoSldb {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.content {
+  display: flex;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 1rem;
+}
+
+.textContainer h2 {
+  text-align: center;
+  font-size: xx-large;
 }
 
 @media (max-width: 768px) {
+  .imgPortrait {
+    max-width: 100%;
+  }
+
+  .imgLogoSldb {
+    max-width: 250px;
+  }
+
+  .textContainer h2 {
+    font-size: larger;
+  }
+
   .main {
     padding-inline: 1rem;
   }
   .page h1 {
     font-size: x-large;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.place {
+  color: #004587;
+  font-size: small;
+}
+
+.container h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+.container h3 span {
+  font-size: small;
+  text-transform: lowercase;
+}
+
+.bookTitle {
+  font-style: italic;
+  font-size: small;
+}
+
+.bookAuthor {
+  text-transform: uppercase;
+  color: #22702f;
+  font-weight: 600;
+  font-size: small;
+}
+
+.readerName {
+  font-size: smaller;
+}
