@@ -35,6 +35,23 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  position: relative;
+  transition: background 0.2s;
+}
+
+a:hover,
+a:focus-visible {
+  z-index: 1;
+}
+a:hover::after,
+a:focus-visible::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 2;
+  border-radius: inherit;
 }
 
 @media (prefers-color-scheme: dark) {

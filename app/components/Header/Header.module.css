@@ -12,6 +12,18 @@
   margin: 0 auto;
 }
 
+.navGroup {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  padding-inline: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .logo {
   height: 88px;
   width: auto;
@@ -61,7 +73,7 @@
   height: 0.25rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .burgerButton {
     display: block;
     position: absolute;
@@ -76,6 +88,10 @@
   }
 
   .headerBar {
+    display: none;
+  }
+
+  .navGroup {
     display: none;
   }
 }

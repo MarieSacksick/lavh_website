@@ -31,12 +31,25 @@ export default function Header() {
           height={100}
           className={styles.logo}
         />
+        <div className={styles.navGroup}>
+          <Link href="/">Soirées Littéraires du Bessin</Link>
+          <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>
+            Extraits Audio
+          </Link>
+        </div>
       </nav>
-
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
-        <span>Soirées Littéraires du Bessin</span>
-        <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>Extraits Audio</Link>
+        <ul>
+          <li>
+            <span>Soirées Littéraires du Bessin</span>
+          </li>
+          <li>
+            <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>
+              Extraits Audio
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className={`${styles.headerBar} ${styles.headerBarDown}`} />
     </header>
