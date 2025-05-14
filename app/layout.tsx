@@ -5,7 +5,7 @@ import './globals.css';
 const libreBaskerville = Libre_Baskerville({
   variable: '--font-libre-baskerville',
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['700'],
 });
 
 export const metadata: Metadata = {

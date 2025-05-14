@@ -14,6 +14,8 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
+      <div className={`${styles.headerBar} ${styles.headerBarUp}`} />
+
       <nav className={styles.nav}>
         <button
           className={`${styles.burgerButton} ${styles.icon}`}
@@ -33,15 +35,10 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
-        <ul className={styles.navUl}>
-          <li>Soirées Littéraires du Bessin</li>
-          <li>
-            <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>
-              Extraits Audio
-            </Link>
-          </li>
-        </ul>
+        <span>Soirées Littéraires du Bessin</span>
+        <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>Extraits Audio</Link>
       </div>
+      <div className={`${styles.headerBar} ${styles.headerBarDown}`} />
     </header>
   );
 }
