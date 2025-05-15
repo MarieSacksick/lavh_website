@@ -15,30 +15,42 @@
 .navGroup {
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 0;
-  top: 60px;
-  padding-inline: 1rem;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
+  padding-inline: 1rem;
+  font-weight: 600;
 }
 
 .logo {
-  height: 88px;
+  height: 120px;
   width: auto;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .burgerButton {
   display: none;
 }
 
+.headerBar {
+  width: 100%;
+  background: var(--foreground);
+  display: block;
+}
+
+.headerBarUp {
+  height: 1rem;
+}
+.headerBarDown {
+  height: 0.25rem;
+}
+
 .mobileMenu {
   display: none;
   padding: 1.5rem;
+}
+
+.active {
+  display: flex;
 }
 
 .mobileMenu ul {
@@ -56,21 +68,8 @@
   height: 20px;
 }
 
-.active {
-  display: flex;
-}
-
-.headerBar {
-  width: 100%;
-  background: var(--foreground);
-  display: block;
-}
-
-.headerBar.headerBarUp {
-  height: 1rem;
-}
-.headerBar.headerBarDown {
-  height: 0.25rem;
+.logoMobile {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -93,5 +92,14 @@
 
   .navGroup {
     display: none;
+  }
+
+  .logoMobile {
+    display: block;
+    height: 88px;
+    width: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

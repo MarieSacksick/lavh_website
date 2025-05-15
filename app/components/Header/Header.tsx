@@ -29,10 +29,17 @@ export default function Header() {
           alt="Littérature à Voix Haute"
           width={100}
           height={100}
-          className={styles.logo}
+          className={styles.logoMobile}
         />
         <div className={styles.navGroup}>
           <Link href="/">Soirées Littéraires du Bessin</Link>
+          <Image
+            src="/logo.jpg"
+            alt="Littérature à Voix Haute"
+            width={100}
+            height={100}
+            className={styles.logo}
+          />
           <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>
             Extraits Audio
           </Link>
