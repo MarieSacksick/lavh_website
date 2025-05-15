@@ -35,60 +35,75 @@ export default function Home() {
               />
               <PriceInfoItem displayFor="mobile" />
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
+                date="SAMEDI 17 AOÛT"
+                hour="19H30"
                 place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
+                bookTitle="Don Quichotte (« Le curieux malavisé »)"
+                bookAuthor="MIGUEL DE CERVANTES"
                 readerInfo="lecture de Thomas Sacksick"
               />
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
-                place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
-                readerInfo="lecture de Thomas Sacksick"
+                date="DIMANCHE 18 AOÛT"
+                hour="19H30"
+                place="TRACY-SUR-MER, Château de Tracy"
+                bookTitle="Le moulin sur la Floss"
+                bookAuthor="GEORGE ELIOT"
+                readerInfo="lecture de Mélodie Richard"
               />
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
+                date="LUNDI 19 AOÛT"
+                hour="19H30"
                 place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
-                readerInfo="lecture de Thomas Sacksick"
+                bookTitle="Mars"
+                bookAuthor="FRITZ ZORN"
+                readerInfo="lecture de Louis Albertosi"
               />
               <PriceInfoItem displayFor="desktop" />
+              <EventItem date="MARDI 20 AOÛT" place="VER-SUR-MER, Ancienne école des filles">
+                <p>
+                  <span className={styles.eventTime}>16H</span> - <em>Petite sœur</em>
+                </p>
+                <p>
+                  <span className={styles.authorName}>JON FOSSE</span>{' '}
+                  <strong>(prix Nobel 2023)</strong>
+                </p>
+                <p>lecture jeune-public de Marion Rochmann</p>
+                <p>
+                  <span className={styles.eventTime}>19H30</span> - présentation de l&apos;atelier
+                  participatif
+                </p>
+                <p className={styles.italicText}>Vos poèmes ou ceux des autres (entrée libre)</p>
+              </EventItem>
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
-                place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
-                readerInfo="lecture de Thomas Sacksick"
+                date="MERCREDI 21 AOÛT"
+                hour="19H30"
+                place="LES VERGERS DE DUCY"
+                bookTitle="Joseph"
+                bookAuthor="MARIE-HÉLÈNE LAFON"
+                readerInfo="lecture d'Evelyne Istria"
               />
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
-                place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
-                readerInfo="lecture de Thomas Sacksick"
+                date="JEUDI 22 AOÛT"
+                hour="19H30"
+                place="CHÂTEAU DE CREULLY"
+                bookTitle="Voyage au bout de la nuit"
+                bookAuthor="LOUIS-FERDINAND CÉLINE"
+                readerInfo="lecture de Guillaume Lévêque"
               />
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
-                place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
-                readerInfo="lecture de Thomas Sacksick"
+                date="VENDREDI 23 AOÛT"
+                hour="19H30"
+                place="ARROMANCHES, Salle des fêtes"
+                bookTitle="Alias Caracalla"
+                bookAuthor="DANIEL CORDIER"
+                readerInfo="lecture d'André Marcon"
               />
               <EventItem
-                date="Samedi 17 août"
-                hour="19h30"
-                place="ASNELLES, Douce Souvenance"
-                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
-                bookAuthor="Miguel De Cervantès"
+                date="SAMEDI 24 AOÛT"
+                hour="19H30"
+                place="GRAYE-SUR-MER, La grange aux dîmes"
+                bookTitle="Le Choix de Sophie"
+                bookAuthor="WILLIAM STYRON"
                 readerInfo="lecture de Thomas Sacksick"
               />
             </div>

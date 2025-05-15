@@ -99,3 +99,17 @@
     flex-direction: column;
   }
 }
+
+.eventTime {
+  color: var(--primary-color);
+}
+
+.authorName {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.italicText {
+  font-style: italic;
+}

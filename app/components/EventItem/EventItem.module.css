@@ -26,13 +26,19 @@
 
 .bookAuthor {
   text-transform: uppercase;
-  color: #22702f;
+  color: var(--green);
   font-weight: 600;
   font-size: small;
 }
 
 .readerName {
   font-size: smaller;
+}
+
+/* Custom content styles */
+.container p {
+  font-size: small;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
