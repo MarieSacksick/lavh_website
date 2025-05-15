@@ -1,5 +1,11 @@
 import { PropsWithChildren } from 'react';
 import styles from './EventItem.module.css';
+import pageStyles from '../../page.module.css';
+
+const getGoogleMapsUrl = (place: string) => {
+  const encodedPlace = encodeURIComponent(place);
+  return `https://www.google.com/maps/search/?api=1&query=${encodedPlace},France`;
+};
 
 type Props = {
   date: string;
@@ -24,7 +30,18 @@ export default function EventItem({
       <h3>
         {date} <span>{hour}</span>
       </h3>
-      <div className={styles.place}>{place}</div>
+      {place && (
+        <div className={styles.place}>
+          <a
+            href={getGoogleMapsUrl(place)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={pageStyles.placeLink}
+          >
+            {place}
+          </a>
+        </div>
+      )}
       <span className={styles.bookTitle}>{bookTitle}</span>
       <span className={styles.bookAuthor}>{bookAuthor}</span>
       <div className={styles.readerName}>{readerInfo}</div>

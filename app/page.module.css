@@ -113,3 +113,14 @@
 .italicText {
   font-style: italic;
 }
+
+.placeLink {
+  color: #004587;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.placeLink:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
