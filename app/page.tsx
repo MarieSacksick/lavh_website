@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import EventItem from './components/EventItem/EventItem';
 import Image from 'next/image';
 import PriceInfoItem from './components/PriceInfoItem/PriceInfoItem';
+import ActorsPictures from './components/ActorsPictures/ActorsPictures';
 
 export default function Home() {
   return (
@@ -19,12 +20,12 @@ export default function Home() {
             height={1000}
           />
           <div className={styles.textContainer}>
+            <ActorsPictures />
             <h2>
               <p>Littérature à Voix Haute présente</p>
               <p>du 17 au 24 août 2024</p>
             </h2>
-
-            <div>
+            <div className={styles.eventsContainer}>
               <Image
                 src="/logo_sldb.png"
                 alt="Portrait de Jean Moulin"
@@ -32,7 +33,40 @@ export default function Home() {
                 height={205}
                 className={styles.imgLogoSldb}
               />
-              <PriceInfoItem />
+              <PriceInfoItem displayFor="mobile" />
+              <EventItem
+                date="Samedi 17 août"
+                hour="19h30"
+                place="ASNELLES, Douce Souvenance"
+                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
+                bookAuthor="Miguel De Cervantès"
+                readerInfo="lecture de Thomas Sacksick"
+              />
+              <EventItem
+                date="Samedi 17 août"
+                hour="19h30"
+                place="ASNELLES, Douce Souvenance"
+                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
+                bookAuthor="Miguel De Cervantès"
+                readerInfo="lecture de Thomas Sacksick"
+              />
+              <EventItem
+                date="Samedi 17 août"
+                hour="19h30"
+                place="ASNELLES, Douce Souvenance"
+                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
+                bookAuthor="Miguel De Cervantès"
+                readerInfo="lecture de Thomas Sacksick"
+              />
+              <PriceInfoItem displayFor="desktop" />
+              <EventItem
+                date="Samedi 17 août"
+                hour="19h30"
+                place="ASNELLES, Douce Souvenance"
+                bookTitle={'Don Quichotte (« Le curieux malavisé »)'}
+                bookAuthor="Miguel De Cervantès"
+                readerInfo="lecture de Thomas Sacksick"
+              />
               <EventItem
                 date="Samedi 17 août"
                 hour="19h30"

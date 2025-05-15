@@ -34,3 +34,10 @@
 .readerName {
   font-size: smaller;
 }
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+}

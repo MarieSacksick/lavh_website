@@ -5,3 +5,21 @@
 .container span {
   color: var(--primary-color);
 }
+
+.displayOnMobile {
+  display: none;
+}
+
+.displayOnDesktop {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .displayOnMobile {
+    display: block;
+  }
+
+  .displayOnDesktop {
+    display: none;
+  }
+}

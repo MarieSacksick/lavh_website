@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.polaroidContainer {
+  background-color: white;
+  padding: 1rem 1rem 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100px;
+  height: 120px;
+}
+
+.actorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.name {
+  font-size: xx-small;
+  font-style: italic;
+}

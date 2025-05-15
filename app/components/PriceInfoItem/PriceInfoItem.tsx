@@ -1,8 +1,14 @@
 import styles from './PriceInfoItem.module.css';
 
-export default function PriceInfoItem() {
+export default function PriceInfoItem({
+  displayFor = 'desktop',
+}: {
+  displayFor?: 'mobile' | 'desktop';
+}) {
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${displayFor === 'mobile' ? styles.displayOnMobile : styles.displayOnDesktop}`}
+    >
       <p>
         Prix des places : <span>13 €</span>
       </p>
