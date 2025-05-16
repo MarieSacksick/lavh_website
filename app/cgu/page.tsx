@@ -3,7 +3,7 @@ import styles from './page.module.css';
 export default function CGU() {
   return (
     <div className={styles.container}>
-      <h1>Conditions Générales d'Utilisation</h1>
+      <h2>Conditions Générales d'Utilisation</h2>
 
       <section className={styles.section}>
         <h2>1. Présentation du site</h2>
@@ -26,10 +26,10 @@ export default function CGU() {
       <section className={styles.section}>
         <h2>3. Protection des données personnelles</h2>
         <p>
-          Les informations collectées sur le Site sont utilisées uniquement dans le cadre des
+          {`Les informations collectées sur le Site sont utilisées uniquement dans le cadre des
           services proposés par Littérature à Voix Haute. Conformément à la loi "Informatique et
           Libertés" du 6 janvier 1978, vous disposez d'un droit d'accès, de modification et de
-          suppression des données vous concernant.
+          suppression des données vous concernant.`}
         </p>
       </section>
 

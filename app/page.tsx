@@ -7,7 +7,7 @@ import ActorsPictures from './components/ActorsPictures/ActorsPictures';
 export default function Home() {
   return (
     <div className={styles.page}>
-      <h1>Littérature à voix haute - Bessin 2024</h1>
+      <h2>Bessin 2024</h2>
       <div className={styles.content}>
         <Image
           className={styles.imgPortrait}
@@ -18,10 +18,10 @@ export default function Home() {
         />
         <div className={styles.textContainer}>
           <ActorsPictures />
-          <h2>
+          <div>
             <p>Littérature à Voix Haute présente</p>
             <p>du 17 au 24 août 2024</p>
-          </h2>
+          </div>
           <div className={styles.eventsContainer}>
             <Image
               src="/logo_sldb.png"
