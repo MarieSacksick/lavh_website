@@ -1,13 +1,19 @@
 import type { Metadata } from 'next';
-import { Libre_Baskerville } from 'next/font/google';
+import { Crimson_Text, EB_Garamond } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-const libreBaskerville = Libre_Baskerville({
-  variable: '--font-libre-baskerville',
+const crimsonText = Crimson_Text({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '600', '700'],
+  variable: '--font-crimson',
+});
+
+const ebGaramond = EB_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-eb-garamond',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={libreBaskerville.variable}>
+      <body className={`${crimsonText.variable} ${ebGaramond.variable}`}>
         <div className="layout">
           <Header />
           <main className="main">{children}</main>

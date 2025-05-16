@@ -6,6 +6,13 @@
   --green: #22702f;
 }
 
+.layout {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -22,9 +29,22 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-eb-garamond), Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.nav-font {
+  font-family: var(--font-crimson), Georgia, serif;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 * {
