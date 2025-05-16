@@ -33,6 +33,7 @@ export default function Header() {
         />
         <div className={styles.navGroup}>
           <Link href="/">Soirées Littéraires du Bessin</Link>
+          <Link href="/comediens">Comédiens</Link>
           <Image
             src="/logo.jpg"
             alt="Littérature à Voix Haute"
@@ -49,7 +50,10 @@ export default function Header() {
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
         <ul>
           <li>
-            <span>Soirées Littéraires du Bessin</span>
+            <Link href="/">Soirées Littéraires du Bessin</Link>
+          </li>
+          <li>
+            <Link href="/comediens">Comédiens</Link>
           </li>
           <li>
             <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>

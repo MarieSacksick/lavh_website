@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Libre_Baskerville } from 'next/font/google';
 import './globals.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 const libreBaskerville = Libre_Baskerville({
   variable: '--font-libre-baskerville',
@@ -21,7 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={libreBaskerville.variable}>{children}</body>
+      <body className={libreBaskerville.variable}>
+        <div className="layout">
+          <Header />
+          <main className="main">{children}</main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
