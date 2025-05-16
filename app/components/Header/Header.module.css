@@ -1,12 +1,12 @@
 .header {
   background-color: #fff;
-  padding: 0.5rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .navMobile {
@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0rem 0rem 1rem 0rem;
   align-items: center;
 }
 
@@ -44,7 +43,7 @@
 
 .rightElement {
   font-size: 4rem;
-  width: 10rem;
+  width: 8rem;
   max-width: 10rem;
   display: flex;
   justify-content: end;
@@ -52,7 +51,7 @@
 
 .logo {
   height: 100%;
-  width: 10rem;
+  width: 8rem;
 }
 
 .burgerButton {
@@ -63,18 +62,59 @@
   width: 100%;
   background: var(--foreground);
   display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 .headerBarUp {
   height: 0.05rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
+
 .headerBarDown {
   margin: 0.1rem;
   height: 0.05rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerBarDown:last-child {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled .headerBarUp {
+  opacity: 0;
+  height: 0;
+}
+
+.scrolled .headerBarDown:last-child {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+}
+
+.headImageContainer {
+  transition: all 0.3s ease-in-out;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .headImage {
+  transition: all 0.3s ease-in-out;
+  width: 100px !important;
+  height: 150px !important;
   object-fit: contain;
+}
+
+.scrolled .headImageContainer {
+  height: 88px;
+}
+
+.scrolled .headImage {
+  width: 60px !important;
 }
 
 .mobileMenu {
@@ -109,6 +149,9 @@
   .burgerButton {
     display: block;
     position: absolute;
+  }
+  .headerSpacer {
+    display: none;
   }
 
   .navMobile {
@@ -147,9 +190,18 @@
   .navDesktop {
     display: none;
   }
+
+  .header {
+    position: static;
+    display: block;
+  }
 }
 
 /* Add padding to the body to compensate for fixed header */
 .headerSpacer {
-  height: 250px; /* Ajustez cette valeur en fonction de la hauteur de votre header */
+  height: 220px;
+}
+
+.scrolled .headerSpacer {
+  height: 160px;
 }

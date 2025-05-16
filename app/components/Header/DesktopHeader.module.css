@@ -1,0 +1,119 @@
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerTitleAndNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightElement {
+  font-size: 4rem;
+  width: 8rem;
+  max-width: 10rem;
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  height: 100%;
+  width: 8rem;
+}
+
+.dividerOrnament {
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: 104.5px;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.navGroup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 600;
+  font-family: var(--font-crimson), Georgia, serif;
+  padding: 0.5rem 0rem;
+}
+
+.headerBar {
+  width: 100%;
+  background: var(--foreground);
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerBarUp {
+  height: 0.05rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerBarDown {
+  margin: 0.1rem;
+  height: 0.05rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.headerBarDown:last-child {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.headImageContainer {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headImage {
+  transition: all 0.3s ease-in-out;
+  object-fit: contain;
+  height: 96px;
+}
+
+.scrolled .headerBarUp {
+  opacity: 0;
+  height: 0;
+}
+
+.scrolled .headerBarDown {
+  opacity: 0;
+  height: 0;
+}
+
+.scrolled .headerBarDown:last-child {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+}
+
+.scrolled .headImageContainer {
+  height: 56px;
+}
+
+.scrolled .headImage {
+  width: 60px !important;
+  height: 56px !important;
+}
+
+.scrolled .dividerOrnament {
+  top: 68px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navDesktop {
+    display: none;
+  }
+}

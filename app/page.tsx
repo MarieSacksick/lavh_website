@@ -11,17 +11,14 @@ export default function Home() {
       <div className={styles.content}>
         <Image
           className={styles.imgPortrait}
-          src="/image_background_jean_moulin.jpg"
+          src="jean_moulin.png"
           alt="Portrait de Jean Moulin"
           width={1000}
           height={1000}
         />
         <div className={styles.textContainer}>
           <ActorsPictures />
-          <div>
-            <p>Littérature à Voix Haute présente</p>
-            <p>du 17 au 24 août 2024</p>
-          </div>
+          <h2>Du 17 au 24 août 2024</h2>
           <div className={styles.eventsContainer}>
             <Image
               src="/logo_sldb.png"

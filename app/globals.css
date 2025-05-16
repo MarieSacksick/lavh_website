@@ -51,8 +51,7 @@ h3,
 h4,
 h5,
 h6,
-nav,
-.nav-font {
+nav {
   font-family: var(--font-crimson), Georgia, serif;
   text-transform: uppercase;
   font-weight: 900;

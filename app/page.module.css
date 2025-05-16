@@ -1,13 +1,4 @@
-.page {
-  background-color: white;
-  margin: 0 auto;
-}
-
 .page h1 {
-  text-transform: uppercase;
-  color: var(--primary-color);
-  margin: auto;
-  text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -26,6 +17,7 @@
 
 .content {
   display: flex;
+  justify-content: center;
 }
 
 .eventsContainer {
@@ -57,6 +49,10 @@
   .imgPortrait {
     max-width: 65%;
     margin: 0rem 0rem 2rem -1rem;
+  }
+
+  .textContainer {
+    gap: 0rem;
   }
   .eventsContainer {
     flex-wrap: unset;

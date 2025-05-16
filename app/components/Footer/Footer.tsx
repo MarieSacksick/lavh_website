@@ -37,10 +37,10 @@ export default function Footer() {
           </a>
         </div>
         <Image
-          src={'head_drawing_from_logo.png'}
+          src={'head_from_logo.png'}
           alt=""
           width={100}
-          height={150}
+          height={100}
           className={styles.headImage}
         />
       </div>
