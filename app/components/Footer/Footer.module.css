@@ -34,20 +34,26 @@
 .iconLink {
   color: var(--foreground);
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 
 .iconLink:hover {
-  transform: scale(1.1);
   opacity: 0.8;
 }
 
 .icon {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
+}
+
+.iconText {
+  display: block;
+  font-size: 0.9rem;
 }
 
 .headImage {
@@ -57,7 +63,7 @@
 .bottom {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 0.05rem solid var(--foreground);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -72,6 +78,7 @@
 .legalLink {
   font-size: small;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -82,10 +89,15 @@
   .iconsContainer {
     gap: 1.5rem;
   }
+
   .content {
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+
+  .iconText {
+    display: none;
   }
 
   .icon {
@@ -101,6 +113,10 @@
   .copyright,
   .legalLink {
     font-size: 0.8rem;
+  }
+
+  .dividerOrnament {
+    display: none;
   }
 }
 

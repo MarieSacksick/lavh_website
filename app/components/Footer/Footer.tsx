@@ -29,6 +29,7 @@ export default function Footer() {
                 className={styles.iconLink}
               >
                 <FaFacebook className={styles.icon} />
+                <span className={styles.iconText}>Facebook</span>
               </a>
               <a
                 href="https://www.youtube.com/@lavh8723"
@@ -37,12 +38,15 @@ export default function Footer() {
                 className={styles.iconLink}
               >
                 <FaYoutube className={styles.icon} />
+                <span className={styles.iconText}>YouTube</span>
               </a>
               <a href="mailto:contact@litteratureavoixhaute.com" className={styles.iconLink}>
                 <IoMail className={styles.icon} />
+                <span className={styles.iconText}>contact@litteratureavoixhaute.com</span>
               </a>
               <a href="tel:0231228381" className={styles.iconLink}>
                 <BsTelephoneFill className={styles.icon} />
+                <span className={styles.iconText}>02 31 22 83 81</span>
               </a>
             </div>
           </div>

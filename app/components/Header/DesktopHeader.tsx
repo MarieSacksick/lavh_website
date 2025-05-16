@@ -34,13 +34,15 @@ export default function DesktopHeader() {
         <div className={styles.containerTitleAndNav}>
           <div className={`${styles.headerBar} ${styles.headerBarUp}`} />
           <div className={styles.headImageContainer}>
-            <Image
-              src={'head_from_logo.png'}
-              alt=""
-              width={100}
-              height={150}
-              className={styles.headImage}
-            />
+            <Link href="/" className={styles.headImageLink}>
+              <Image
+                src={'head_from_logo.png'}
+                alt=""
+                width={100}
+                height={150}
+                className={styles.headImage}
+              />
+            </Link>
           </div>
           <div className={styles.navGroup}>
             <Link href="/" className={pathname === '/' ? styles.activeLink : ''}>

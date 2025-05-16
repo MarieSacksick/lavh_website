@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 0.5rem;
 }
 
 .rightElement {
@@ -22,13 +23,14 @@
 .logo {
   height: 100%;
   width: 8rem;
+  cursor: pointer;
 }
 
 .dividerOrnament {
   height: 60px;
   width: auto;
   position: absolute;
-  top: 104.5px;
+  top: 125px;
   transition: all 0.3s ease-in-out;
   z-index: -1;
 }
@@ -48,6 +50,7 @@
   color: var(--foreground);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .navGroup a:hover {
@@ -73,7 +76,7 @@
 }
 
 .headerBarDown {
-  margin: 0.1rem;
+  margin: 0.5rem;
   height: 0.05rem;
   opacity: 1;
   transition: all 0.3s ease-in-out;
@@ -95,6 +98,14 @@
   transition: all 0.3s ease-in-out;
   object-fit: contain;
   height: 96px;
+}
+
+.scrolled .headerBarUp,
+.scrolled .headerBarDown,
+.scrolled .headImageContainer,
+.scrolled .headImage,
+.scrolled .dividerOrnament {
+  transition: all 0.3s ease-in-out;
 }
 
 .scrolled .headerBarUp {
@@ -125,6 +136,16 @@
 .scrolled .dividerOrnament {
   top: 68px;
   transition: all 0.3s ease-in-out;
+}
+
+.headImageLink {
+  cursor: pointer;
+  z-index: -1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.headImageLink:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
