@@ -11,10 +11,6 @@
   margin: 0 auto;
 }
 
-.footer {
-  background-color: red;
-}
-
 .page h1 {
   text-transform: uppercase;
   color: var(--primary-color);
@@ -59,10 +55,6 @@
   padding: 1rem 1rem;
 }
 
-.textContainer h2 {
-  text-align: center;
-}
-
 @media (max-width: 1200px) {
   .eventsContainer {
     flex-wrap: unset;
@@ -82,10 +74,6 @@
 
   .imgLogoSldb {
     max-width: 250px;
-  }
-
-  .textContainer h2 {
-    font-size: larger;
   }
 
   .main {

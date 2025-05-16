@@ -4,6 +4,7 @@ import EventItem from './components/EventItem/EventItem';
 import Image from 'next/image';
 import PriceInfoItem from './components/PriceInfoItem/PriceInfoItem';
 import ActorsPictures from './components/ActorsPictures/ActorsPictures';
+import Footer from './components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -110,7 +111,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className={styles.footer}>This is the footer</footer>
+      <Footer />
     </div>
   );
 }

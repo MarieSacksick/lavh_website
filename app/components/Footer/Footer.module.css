@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--background);
+  border-top: 1px solid var(--foreground);
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.iconLink {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLink:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.headImage {
+  object-fit: contain;
+}
+
+.bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-size: xx-small;
+}
+
+.legalLink {
+  font-size: xx-small;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .iconsContainer {
+    gap: 1.5rem;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .bottom {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+  }
+
+  .copyright,
+  .legalLink {
+    font-size: 0.8rem;
+  }
+}

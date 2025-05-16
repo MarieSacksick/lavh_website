@@ -79,18 +79,6 @@ ol {
   margin-left: 0;
 }
 
-main {
-  /* background-image: url('/image_background_jean_moulin.jpg'); */
-  /* background-size: contain; */
-  /* background-position: left 20px; */
-  /* background-repeat: no-repeat; */
-}
-
-@media (max-width: 758px) {
-  main {
-    /* background-size: contain; */
-    /* background-position: center 60px; */
-    /* max-height: 500px; */
-    /* max-width: unset; */
-  }
+h2 {
+  margin-bottom: 32px;
 }
