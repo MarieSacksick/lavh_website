@@ -39,6 +39,13 @@
 .content {
   display: flex;
   justify-content: center;
+  gap: 2rem;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .eventsContainer {
@@ -75,6 +82,7 @@
   .artistInfo {
     display: none;
   }
+
   .imgPortrait {
     max-width: 65%;
     margin: 0rem 0rem 2rem -1rem;
@@ -83,6 +91,7 @@
   .textContainer {
     gap: 0rem;
   }
+
   .eventsContainer {
     flex-wrap: unset;
     max-height: unset;
@@ -95,9 +104,11 @@
   .page {
     padding-inline: 1rem;
   }
+
   .page h1 {
     font-size: x-large;
   }
+
   .content {
     display: flex;
     flex-direction: column;
