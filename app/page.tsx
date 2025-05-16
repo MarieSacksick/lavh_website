@@ -7,7 +7,7 @@ import ActorsPictures from './components/ActorsPictures/ActorsPictures';
 export default function Home() {
   return (
     <div className={styles.page}>
-      <h2>Bessin 2024</h2>
+      <h1>Littérature à voix haute - Bessin 2024</h1>
       <div className={styles.content}>
         <Image
           className={styles.imgPortrait}

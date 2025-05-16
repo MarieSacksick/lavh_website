@@ -1,7 +1,12 @@
 .header {
   background-color: #fff;
   padding: 0.5rem 1rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .navMobile {
@@ -18,16 +23,16 @@
   width: 100%;
   justify-content: center;
   gap: 2rem;
-  padding-inline: 1rem;
   font-weight: 600;
   font-family: var(--font-crimson), Georgia, serif;
+  padding: 1rem;
 }
 
 .containerHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
   align-items: center;
 }
 
@@ -35,7 +40,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
 .rightElement {
@@ -62,10 +66,15 @@
 }
 
 .headerBarUp {
-  height: 1rem;
+  height: 0.05rem;
 }
 .headerBarDown {
-  height: 0.25rem;
+  margin: 0.1rem;
+  height: 0.05rem;
+}
+
+.headImage {
+  object-fit: contain;
 }
 
 .mobileMenu {
@@ -138,4 +147,9 @@
   .navDesktop {
     display: none;
   }
+}
+
+/* Add padding to the body to compensate for fixed header */
+.headerSpacer {
+  height: 250px; /* Ajustez cette valeur en fonction de la hauteur de votre header */
 }
