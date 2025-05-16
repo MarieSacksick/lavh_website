@@ -31,6 +31,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${crimsonText.variable} ${ebGaramond.variable}`}>
         <div className="layout">
+          <div className="spaceHeader"></div>
           <Header />
           <main className="main">{children}</main>
           <Footer />

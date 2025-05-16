@@ -26,6 +26,10 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -34,15 +38,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: 4rem;
+@media (max-width: 768px) {
+  .spaceHeader {
+    display: none;
+  }
 }
 
-@media (max-width: 1300px) {
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-  }
+.spaceHeader {
+  height: 140px;
 }
 
 h1,

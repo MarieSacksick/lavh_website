@@ -150,9 +150,6 @@
     display: block;
     position: absolute;
   }
-  .headerSpacer {
-    display: none;
-  }
 
   .navMobile {
     display: flex;
@@ -195,13 +192,4 @@
     position: static;
     display: block;
   }
-}
-
-/* Add padding to the body to compensate for fixed header */
-.headerSpacer {
-  height: 220px;
-}
-
-.scrolled .headerSpacer {
-  height: 160px;
 }
