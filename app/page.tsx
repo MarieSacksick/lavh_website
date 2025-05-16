@@ -9,13 +9,19 @@ export default function Home() {
     <div className={styles.page}>
       <h1>Littérature à voix haute - Bessin 2024</h1>
       <div className={styles.content}>
-        <Image
-          className={styles.imgPortrait}
-          src="jean_moulin.png"
-          alt="Portrait de Jean Moulin"
-          width={1000}
-          height={1000}
-        />
+        <div className={styles.portraitContainer}>
+          <Image
+            className={styles.imgPortrait}
+            src="jean_moulin.png"
+            alt="Portrait de Jean Moulin"
+            width={1000}
+            height={1000}
+          />
+          <p className={styles.imageCaption}>
+            Illustration : &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
+          </p>
+          <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse</p>
+        </div>
         <div className={styles.textContainer}>
           <ActorsPictures />
           <h2>Du 17 au 24 août 2024</h2>
