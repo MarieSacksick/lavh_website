@@ -6,8 +6,9 @@
 
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  align-self: center;
   gap: 2rem;
 }
 
@@ -15,6 +16,19 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+}
+
+.footerContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconsAndTitleContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .iconLink {
@@ -52,11 +66,11 @@
 }
 
 .copyright {
-  font-size: xx-small;
+  font-size: small;
 }
 
 .legalLink {
-  font-size: xx-small;
+  font-size: small;
   text-decoration: none;
 }
 
@@ -67,6 +81,11 @@
 
   .iconsContainer {
     gap: 1.5rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .icon {
@@ -83,4 +102,18 @@
   .legalLink {
     font-size: 0.8rem;
   }
+}
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dividerOrnament {
+  height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
 }
