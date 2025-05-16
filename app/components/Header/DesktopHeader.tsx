@@ -3,9 +3,11 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './DesktopHeader.module.css';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function DesktopHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,9 +43,16 @@ export default function DesktopHeader() {
             />
           </div>
           <div className={styles.navGroup}>
-            <Link href="/">Soirées Littéraires du Bessin</Link>
-            <Link href="/comediens">Comédiens</Link>
-            <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>
+            <Link href="/" className={pathname === '/' ? styles.activeLink : ''}>
+              Soirées Littéraires du Bessin
+            </Link>
+            <Link href="/comediens" className={pathname === '/comediens' ? styles.activeLink : ''}>
+              Comédiens
+            </Link>
+            <Link
+              href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}
+              className={pathname === '/Bessin_audio.html' ? styles.activeLink : ''}
+            >
               Extraits Audio
             </Link>
           </div>

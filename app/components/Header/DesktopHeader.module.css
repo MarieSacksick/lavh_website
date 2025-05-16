@@ -44,6 +44,21 @@
   padding: 0.5rem 0rem;
 }
 
+.navGroup a {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.navGroup a:hover {
+  color: var(--primary-color);
+}
+
+.activeLink {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+}
+
 .headerBar {
   width: 100%;
   background: var(--foreground);
