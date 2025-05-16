@@ -28,7 +28,14 @@ export default function EventItem({
   return (
     <div className={styles.container}>
       <h3>
-        {date} <span>{hour}</span>
+        <a
+          href="/dossier-programme_SLdB24.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.dateLink}
+        >
+          {date} <span>{hour}</span>
+        </a>
       </h3>
       {place && (
         <div className={styles.place}>

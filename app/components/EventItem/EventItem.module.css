@@ -12,11 +12,23 @@
   color: var(--primary-color);
   text-transform: uppercase;
   font-size: larger;
+  margin: 0;
 }
 
 .container h3 span {
   font-size: small;
   text-transform: lowercase;
+}
+
+.dateLink {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dateLink:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .bookTitle {
