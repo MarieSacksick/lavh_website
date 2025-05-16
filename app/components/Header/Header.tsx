@@ -18,13 +18,15 @@ export default function Header() {
       <nav className={styles.navDesktop}>
         <div className={`${styles.headerBar} ${styles.headerBarDown}`} />
         <div className={styles.containerHeader}>
-          <Image
-            src="/logo.jpg"
-            alt="Littérature à Voix Haute"
-            width={100}
-            height={100}
-            className={styles.logo}
-          />
+          <Link href="/">
+            <Image
+              src="/logo.jpg"
+              alt="Littérature à Voix Haute"
+              width={100}
+              height={100}
+              className={styles.logo}
+            />
+          </Link>
           <div className={styles.containerTitleAndNav}>
             <h1>Littérature à voix haute</h1>
             <div className={styles.navGroup}>
@@ -49,13 +51,15 @@ export default function Header() {
         >
           {isMenuOpen ? <XMarkIcon /> : <Bars3Icon />}
         </button>
-        <Image
-          src="/logo.jpg"
-          alt="Littérature à Voix Haute"
-          width={100}
-          height={100}
-          className={styles.logoMobile}
-        />
+        <Link href="/">
+          <Image
+            src="/logo.jpg"
+            alt="Littérature à Voix Haute"
+            width={100}
+            height={100}
+            className={styles.logoMobile}
+          />
+        </Link>
       </nav>
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
