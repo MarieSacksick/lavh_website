@@ -1,0 +1,32 @@
+.container {
+  padding: 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  color: var(--primary-color);
+  font-family: var(--font-crimson), Georgia, serif;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.actorsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+
+  .container h1 {
+    margin-bottom: 2rem;
+  }
+
+  .actorsContainer {
+    gap: 2rem;
+  }
+}
