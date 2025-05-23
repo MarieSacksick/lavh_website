@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './MobileHeader.module.css';
 import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
+import DropDownMenu from '../DropdownMenu.tsx/DropDownMenu';
 
 export default function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +36,16 @@ export default function MobileHeader() {
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
         <ul>
           <li>
-            <Link href="/">Soirées Littéraires du Bessin</Link>
+            <DropDownMenu
+              triggerTitle="Soirées Littéraires du Bessin"
+              contents={[
+                { title: 'Session 2024', href: '/' },
+                {
+                  title: 'Ailleurs',
+                  href: 'https://www.litteratureavoixhaute.com/ailleurs_2021.html',
+                },
+              ]}
+            />
           </li>
           <li>
             <Link href="/comediens">Comédiens</Link>
