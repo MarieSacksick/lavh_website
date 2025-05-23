@@ -5,21 +5,12 @@ type PolaroidProps = {
   src: string;
   alt: string;
   name: string;
-  width?: number;
-  height?: number;
+
   onClick?: () => void;
   className?: string;
 };
 
-export default function Polaroid({
-  src,
-  alt,
-  name,
-  width = 300,
-  height = 300,
-  onClick,
-  className,
-}: PolaroidProps) {
+export default function Polaroid({ src, alt, name, onClick, className }: PolaroidProps) {
   return (
     <div
       className={`${styles.polaroidContainer} ${className || ''} ${onClick ? styles.clickable : ''}`}
@@ -27,7 +18,7 @@ export default function Polaroid({
       role={onClick ? 'button' : undefined}
       tabIndex={onClick ? 0 : undefined}
     >
-      <Image src={src} alt={alt} width={width} height={height} className={styles.actorImage} />
+      <Image src={src} alt={alt} width={200} height={200} className={styles.actorImage} />
       <div className={styles.name}>{name}</div>
     </div>
   );

@@ -4,7 +4,7 @@ import Polaroid from '../Polaroid/Polaroid';
 type ActorProfileProps = {
   name: string;
   imagePath: string;
-  description?: string; // Optional for now since content will be added later
+  description?: string;
   id?: string;
 };
 
@@ -12,7 +12,7 @@ export default function ActorProfile({ name, imagePath, description, id }: Actor
   return (
     <div className={styles.container} id={id}>
       <div className={styles.imageContainer}>
-        <Polaroid src={imagePath} alt={`Photo de ${name}`} name={name} width={300} height={300} />
+        <Polaroid src={imagePath} alt={`Photo de ${name}`} name={name} />
       </div>
       <div className={styles.textContainer}>
         <h2>{name}</h2>
