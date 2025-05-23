@@ -7,11 +7,6 @@
   overflow: hidden;
 }
 
-.polaroidContainer:hover {
-  transform: scale(1.01);
-  z-index: 1;
-}
-
 .clickable {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
