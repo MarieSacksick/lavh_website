@@ -46,6 +46,9 @@ export default function DesktopHeader() {
             </Link>
           </div>
           <div className={styles.navGroup}>
+            <Link href="/" className={pathname === '/' ? styles.activeLink : ''}>
+              Accueil
+            </Link>
             <DropDownMenu
               triggerTitle="Soirées Littéraires du Bessin"
               contents={[

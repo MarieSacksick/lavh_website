@@ -50,13 +50,7 @@ export default function PartnersGrid() {
             rel="noopener noreferrer"
             className={styles.logoWrapper}
           >
-            <Image
-              src={partner.logo}
-              alt={`Logo ${partner.name}`}
-              width={200}
-              height={100}
-              className={styles.logo}
-            />
+            <Image src={partner.logo} alt={`Logo ${partner.name}`} width={100} height={100} />
           </Link>
         ))}
       </div>

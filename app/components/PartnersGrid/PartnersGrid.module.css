@@ -58,11 +58,4 @@
     max-width: unset;
     min-width: unset;
   }
-
-  .logo {
-    max-width: 200px;
-    max-height: 100px;
-    filter: none;
-    opacity: 1;
-  }
 }

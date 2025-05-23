@@ -27,10 +27,10 @@
 }
 
 .dividerOrnament {
-  height: 60px;
+  height: 40px;
   width: auto;
   position: absolute;
-  top: 125px;
+  top: 135px;
   transition: all 0.3s ease-in-out;
   z-index: -1;
 }
@@ -134,7 +134,7 @@
 }
 
 .scrolled .dividerOrnament {
-  top: 68px;
+  top: 90px;
   transition: all 0.3s ease-in-out;
 }
 
