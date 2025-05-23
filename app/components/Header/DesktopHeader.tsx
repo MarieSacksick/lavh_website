@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from './DesktopHeader.module.css';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import DropDownMenu from '../DropdownMenu.tsx/DropDownMenu';
 
 export default function DesktopHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,9 +46,16 @@ export default function DesktopHeader() {
             </Link>
           </div>
           <div className={styles.navGroup}>
-            <Link href="/" className={pathname === '/' ? styles.activeLink : ''}>
-              Soirées Littéraires du Bessin
-            </Link>
+            <DropDownMenu
+              triggerTitle="Soirées Littéraires du Bessin"
+              contents={[
+                { title: 'Session 2024', href: '/' },
+                {
+                  title: 'Ailleurs',
+                  href: 'https://www.litteratureavoixhaute.com/ailleurs_2021.html',
+                },
+              ]}
+            />
             <Link href="/comediens" className={pathname === '/comediens' ? styles.activeLink : ''}>
               Comédiens
             </Link>
