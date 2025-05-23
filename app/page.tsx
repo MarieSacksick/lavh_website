@@ -26,7 +26,10 @@ export default function Home() {
         <div className={styles.rightContent}>
           <div className={styles.textContainer}>
             <ActorsPictures />
-            <h2>Du 17 au 24 août 2024</h2>
+            <h2>
+              <span>Littérature à Voix Haute présente</span>
+              <span>Du 17 au 24 août 2024</span>
+            </h2>
             <div className={styles.eventsContainer}>
               <Image
                 src="/logo_sldb.png"

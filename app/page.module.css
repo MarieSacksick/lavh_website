@@ -13,7 +13,7 @@
 .imgPortrait {
   height: 100%;
   max-width: fit-content;
-  max-height: 1100px;
+  max-height: 800px;
 }
 
 .imageCaption {
@@ -64,6 +64,13 @@
   align-items: center;
   gap: 2rem;
   padding: 1rem 1rem;
+}
+
+.textContainer h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 @media (max-width: 1200px) {
