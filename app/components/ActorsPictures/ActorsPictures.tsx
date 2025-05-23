@@ -1,8 +1,9 @@
 import styles from './ActorsPictures.module.css';
+
 import Image, { ImageProps } from 'next/image';
 
+import Link from 'next/link';
 type ActorPictureProps = Pick<ImageProps, 'alt' | 'src'>;
-
 const actors = [
   { name: 'Thomas Sacksick', image: '/actors/Sacksick_Thomas.jpg' },
   { name: 'Mélodie Richard', image: '/actors/Richard_melodie_24.jpg' },
@@ -15,10 +16,10 @@ const actors = [
 
 function ActorPicture({ alt, src }: ActorPictureProps) {
   return (
-    <div className={styles.polaroidContainer}>
+    <Link href={`/comediens`} className={styles.polaroidContainer}>
       <Image src={src} alt={alt} width={300} height={300} className={styles.actorImage} />
       <div className={styles.name}>{alt}</div>
-    </div>
+    </Link>
   );
 }
 
