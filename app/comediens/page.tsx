@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 import ActorProfile from '../components/ActorProfile/ActorProfile';
-import { actors } from './data-actors';
+import { actors } from '../data/actors';
 
 export default function Comediens() {
   return (
