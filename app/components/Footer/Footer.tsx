@@ -10,13 +10,6 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <Image
-        src={'divider_ornament.png'}
-        alt=""
-        width={100}
-        height={100}
-        className={styles.dividerOrnament}
-      />
       <div className={styles.footerContent}>
         <div className={styles.content}>
           <div className={styles.iconsAndTitleContainer}>

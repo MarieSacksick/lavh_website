@@ -14,11 +14,6 @@
   display: none;
 }
 
-.dividerOrnament {
-  height: auto;
-  width: 32px;
-}
-
 @media (max-width: 768px) {
   .navMobile {
     display: flex;

@@ -19,7 +19,7 @@ export default function Home() {
             height={1000}
           />
           <p className={styles.imageCaption}>
-            Illustration : &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
+            &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
           </p>
           <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse</p>
         </div>

@@ -9,7 +9,7 @@ const actors = [
   { name: 'Mélodie Richard', image: '/actors/Richard_melodie_24.jpg' },
   { name: 'Marion Rochmann', image: '/actors/Marion_Rochmann_20230827 copie.jpg' },
   { name: 'André Marcon', image: '/actors/Marcon_Andre_24.jpg' },
-  { name: 'Guillaume Lévèque', image: '/actors/Lévèque_Guillaume_24.jpg' },
+  { name: 'Guillaume Lévêque', image: '/actors/guillaume_leveque.jpg' },
   { name: 'Evelyne Istria', image: '/actors/Istria_Evelyne_24.jpg' },
   { name: 'Louis Albertosi', image: '/actors/Albertosi_Louis.jpg' },
 ];

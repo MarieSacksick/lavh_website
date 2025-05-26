@@ -40,7 +40,6 @@ const partners: Partner[] = [
 export default function PartnersGrid() {
   return (
     <div className={styles.container}>
-      <h2>Nos partenaires</h2>
       <div className={styles.logosContainer}>
         {partners.map(partner => (
           <Link

@@ -27,8 +27,8 @@ Les spectateurs des deux dernières années se rappellent les très poignantes l
   },
   {
     id: 'guillaume-leveque',
-    name: 'Guillaume Lévèque',
-    imagePath: '/actors/Lévèque_Guillaume_24.jpg',
+    name: 'Guillaume Lévêque',
+    imagePath: '/actors/guillaume_leveque.jpg',
     description: `Guillaume Lévêque joue des auteurs aussi divers que Shakespeare, Tchekhov, Bond, Feydeau, Marlowe, Vinaver, Gorki, Strauss, Tourgueniev, Handke, Beckett... sous la direction d'Arlette Téphany, Pierre Meyrand, Jacques Nichet, Stéphane Braunschweig, Jean-Pierre Vincent... et d'Alain Françon avec lequel, en tant qu'acteur et/ou dramaturge, il collabore sur plus d'une trentaine de spectacles. Au cinéma il tourne avec Jacques Rivette et à la télévision avec Hervé Baslé. Comme artiste associé à la Colline, il y met également en scène Kaiser, Bernhard, Vinaver, Strauss.
 
 Il est parallèlement enseignant et intervenant dans diverses Écoles Nationales et depuis treize ans co-responsable du département mise en scène de l'ENSATT.

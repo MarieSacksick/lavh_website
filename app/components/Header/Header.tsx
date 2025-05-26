@@ -1,12 +1,12 @@
 'use client';
 import styles from './Header.module.css';
-import DesktopHeader from './DesktopHeader';
+import DesktopNavbar from './DesktopNavbar';
 import MobileHeader from './MobileHeader';
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <DesktopHeader />
+      <DesktopNavbar />
       <MobileHeader />
     </header>
   );

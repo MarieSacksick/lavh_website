@@ -18,9 +18,6 @@ export default function PriceInfoItem({
       <p>
         Tarif jeune public : <span>3 €</span>
       </p>
-      <p>
-        Inscription atelier-participatif : <span>30 €</span>
-      </p>
     </div>
   );
 }

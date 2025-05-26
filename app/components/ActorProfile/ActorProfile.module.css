@@ -4,7 +4,7 @@
   width: 100%;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--divider);
 }
 
 .container:last-child {
