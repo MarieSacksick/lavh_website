@@ -3,6 +3,7 @@ import Image from 'next/image';
 import ActorsPictures from './components/ActorsPictures/ActorsPictures';
 import BandeauLogos from './components/BandeauLogos/BandeauLogos';
 import Programme from './components/Programme/Programme';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,7 +19,15 @@ export default function Home() {
             height={1000}
           />
           <p className={styles.imageCaption}>
-            &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
+            &ldquo;Jean Moulin&rdquo;, une peinture de{' '}
+            <Link
+              href={'https://gillessacksick.com/'}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Site de Gilles Sacksick"
+            >
+              Gilles Sacksick
+            </Link>
           </p>
         </div>
         <div className={styles.rightContent}>

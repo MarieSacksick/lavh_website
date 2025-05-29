@@ -20,7 +20,7 @@
   font-style: italic;
   font-size: small;
   text-align: center;
-  margin: 0;
+  margin-top: 2rem;
 }
 
 .artistInfo {
@@ -88,5 +88,9 @@
 
   .rightContent {
     align-items: center;
+  }
+
+  .imageCaption {
+    margin-top: 0rem;
   }
 }
