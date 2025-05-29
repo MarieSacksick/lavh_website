@@ -20,7 +20,6 @@ export default function Home() {
           <p className={styles.imageCaption}>
             &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
           </p>
-          <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse</p>
         </div>
         <div className={styles.rightContent}>
           <ActorsPictures />
@@ -29,19 +28,29 @@ export default function Home() {
             <span>Du 17 au 24 août 2024</span>
           </h2>
           <Programme />
-          {/* Informations sur les tarifs */}
-          <div>
-            <p>
-              Prix des places : <span>13 €</span>
-            </p>
-            <p>
-              PASS : <span>75 € - CB</span> acceptée
-            </p>
-            <p>
-              Tarif jeune public : <span>3 €</span>
-            </p>
-          </div>
 
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              width: '100%',
+            }}
+          >
+            {/* Informations sur les tarifs */}
+            <div>
+              <p>
+                Prix des places : <span>13 €</span>
+              </p>
+              <p>
+                PASS : <span>75 € - CB</span> acceptée
+              </p>
+              <p>
+                Tarif jeune public : <span>3 €</span>
+              </p>
+            </div>
+            <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse</p>
+          </div>
           <BandeauLogos />
         </div>
       </div>
