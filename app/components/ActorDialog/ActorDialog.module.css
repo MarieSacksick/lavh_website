@@ -1,0 +1,126 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.dialog {
+  background-color: white;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  position: relative;
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialogHeader {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid var(--divider);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+  background-color: #f5f5f5;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.imageContainer {
+  flex: 0 0 300px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.textContainer h2 {
+  color: var(--primary-color);
+  font-family: var(--font-crimson), Georgia, serif;
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .imageContainer {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+}

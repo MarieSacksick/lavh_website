@@ -6,12 +6,18 @@
 
 .container h1 {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
-.actorsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.actorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.actorsGrid > div {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -23,7 +29,7 @@
     margin-bottom: 2rem;
   }
 
-  .actorsContainer {
-    gap: 2rem;
+  .actorsGrid {
+    gap: 1rem;
   }
 }
