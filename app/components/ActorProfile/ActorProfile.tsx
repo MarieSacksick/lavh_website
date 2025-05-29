@@ -1,22 +1,20 @@
 import styles from './ActorProfile.module.css';
-import Polaroid from '../Polaroid/Polaroid';
+import ComedienPhoto, { ComedienPhotosProps } from '../ComedienPhoto/ComedienPhoto';
 
-type ActorProfileProps = {
-  name: string;
-  imagePath: string;
-  description?: string;
-  id?: string;
+export type ActorProfileProps = ComedienPhotosProps & {
+  id: string;
+  description: string;
 };
 
-export default function ActorProfile({ name, imagePath, description, id }: ActorProfileProps) {
+export default function ActorProfile({ description, nom, imageSrc, prenom }: ActorProfileProps) {
   return (
-    <div className={styles.container} id={id}>
+    <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Polaroid src={imagePath} alt={`Photo de ${name}`} name={name} />
+        <ComedienPhoto imageSrc={imageSrc} nom={nom} prenom={prenom} />
       </div>
       <div className={styles.textContainer}>
-        <h2>{name}</h2>
-        <p className={styles.description}>{description || 'Description à venir'}</p>
+        <h2>{nom}</h2>
+        <p className={styles.description}>{description}</p>
       </div>
     </div>
   );

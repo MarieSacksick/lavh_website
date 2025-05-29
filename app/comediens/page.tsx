@@ -8,13 +8,7 @@ export default function Comediens() {
       <h1>Les comédiens</h1>
       <div className={styles.actorsContainer}>
         {actors.map(actor => (
-          <ActorProfile
-            key={actor.name}
-            name={actor.name}
-            imagePath={actor.imagePath}
-            description={actor.description}
-            id={actor.name.toLowerCase().replace(/\s+/g, '-')}
-          />
+          <ActorProfile key={actor.nom} {...actor} />
         ))}
       </div>
     </div>
