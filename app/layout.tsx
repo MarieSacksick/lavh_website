@@ -33,7 +33,7 @@ export default function RootLayout({
         <div className="layout">
           <div className="spaceHeader"></div>
           <Header />
-          <main className="main">{children}</main>
+          <main>{children}</main>
           <Footer />
         </div>
       </body>

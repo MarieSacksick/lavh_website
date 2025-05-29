@@ -5,10 +5,7 @@
 }
 
 .container h1 {
-  color: var(--primary-color);
-  font-family: var(--font-crimson), Georgia, serif;
   margin-bottom: 3rem;
-  text-align: center;
 }
 
 .actorsContainer {

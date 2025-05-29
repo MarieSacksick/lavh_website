@@ -1,16 +1,17 @@
 import styles from './page.module.css';
 import Image from 'next/image';
-import ActorsPictures from './components/ActorsPictures/ActorsPictures';
 import BandeauLogos from './components/BandeauLogos/BandeauLogos';
 import Programme from './components/Programme/Programme';
 import Link from 'next/link';
+import { actors } from './data/actors';
+import ComedienPhoto from './components/ComedienPhoto/ComedienPhoto';
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <h1>Littérature à voix haute - Bessin 2024</h1>
       <div className={styles.content}>
-        <div className={styles.portraitContainer}>
+        <div>
           <Image
             className={styles.imgPortrait}
             src="jean_moulin.png"
@@ -31,8 +32,19 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.rightContent}>
-          <ActorsPictures />
-          <h2>
+          <div className={styles.comedienPhotos}>
+            {actors.map(actor => (
+              <ComedienPhoto key={actor.nom} {...actor} />
+            ))}
+          </div>
+          <h2
+            style={{
+              textAlign: 'center',
+              marginTop: 32,
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
             <span>Littérature à Voix Haute présente</span>
             <span>Du 17 au 24 août 2024</span>
           </h2>
