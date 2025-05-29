@@ -11,13 +11,6 @@ export const actors: ActorProfileProps[] = [
 En 2024-2025, il jouera dans 4,7% de liberté de Samuel Hercule et Métilde Weyergans.`,
   },
   {
-    id: 'marion-rochmann',
-    prenom: 'Marion',
-    nom: 'Rochmann',
-    imageSrc: '/actors/Marion_Rochmann_20230827 copie.jpg',
-    description: `Marion Rochmann est comédienne-amateur-impénitente. Enfant, elle est de tous les « ateliers théâtre », de toutes les « pièces pour parents » et prend ses premiers cours. Le bac en poche, elle est au cours Florent, puis au Charpentier Art Studio, ne faisant son droit que pour donner le change à ses parents, dit-elle... jusqu'à prêter serment ! C'est alors qu'elle rencontre Thomas Sacksick qui l'engage dans une belle aventure théâtrale. Elle mène alors de front sa carrière d'avocate et de nombreuses représentations théâtrales (Les Amours de Don Perlimplin et Bélise en leur jardin de Federico Garcia-Lorca notamment, mis en scène par Gilles Sacksick). Puis elle réserve ses talents de conteuse à ses filles ; elle leur lira presque l'intégralité des Harry Potter ! Active depuis leur création dans les Soirées Littéraires du Bessin, elle renoue ici avec la littérature enfantine.`,
-  },
-  {
     id: 'evelyne-istria',
     prenom: 'Évelyne',
     nom: 'Istria',
@@ -57,17 +50,6 @@ Sans composer ni se grimer, André Marcon semble curieusement empreindre ses per
 Avant de rejoindre les « Soirées Littéraires du Bessin », André Marcon participe cet été au « Festival Beckett en Roussillon ».`,
   },
   {
-    id: 'thomas-sacksick',
-    prenom: 'Thomas',
-    nom: 'Sacksick',
-    imageSrc: '/actors/Sacksick_Thomas.jpg',
-    description: `Thomas Sacksick, comédien, metteur en scène et galériste ; lauréat de la Fondation de la Vocation.
-
-Après diverses réalisations théâtrales (dont Les Amours de Don Perlimplin et de Bélise en leur jardin de Garcia-Lorca mis en scène par Gilles Sacksick), une maîtrise de lettres à Paris III sous la direction du latiniste Philippe Heuzé, et renouant avec le souvenir d'enfance d'enregistrements sur vinyle (Napoléon à Austerlitz, Lucky Luke, qu'il écoutait et réécoutait inlassablement), Thomas Sacksick crée ex nihilo l'association Littérature à Voix Haute au printemps 2010.
-
-Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale ainsi qu'en direction des scolaires -qui semblent s'en être bien trouvés...`,
-  },
-  {
     id: 'melodie-richard',
     prenom: 'Mélodie',
     nom: 'Richard',
@@ -82,4 +64,22 @@ Pour la saison 2024/25, Mélodie Richard travaille sur l'adaptation du Martin Ed
 
 Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance dans un moulin au bord d'une rivière...`,
   },
-];
+  {
+    id: 'marion-rochmann',
+    prenom: 'Marion',
+    nom: 'Rochmann',
+    imageSrc: '/actors/Marion_Rochmann_20230827 copie.jpg',
+    description: `Marion Rochmann est comédienne-amateur-impénitente. Enfant, elle est de tous les « ateliers théâtre », de toutes les « pièces pour parents » et prend ses premiers cours. Le bac en poche, elle est au cours Florent, puis au Charpentier Art Studio, ne faisant son droit que pour donner le change à ses parents, dit-elle... jusqu'à prêter serment ! C'est alors qu'elle rencontre Thomas Sacksick qui l'engage dans une belle aventure théâtrale. Elle mène alors de front sa carrière d'avocate et de nombreuses représentations théâtrales (Les Amours de Don Perlimplin et Bélise en leur jardin de Federico Garcia-Lorca notamment, mis en scène par Gilles Sacksick). Puis elle réserve ses talents de conteuse à ses filles ; elle leur lira presque l'intégralité des Harry Potter ! Active depuis leur création dans les Soirées Littéraires du Bessin, elle renoue ici avec la littérature enfantine.`,
+  },
+  {
+    id: 'thomas-sacksick',
+    prenom: 'Thomas',
+    nom: 'Sacksick',
+    imageSrc: '/actors/Sacksick_Thomas.jpg',
+    description: `Thomas Sacksick, comédien, metteur en scène et galériste ; lauréat de la Fondation de la Vocation.
+
+Après diverses réalisations théâtrales (dont Les Amours de Don Perlimplin et de Bélise en leur jardin de Garcia-Lorca mis en scène par Gilles Sacksick), une maîtrise de lettres à Paris III sous la direction du latiniste Philippe Heuzé, et renouant avec le souvenir d'enfance d'enregistrements sur vinyle (Napoléon à Austerlitz, Lucky Luke, qu'il écoutait et réécoutait inlassablement), Thomas Sacksick crée ex nihilo l'association Littérature à Voix Haute au printemps 2010.
+
+Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale ainsi qu'en direction des scolaires -qui semblent s'en être bien trouvés...`,
+  },
+].sort((a, b) => a.nom.localeCompare(b.nom));

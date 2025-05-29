@@ -9,6 +9,7 @@
 
 .imageContainer {
   flex: 0 0 300px;
+  font-size: x-large;
 }
 
 .textContainer {
