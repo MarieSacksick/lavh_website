@@ -1,10 +1,20 @@
-import styles from './PartnersGrid.module.css';
+import styles from './BandeauLogos.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
 type Partner = { name: string; logo: string; website: string };
 
 const partners: Partner[] = [
+  {
+    name: 'Littérature à Voix Haute',
+    logo: '/logo.jpg',
+    website: 'https://www.litteratureavoixhaute.com/',
+  },
+  {
+    name: 'Seulles Terre et Mer',
+    logo: '/logos/Logo_Seulles_terre et mer copie.jpg',
+    website: 'https://seulles-terre-mer.fr/',
+  },
   {
     name: 'Conseil Général du Calvados',
     logo: '/logos/conseil_général_calvados.jpeg',
@@ -21,13 +31,8 @@ const partners: Partner[] = [
     website: 'https://tracy-sur-mer.fr/',
   },
   {
-    name: 'Seulles Terre et Mer',
-    logo: '/logos/Logo_Seulles_terre et mer copie.jpg',
-    website: 'https://seulles-terre-mer.fr/',
-  },
-  {
     name: 'Friendly Home Bayeux',
-    logo: '/logos/Friendly Home Bayeux.PNG',
+    logo: '/logos/friendly_home_bagneux.png',
     website: 'https://www.facebook.com/friendlyhomebayeux/',
   },
   {
@@ -37,22 +42,26 @@ const partners: Partner[] = [
   },
 ];
 
-export default function PartnersGrid() {
+export default function BandeauLogos() {
   return (
     <div className={styles.container}>
-      <div className={styles.logosContainer}>
-        {partners.map(partner => (
-          <Link
-            key={partner.name}
-            href={partner.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.logoWrapper}
-          >
-            <Image src={partner.logo} alt={`Logo ${partner.name}`} width={100} height={100} />
-          </Link>
-        ))}
-      </div>
+      {partners.map(partner => (
+        <Link
+          key={partner.name}
+          href={partner.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.logoWrapper}
+        >
+          <Image
+            src={partner.logo}
+            alt={`Logo ${partner.name}`}
+            width={1000}
+            height={1000}
+            className={styles.logoImg}
+          />
+        </Link>
+      ))}
     </div>
   );
 }

@@ -45,63 +45,18 @@
 .rightContent {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.eventsContainer {
-  display: flex;
-  row-gap: 0.75rem;
-  flex-direction: column;
-  max-height: 550px;
-  column-gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.textContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem 1rem;
-}
-
-.textContainer h2 {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-@media (max-width: 1200px) {
-  .eventsContainer {
-    flex-wrap: unset;
-    max-height: unset;
-  }
+  gap: 1rem;
+  align-items: start;
 }
 
 @media (max-width: 768px) {
-  .portraitContainer {
-    align-items: center;
-    flex-direction: row;
-  }
-
   .artistInfo {
     display: none;
   }
 
   .imgPortrait {
-    max-width: 65%;
+    max-width: 70%;
     margin: 0rem 0rem 2rem -1rem;
-  }
-
-  .textContainer {
-    gap: 0rem;
-  }
-
-  .eventsContainer {
-    flex-wrap: unset;
-    max-height: unset;
   }
 
   .imgLogoSldb {
@@ -120,29 +75,8 @@
     display: flex;
     flex-direction: column;
   }
-}
 
-.eventTime {
-  color: var(--primary-color);
-}
-
-.authorName {
-  color: var(--green);
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.italicText {
-  font-style: italic;
-}
-
-.placeLink {
-  color: #004587;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.placeLink:hover {
-  text-decoration: underline;
-  opacity: 0.8;
+  .rightContent {
+    align-items: center;
+  }
 }
