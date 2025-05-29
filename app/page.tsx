@@ -29,14 +29,7 @@ export default function Home() {
           </h2>
           <Programme />
 
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              width: '100%',
-            }}
-          >
+          <div className={styles.tarifEtGayLee}>
             {/* Informations sur les tarifs */}
             <div>
               <p>
