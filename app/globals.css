@@ -66,6 +66,7 @@ a {
   text-decoration: none;
   position: relative;
   transition: background 0.2s;
+  cursor: pointer;
 }
 
 a:hover,
@@ -81,6 +82,7 @@ a:focus-visible::after {
   pointer-events: none;
   z-index: 2;
   border-radius: inherit;
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {

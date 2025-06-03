@@ -3,9 +3,14 @@ import Image from 'next/image';
 import styles from './ComedienPhoto.module.css';
 import { ComedienPhotosProps } from '@/app/types/comediens';
 
-const ComedienPhoto = ({ nom, prenom, imageSrc }: ComedienPhotosProps) => {
+const ComedienPhoto = ({
+  nom,
+  prenom,
+  imageSrc,
+  onClick,
+}: ComedienPhotosProps & { onClick?: () => void }) => {
   return (
-    <div className={styles.container}>
+    <a className={styles.container} onClick={onClick}>
       <Image
         width={100}
         height={100}
@@ -17,7 +22,7 @@ const ComedienPhoto = ({ nom, prenom, imageSrc }: ComedienPhotosProps) => {
         <p>{prenom}</p>
         <p>{nom}</p>
       </div>
-    </div>
+    </a>
   );
 };
 

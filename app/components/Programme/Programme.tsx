@@ -1,12 +1,31 @@
 import styles from './Programme.module.css';
 import Image from 'next/image';
+import { comediens } from '@/app/data/comediens';
+import { Comedien } from '@/app/types/comediens';
 
 const getGoogleMapsUrl = (place: string) => {
   const encodedPlace = encodeURIComponent(place);
   return `https://www.google.com/maps/search/?api=1&query=${encodedPlace},France`;
 };
 
-export default function Programme() {
+type ProgrammeProps = {
+  onComedienClick: (comedien: Comedien) => void;
+};
+
+export default function Programme({ onComedienClick }: ProgrammeProps) {
+  const findComedienByName = (name: string) => {
+    return comediens.find(
+      comedien => `${comedien.prenom} ${comedien.nom}`.toLowerCase() === name.toLowerCase()
+    );
+  };
+
+  const handleComedienClick = (name: string) => {
+    const comedien = findComedienByName(name);
+    if (comedien) {
+      onComedienClick(comedien);
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Image
@@ -34,7 +53,9 @@ export default function Programme() {
         </div>
         <span className={styles.titreOeuvre}>Don Quichotte (« Le curieux malavisé »)</span>
         <span className={styles.auteurOeuvre}>MIGUEL DE CERVANTÈS</span>
-        <div className={styles.readerName}>lecture de Thomas Sacksick</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Thomas Sacksick')}>
+          lecture de Thomas Sacksick
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -55,7 +76,9 @@ export default function Programme() {
         </div>
         <span className={styles.titreOeuvre}>Le moulin sur la Floss</span>
         <span className={styles.auteurOeuvre}>GEORGE ELIOT</span>
-        <div className={styles.readerName}>lecture de Mélodie Richard</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Mélodie Richard')}>
+          lecture de Mélodie Richard
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -76,7 +99,9 @@ export default function Programme() {
         </div>
         <span className={styles.titreOeuvre}>Mars</span>
         <span className={styles.auteurOeuvre}>FRITZ ZORN</span>
-        <div className={styles.readerName}>lecture de Louis Albertosi</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Louis Albertosi')}>
+          lecture de Louis Albertosi
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -102,7 +127,9 @@ export default function Programme() {
         <p>
           <span className={styles.auteurOeuvre}>JON FOSSE</span> (prix Nobel 2023)
         </p>
-        <div className={styles.readerName}>lecture jeune-public de Marion Rochmann</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Marion Rochmann')}>
+          lecture jeune-public de Marion Rochmann
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -123,7 +150,9 @@ export default function Programme() {
         </div>
         <span className={styles.titreOeuvre}>Joseph</span>
         <span className={styles.auteurOeuvre}>MARIE-HÉLÈNE LAFON</span>
-        <div className={styles.readerName}>{`lecture d'Evelyne Istria`} </div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Evelyne Istria')}>
+          {`lecture d'Evelyne Istria`}
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -144,7 +173,9 @@ export default function Programme() {
 
         <span className={styles.titreOeuvre}>Voyage au bout de la nuit</span>
         <span className={styles.auteurOeuvre}>LOUIS-FERDINAND CÉLINE</span>
-        <div className={styles.readerName}>lecture de Guillaume Lévêque</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Guillaume Lévêque')}>
+          lecture de Guillaume Lévêque
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -165,7 +196,9 @@ export default function Programme() {
         </div>
         <span className={styles.titreOeuvre}>Alias Caracalla</span>
         <span className={styles.auteurOeuvre}>DANIEL CORDIER</span>
-        <div className={styles.readerName}>{`lecture d'André Marcon`}</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('André Marcon')}>
+          {`lecture d'André Marcon`}
+        </a>
       </div>
 
       <div className={styles.jour}>
@@ -186,7 +219,9 @@ export default function Programme() {
         </div>
         <span className={styles.titreOeuvre}>Le Choix de Sophie</span>
         <span className={styles.auteurOeuvre}>WILLIAM STYRON</span>
-        <div className={styles.readerName}>lecture de Thomas Sacksick</div>
+        <a className={styles.readerName} onClick={() => handleComedienClick('Thomas Sacksick')}>
+          lecture de Thomas Sacksick
+        </a>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+'use client';
 import styles from './page.module.css';
 import Image from 'next/image';
 import BandeauLogos from './components/BandeauLogos/BandeauLogos';
@@ -5,8 +6,13 @@ import Programme from './components/Programme/Programme';
 import Link from 'next/link';
 import { comediens } from './data/comediens';
 import ComedienPhoto from './components/ComedienPhoto/ComedienPhoto';
+import ComedienDialog from './components/ComedienDialog/ComedienDialog';
+import { useState } from 'react';
+import { Comedien } from './types/comediens';
 
 export default function Home() {
+  const [selectedComedien, setSelectedComedien] = useState<Comedien | null>(null);
+
   return (
     <div className={styles.page}>
       <h1>Littérature à voix haute - Bessin 2024</h1>
@@ -34,7 +40,11 @@ export default function Home() {
         <div className={styles.rightContent}>
           <div className={styles.comedienPhotos}>
             {comediens.map(comedien => (
-              <ComedienPhoto key={comedien.nom} {...comedien} />
+              <ComedienPhoto
+                key={comedien.nom}
+                {...comedien}
+                onClick={() => setSelectedComedien(comedien)}
+              />
             ))}
           </div>
           <h2
@@ -48,7 +58,7 @@ export default function Home() {
             <span>Littérature à Voix Haute présente</span>
             <span>Du 17 au 24 août 2024</span>
           </h2>
-          <Programme />
+          <Programme onComedienClick={setSelectedComedien} />
 
           <div className={styles.tarifEtGayLee}>
             {/* Informations sur les tarifs */}
@@ -68,6 +78,9 @@ export default function Home() {
           <BandeauLogos />
         </div>
       </div>
+      {selectedComedien && (
+        <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} />
+      )}
     </div>
   );
 }
