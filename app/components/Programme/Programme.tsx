@@ -8,6 +8,20 @@ const getGoogleMapsUrl = (place: string) => {
   return `https://www.google.com/maps/search/?api=1&query=${encodedPlace},France`;
 };
 
+const getPdfUrl = (date: string) => {
+  const dateMap: { [key: string]: string } = {
+    'SAMEDI 17 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
+    'DIMANCHE 18 AOÛT': 'dossier-programme_SLdB24-dimanche-18.pdf',
+    'LUNDI 19 AOÛT': 'dossier-programme_SLdB24-4-lundi-19.pdf',
+    'MARDI 20 AOÛT': 'dossier-programme_SLdB24-5-mardi-20.pdf',
+    'MERCREDI 21 AOÛT': 'dossier-programme_SLdB24-7-mercredi-21.pdf',
+    'JEUDI 22 AOÛT': 'dossier-programme_SLdB24-8-jeudi-22.pdf',
+    'VENDREDI 23 AOÛT': 'dossier-programme_SLdB24-9-Vendredi-23.pdf',
+    'SAMEDI 24 AOÛT': 'dossier-programme_SLdB24-10-samedi-24.pdf',
+  };
+  return `/dossier-programme_SLdB24/${dateMap[date]}`;
+};
+
 type ProgrammeProps = {
   onComedienClick: (comedien: Comedien) => void;
 };
@@ -37,7 +51,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       />
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('SAMEDI 17 AOÛT')} target="_blank" rel="noopener noreferrer">
             SAMEDI 17 AOÛT <span>19H30</span>
           </a>
         </h3>
@@ -60,7 +74,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('DIMANCHE 18 AOÛT')} target="_blank" rel="noopener noreferrer">
             DIMANCHE 18 AOÛT <span>19H30</span>
           </a>
         </h3>
@@ -83,7 +97,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('LUNDI 19 AOÛT')} target="_blank" rel="noopener noreferrer">
             LUNDI 19 AOÛT <span>19H30</span>
           </a>
         </h3>
@@ -106,7 +120,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('MARDI 20 AOÛT')} target="_blank" rel="noopener noreferrer">
             MARDI 20 AOÛT
           </a>
         </h3>
@@ -134,7 +148,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('MERCREDI 21 AOÛT')} target="_blank" rel="noopener noreferrer">
             MERCREDI 21 AOÛT <span>19H30</span>
           </a>
         </h3>
@@ -157,7 +171,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('JEUDI 22 AOÛT')} target="_blank" rel="noopener noreferrer">
             JEUDI 22 AOÛT <span>19H30</span>
           </a>
         </h3>
@@ -180,7 +194,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('VENDREDI 23 AOÛT')} target="_blank" rel="noopener noreferrer">
             VENDREDI 23 AOÛT <span>19H30</span>
           </a>
         </h3>
@@ -203,7 +217,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
       <div className={styles.jour}>
         <h3>
-          <a href="/dossier-programme_SLdB24.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={getPdfUrl('SAMEDI 24 AOÛT')} target="_blank" rel="noopener noreferrer">
             SAMEDI 24 AOÛT <span>19H30</span>
           </a>
         </h3>

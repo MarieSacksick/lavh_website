@@ -25,17 +25,16 @@ export default function Home() {
             width={1000}
             height={1000}
           />
-          <p className={styles.imageCaption}>
-            &ldquo;Jean Moulin&rdquo;, une peinture de{' '}
-            <Link
-              href={'https://gillessacksick.com/'}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Site de Gilles Sacksick"
-            >
-              Gilles Sacksick
-            </Link>
-          </p>
+          <Link
+            href={'https://gillessacksick.com/'}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Site de Gilles Sacksick"
+          >
+            <p className={styles.imageCaption}>
+              &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
+            </p>
+          </Link>
         </div>
         <div className={styles.rightContent}>
           <div className={styles.comedienPhotos}>
