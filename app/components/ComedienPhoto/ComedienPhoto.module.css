@@ -1,0 +1,23 @@
+.container {
+  background-color: white;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 0.5em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+  height: 100%;
+}
+
+.comedienPhoto {
+  width: 100%;
+  height: auto;
+}
+
+.container:hover {
+  color: var(--primary-color);
+}
