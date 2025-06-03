@@ -46,7 +46,7 @@ export default function Footer() {
 
           <Link href={'/'}>
             <Image
-              src={'head_from_logo.png'}
+              src={'tete_du_logo.png'}
               alt=""
               width={100}
               height={100}

@@ -4,8 +4,8 @@
   --primary-color: #9d2844;
   --secondary-color: #575b5b;
   --green: #22702f;
-  --header-height: 7rem;
-  --header-height-min: 5rem;
+  --header-height: 5rem;
+  --header-height-min: 3.5rem;
 }
 
 .layout {

@@ -6,9 +6,6 @@
   gap: 1rem;
   border-bottom: 1px solid var(--foreground);
   padding-block: 0.25rem;
-}
-
-.container .noScrolled {
   height: var(--header-height);
 }
 
@@ -18,18 +15,25 @@
 
 .headImage {
   transition: all 0.3s ease-in-out;
-  object-fit: contain;
-  height: 96px;
+  width: auto;
+  height: 4rem;
 }
 
 .scrolled .headImageContainer,
-.scrolled .headImage .container {
+.scrolled .headImage {
   transition: all 0.3s ease-in-out;
 }
 
+.scrolled .container {
+  transition: all 0.4s ease-in-out;
+}
+
 .scrolled .headImage {
-  width: 60px !important;
-  height: 56px !important;
+  height: 3rem !important;
+}
+
+.scrolled .container {
+  height: var(--header-height-min);
 }
 
 @media (max-width: 768px) {

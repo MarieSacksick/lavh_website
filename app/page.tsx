@@ -40,9 +40,9 @@ export default function Home() {
           <h2
             style={{
               textAlign: 'center',
-              marginTop: 32,
               display: 'flex',
               flexDirection: 'column',
+              margin: 0,
             }}
           >
             <span>Littérature à Voix Haute présente</span>
