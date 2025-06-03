@@ -22,7 +22,7 @@ export default function DesktopNavbar() {
     <nav className={`${isScrolled ? styles.scrolled : styles.notScrolled}`}>
       <div className={styles.container}>
         <NavLinks linkClassName={styles.link} activeLinkClassName={styles.activeLink} />
-        <Link href="/">
+        <Link href="/" className={styles.linkImage}>
           <Image
             src={'tete_du_logo.png'}
             alt=""
