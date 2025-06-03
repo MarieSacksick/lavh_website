@@ -16,6 +16,7 @@
   transition: all 0.3s ease-in-out;
   width: auto;
   height: 4rem;
+  padding-inline: 1.5rem;
 }
 
 .scrolled .headImageContainer,
