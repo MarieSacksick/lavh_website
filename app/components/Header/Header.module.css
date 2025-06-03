@@ -7,6 +7,7 @@
   z-index: 100;
   width: 100%;
   padding: 0 1rem;
+  border-bottom: 0.05rem solid var(--foreground);
 }
 
 .navMobile {
@@ -46,7 +47,7 @@
   width: 8rem;
   max-width: 10rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .logo {
