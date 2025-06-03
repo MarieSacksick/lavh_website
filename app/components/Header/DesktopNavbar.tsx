@@ -3,12 +3,10 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './DesktopNavbar.module.css';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import DropDownMenu from '../DropDownMenu/DropDownMenu';
+import NavLinks from './NavLinks';
 
 export default function DesktopNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,20 +21,7 @@ export default function DesktopNavbar() {
   return (
     <nav className={`${isScrolled ? styles.scrolled : styles.notScrolled}`}>
       <div className={styles.container}>
-        <Link href="/" className={pathname === '/' ? styles.activeLink : ''}>
-          Accueil
-        </Link>
-        <DropDownMenu
-          triggerTitle="Soirées Littéraires du Bessin"
-          contents={[
-            { title: 'Session 2024', href: '/' },
-            { title: 'Session 2023', href: '/' },
-            { title: 'Session 2022', href: '/' },
-            { title: 'Session 2021', href: '/' },
-            { title: 'Session 2020', href: '/' },
-            { title: 'Session 2019', href: '/' },
-          ]}
-        />
+        <NavLinks linkClassName={styles.link} activeLinkClassName={styles.activeLink} />
         <Link href="/">
           <Image
             src={'tete_du_logo.png'}
@@ -45,15 +30,6 @@ export default function DesktopNavbar() {
             height={150}
             className={styles.headImage}
           />
-        </Link>
-        <Link href="/comediens" className={pathname === '/comediens' ? styles.activeLink : ''}>
-          Comédiens
-        </Link>
-        <Link
-          href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}
-          className={pathname === '/Bessin_audio.html' ? styles.activeLink : ''}
-        >
-          Extraits Audio
         </Link>
       </div>
     </nav>

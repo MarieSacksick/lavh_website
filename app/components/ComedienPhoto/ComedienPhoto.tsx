@@ -18,7 +18,7 @@ const ComedienPhoto = ({
         alt={`Photo de ${prenom} ${nom}`}
         className={styles.comedienPhoto}
       />
-      <div>
+      <div style={{ marginTop: 'auto' }}>
         <p>{prenom}</p>
         <p>{nom}</p>
       </div>

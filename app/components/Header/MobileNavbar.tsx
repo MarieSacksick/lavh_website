@@ -1,12 +1,12 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import styles from './MobileHeader.module.css';
+import styles from './MobileNavbar.module.css';
 import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
-import DropDownMenu from '../DropDownMenu/DropDownMenu';
+import NavLinks from './NavLinks';
 
-export default function MobileHeader() {
+export default function MobileNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -35,26 +35,10 @@ export default function MobileHeader() {
       </nav>
       <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
         <ul>
-          <li>
-            <DropDownMenu
-              triggerTitle="Soirées Littéraires du Bessin"
-              contents={[
-                { title: 'Session 2024', href: '/' },
-                {
-                  title: 'Ailleurs',
-                  href: 'https://www.litteratureavoixhaute.com/ailleurs_2021.html',
-                },
-              ]}
-            />
-          </li>
-          <li>
-            <Link href="/comediens">Comédiens</Link>
-          </li>
-          <li>
-            <Link href={'https://www.litteratureavoixhaute.com/Bessin_audio.html'}>
-              Extraits Audio
-            </Link>
-          </li>
+          <NavLinks
+            linkClassName={styles.mobileLink}
+            activeLinkClassName={styles.activeMobileLink}
+          />
         </ul>
       </div>
     </>
