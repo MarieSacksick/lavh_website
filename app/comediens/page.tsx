@@ -7,21 +7,28 @@ import ComedienPhoto from '../components/ComedienPhoto/ComedienPhoto';
 import ComedienDialog from '../components/ComedienDialog/ComedienDialog';
 
 export default function Comediens() {
-  const [selectedcomedien, setSelectedcomedien] = useState<(typeof comediens)[0] | null>(null);
+  const [selectedComedien, setSelectedComedien] = useState<(typeof comediens)[0] | null>(null);
 
   return (
-    <div className={styles.container}>
-      <h1>Les comédiens</h1>
-      <div className={styles.comediensGrid}>
-        {comediens.map(comedien => (
-          <div key={comedien.id} onClick={() => setSelectedcomedien(comedien)}>
-            <ComedienPhoto {...comedien} />
-          </div>
-        ))}
+    <>
+      {/* -----  Page Comédiens -----  */}
+      <div className={styles.container}>
+        {/* -----  Titre de la page  -----  */}
+        <h1>Les comédiens</h1>
+        {/* -----  Contenu de la page  -----  */}
+        <div className={styles.comediensGrid}>
+          {comediens.map(comedien => (
+            <div key={comedien.id} onClick={() => setSelectedComedien(comedien)}>
+              <ComedienPhoto {...comedien} />
+            </div>
+          ))}
+        </div>
       </div>
-      {selectedcomedien && (
-        <ComedienDialog comedien={selectedcomedien} onClose={() => setSelectedcomedien(null)} />
+
+      {/* -----  Boîte de Dialogue avec description des comédiens -----  */}
+      {selectedComedien && (
+        <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} />
       )}
-    </div>
+    </>
   );
 }

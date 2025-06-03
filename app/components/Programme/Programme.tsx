@@ -3,11 +3,21 @@ import Image from 'next/image';
 import { comediens } from '@/app/data/comediens';
 import { Comedien } from '@/app/types/comediens';
 
+/**
+ * Génère l'URL Google Maps pour un lieu donné
+ * @param {string} place - Le nom du lieu à rechercher
+ * @returns {string} L'URL Google Maps pour le lieu spécifié
+ */
 const getGoogleMapsUrl = (place: string) => {
   const encodedPlace = encodeURIComponent(place);
   return `https://www.google.com/maps/search/?api=1&query=${encodedPlace},France`;
 };
 
+/**
+ * Génère l'URL du PDF du programme pour une date donnée
+ * @param {string} date - La date du programme (ex: "SAMEDI 17 AOÛT")
+ * @returns {string} L'URL du PDF correspondant à la date
+ */
 const getPdfUrl = (date: string) => {
   const dateMap: { [key: string]: string } = {
     'SAMEDI 17 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
@@ -22,17 +32,53 @@ const getPdfUrl = (date: string) => {
   return `/dossier-programme_SLdB24/${dateMap[date]}`;
 };
 
+/**
+ * Propriétés du composant Programme
+ * @interface ProgrammeProps
+ * @property {function} onComedienClick - Fonction appelée lorsqu'un comédien est sélectionné
+ */
 type ProgrammeProps = {
   onComedienClick: (comedien: Comedien) => void;
 };
 
+/**
+ * Composant affichant le programme des Soirées Littéraires du Bessin
+ *
+ * @component
+ * @description
+ * Ce composant affiche le programme complet des soirées avec :
+ * - Les dates et horaires
+ * - Les lieux (avec liens Google Maps)
+ * - Les œuvres et auteurs
+ * - Les comédiens (avec liens vers leurs profils)
+ * - Les liens vers les PDFs des programmes
+ *
+ * @param {ProgrammeProps} props - Les propriétés du composant
+ * @param {function} props.onComedienClick - Fonction appelée lorsqu'un comédien est sélectionné
+ *
+ * @example
+ * ```tsx
+ * <Programme onComedienClick={(comedien) => handleComedienClick(comedien)} />
+ * ```
+ *
+ * @returns {JSX.Element} Le programme complet des soirées
+ */
 export default function Programme({ onComedienClick }: ProgrammeProps) {
+  /**
+   * Recherche un comédien par son nom complet
+   * @param {string} name - Le nom complet du comédien
+   * @returns {Comedien | undefined} Le comédien trouvé ou undefined
+   */
   const findComedienByName = (name: string) => {
     return comediens.find(
       comedien => `${comedien.prenom} ${comedien.nom}`.toLowerCase() === name.toLowerCase()
     );
   };
 
+  /**
+   * Gère le clic sur un nom de comédien
+   * @param {string} name - Le nom complet du comédien
+   */
   const handleComedienClick = (name: string) => {
     const comedien = findComedienByName(name);
     if (comedien) {
@@ -42,6 +88,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
   return (
     <div className={styles.container}>
+      {/* -----  Logo Soirées Littéraires du Bessin -----  */}
       <Image
         src="/logos/logo_sldb.png"
         alt="Logo Soirées littéraires du Bessin"
@@ -49,6 +96,8 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         height={105}
         className={styles.logoSldb}
       />
+
+      {/* -----  Samedi 17 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('SAMEDI 17 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -72,6 +121,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Dimanche 18 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('DIMANCHE 18 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -95,6 +145,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Lundi 19 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('LUNDI 19 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -118,6 +169,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Mardi 20 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('MARDI 20 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -146,6 +198,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Mercredi 21 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('MERCREDI 21 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -169,6 +222,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Jeudi 22 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('JEUDI 22 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -192,6 +246,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Vendredi 23 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('VENDREDI 23 AOÛT')} target="_blank" rel="noopener noreferrer">
@@ -215,6 +270,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
       </div>
 
+      {/* -----  Samedi 24 août -----  */}
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('SAMEDI 24 AOÛT')} target="_blank" rel="noopener noreferrer">

@@ -1,10 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #303030;
+  /* Couleur primaire, actuellement rouge */
   --primary-color: #9d2844;
+  /* Couleur secondaire, actuellement vert-gris */
   --secondary-color: #575b5b;
   --green: #22702f;
+  /* Taille du header */
   --header-height: 5rem;
+  /* Taille du header après le scroll */
   --header-height-min: 3.5rem;
 }
 
@@ -33,14 +37,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.spaceHeader {
+  /* Crée un espace réservé de la même hauteur que le header fixe
+   * pour éviter que le contenu de la page ne soit masqué derrière le header
+   * lors du défilement. 
+   */
+  height: var(--header-height);
+}
+
 @media (max-width: 768px) {
   .spaceHeader {
     display: none;
   }
-}
-
-.spaceHeader {
-  height: var(--header-height);
 }
 
 h1,

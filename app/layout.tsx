@@ -33,6 +33,7 @@ export default function RootLayout({
         <div className="layout">
           <div className="spaceHeader"></div>
           <Header />
+          {/* L'ensemble des contenus des pages est contenu entre les balises <main> */}
           <main>{children}</main>
           <Footer />
         </div>

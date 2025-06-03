@@ -1,37 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Site Web de Littérature à Voix Haute
 
-## Getting Started
+Ce projet est un site web moderne pour l'association Littérature à Voix Haute, développé avec Next.js 14 et TypeScript.
 
-First, install all : npm run install
+## 🛠️ Structure du Projet
 
-Then, run the development server:
+Voilà la structure globale du projet :
+
+```
+app/
+├── components/          # Les composants utilisés dans les pages
+├── types/               # Les types utilisés
+├── data/                # Les données textuelles, comme la description des comédiens
+├── comediens/           # La page comédien
+├── cgu/                 # La page des conditions d'utilisation
+├── public/              # Dossier contenant les images et les fichiers PDF
+├── globals.css          # Le fichier des variables css globales de l'application
+└── page.tsx             # La page d'accueil
+```
+
+Pour créer une nouvelle page, il suffit de :
+
+1. Créer un dossier dans `app` avec le nom de cette page.
+2. Créer le fichier page.tsx à l'intérieur de ce dossier.
+
+Pour en savoir plus, [https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages](cliquez-ici.).
+
+## 🎨 Design
+
+- **Variables CSS** dans le fichier `app/globals.css`
+
+- **Breakpoints** :
+  - Mobile : < 768px
+  - Desktop : ≥ 768px
+
+## Installation
+
+1. Cloner le repository :
+
+```bash
+git clone [URL_DU_REPO]
+```
+
+2. Installer les dépendances :
+
+```bash
+npm install
+```
+
+3. Lancer le serveur de développement :
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Ouvrir [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 🚀 Déploiement
 
-To learn more about Next.js, take a look at the following resources:
+Pour créer le dossier `out` contenant les fichiers HTML/CSS/JS statiques, lancer :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy
-
-npm run build => create /out folder
-run serve out to serve the file out
-
-## Custom
-
-Lib heroicons installed https://heroicons.com/outline
+```bash
+npm run build
+```

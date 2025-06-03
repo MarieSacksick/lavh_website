@@ -5,6 +5,12 @@ import { BsTelephoneFill } from 'react-icons/bs';
 import Image from 'next/image';
 import Link from 'next/link';
 
+/**
+ * Pied de page du site avec informations de contact et liens légaux
+ *
+ * @component
+ * @returns {JSX.Element} Le pied de page complet avec toutes les informations de contact
+ */
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
