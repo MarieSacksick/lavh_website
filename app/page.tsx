@@ -3,7 +3,7 @@ import Image from 'next/image';
 import BandeauLogos from './components/BandeauLogos/BandeauLogos';
 import Programme from './components/Programme/Programme';
 import Link from 'next/link';
-import { actors } from './data/actors';
+import { comediens } from './data/comediens';
 import ComedienPhoto from './components/ComedienPhoto/ComedienPhoto';
 
 export default function Home() {
@@ -33,8 +33,8 @@ export default function Home() {
         </div>
         <div className={styles.rightContent}>
           <div className={styles.comedienPhotos}>
-            {actors.map(actor => (
-              <ComedienPhoto key={actor.nom} {...actor} />
+            {comediens.map(comedien => (
+              <ComedienPhoto key={comedien.nom} {...comedien} />
             ))}
           </div>
           <h2

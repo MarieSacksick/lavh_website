@@ -7,7 +7,7 @@ type Partner = { name: string; logo: string; website: string };
 const partners: Partner[] = [
   {
     name: 'Littérature à Voix Haute',
-    logo: '/logo.jpg',
+    logo: '/logos/logo_LAVH.jpg',
     website: 'https://www.litteratureavoixhaute.com/',
   },
   {

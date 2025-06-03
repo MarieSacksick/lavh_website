@@ -1,7 +1,10 @@
 .dropdown button {
-  color: black;
   cursor: pointer;
   text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  position: relative;
 }
 
 .dropdown a {
@@ -34,13 +37,6 @@
 
 .dropdown .icon.rotated {
   transform: rotate(180deg);
-}
-
-.dropdown .trigger {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.251rem;
-  position: relative;
 }
 
 @media (max-width: 768px) {

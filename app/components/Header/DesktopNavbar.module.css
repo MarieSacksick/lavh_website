@@ -1,40 +1,19 @@
 .container {
-  display: block;
-  margin-top: 0.25rem;
-  border-top: 1px solid var(--divider);
-  border-bottom: 1px solid var(--divider);
-}
-
-.navGroup {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  font-weight: 600;
-  font-family: var(--font-crimson), Georgia, serif;
-  padding: 0.5rem 0rem;
+  gap: 1rem;
+  border-bottom: 1px solid var(--foreground);
+  padding-block: 0.25rem;
 }
 
-.navGroup a {
-  color: var(--foreground);
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.navGroup a:hover {
-  color: var(--primary-color);
+.container .noScrolled {
+  height: var(--header-height);
 }
 
 .activeLink {
-  color: var(--primary-color) !important;
-}
-
-.headImageContainer {
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: var(--primary-color);
 }
 
 .headImage {
@@ -44,18 +23,8 @@
 }
 
 .scrolled .headImageContainer,
-.scrolled .headImage {
+.scrolled .headImage .container {
   transition: all 0.3s ease-in-out;
-}
-
-.scrolled .headerBarDown:last-child {
-  opacity: 0;
-  height: 0;
-  margin: 0;
-}
-
-.scrolled .headImageContainer {
-  height: 56px;
 }
 
 .scrolled .headImage {

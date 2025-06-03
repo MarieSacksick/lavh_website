@@ -10,7 +10,7 @@ export default function Programme() {
   return (
     <div className={styles.container}>
       <Image
-        src="/logo_sldb.png"
+        src="/logos/logo_sldb.png"
         alt="Logo Soirées littéraires du Bessin"
         width={200}
         height={105}

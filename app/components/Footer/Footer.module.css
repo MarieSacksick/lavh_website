@@ -1,7 +1,13 @@
-.container {
+.footer {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
-  padding: 2rem;
   text-align: center;
+  border-top: 0.05rem solid var(--foreground);
 }
 
 .content {
@@ -63,7 +69,6 @@
 .bottom {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 0.05rem solid var(--foreground);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -114,12 +119,4 @@
   .legalLink {
     font-size: 0.8rem;
   }
-}
-
-.footer {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
 }

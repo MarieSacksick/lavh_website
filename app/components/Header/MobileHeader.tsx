@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './MobileHeader.module.css';
 import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
-import DropDownMenu from '../DropdownMenu.tsx/DropDownMenu';
+import DropDownMenu from '../DropDownMenu/DropDownMenu';
 
 export default function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +25,7 @@ export default function MobileHeader() {
         </button>
         <Link href="/">
           <Image
-            src="/logo.jpg"
+            src="/logos/logo_LAVH.jpg"
             alt="Littérature à Voix Haute"
             width={100}
             height={100}

@@ -1,12 +1,7 @@
 import Image from 'next/image';
 
 import styles from './ComedienPhoto.module.css';
-
-export type ComedienPhotosProps = {
-  prenom: string;
-  nom: string;
-  imageSrc: string;
-};
+import { ComedienPhotosProps } from '@/app/types/comediens';
 
 const ComedienPhoto = ({ nom, prenom, imageSrc }: ComedienPhotosProps) => {
   return (

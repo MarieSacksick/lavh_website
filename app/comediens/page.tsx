@@ -2,25 +2,25 @@
 
 import { useState } from 'react';
 import styles from './page.module.css';
-import { actors } from '../data/actors';
+import { comediens } from '../data/comediens';
 import ComedienPhoto from '../components/ComedienPhoto/ComedienPhoto';
-import ActorDialog from '../components/ActorDialog/ActorDialog';
+import ComedienDialog from '../components/ComedienDialog/ComedienDialog';
 
 export default function Comediens() {
-  const [selectedActor, setSelectedActor] = useState<(typeof actors)[0] | null>(null);
+  const [selectedcomedien, setSelectedcomedien] = useState<(typeof comediens)[0] | null>(null);
 
   return (
     <div className={styles.container}>
       <h1>Les comédiens</h1>
-      <div className={styles.actorsGrid}>
-        {actors.map(actor => (
-          <div key={actor.id} onClick={() => setSelectedActor(actor)}>
-            <ComedienPhoto {...actor} />
+      <div className={styles.comediensGrid}>
+        {comediens.map(comedien => (
+          <div key={comedien.id} onClick={() => setSelectedcomedien(comedien)}>
+            <ComedienPhoto {...comedien} />
           </div>
         ))}
       </div>
-      {selectedActor && (
-        <ActorDialog actor={selectedActor} onClose={() => setSelectedActor(null)} />
+      {selectedcomedien && (
+        <ComedienDialog comedien={selectedcomedien} onClose={() => setSelectedcomedien(null)} />
       )}
     </div>
   );

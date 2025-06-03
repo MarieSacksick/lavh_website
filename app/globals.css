@@ -4,7 +4,8 @@
   --primary-color: #9d2844;
   --secondary-color: #575b5b;
   --green: #22702f;
-  --divider: #eaeaea;
+  --header-height: 7rem;
+  --header-height-min: 5rem;
 }
 
 .layout {
@@ -12,13 +13,6 @@
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html,
@@ -46,7 +40,7 @@ body {
 }
 
 .spaceHeader {
-  height: 140px;
+  height: var(--header-height);
 }
 
 h1,
