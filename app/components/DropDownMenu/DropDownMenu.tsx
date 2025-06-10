@@ -5,13 +5,12 @@ import styles from './DropDownMenu.module.css';
 
 /**
  * Type représentant un élément du menu déroulant
- * @interface Content
- * @property {string} title - Le titre de l'élément
- * @property {string} href - L'URL de destination
  */
 type Content = {
   title: string;
   href: string;
+  target?: string; // La valeur "_blank" de l'attribut target indique au navigateur qu'il doit ouvrir le lien dans une nouvelle fenêtre ou un nouvel onglet.
+  rel?: string;
 };
 
 /**
@@ -82,7 +81,7 @@ const DropDownMenu = ({ triggerTitle, contents }: DropDownMenuProps) => {
       </button>
       <div className={`${styles.content} ${isOpen ? styles.open : ''}`}>
         {contents.map((content, key) => (
-          <a key={key} href={content.href}>
+          <a key={key} href={content.href} target={content.target} rel={content.rel}>
             {content.title}
           </a>
         ))}
