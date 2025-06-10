@@ -16,6 +16,8 @@
   align-items: center;
   align-self: center;
   gap: 2rem;
+  width: 100%;
+  justify-content: center;
 }
 
 .iconsContainer {
@@ -63,7 +65,9 @@
 }
 
 .headImage {
-  object-fit: contain;
+  height: 6rem;
+  width: auto;
+  padding-left: 3rem;
 }
 
 .bottom {
@@ -118,5 +122,9 @@
   .copyright,
   .legalLink {
     font-size: 0.8rem;
+  }
+
+  .headImage {
+    padding-left: 0;
   }
 }

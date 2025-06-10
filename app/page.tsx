@@ -22,7 +22,13 @@ export default function Home() {
         {/* -----  Contenu de la page  -----  */}
         <div className={styles.content}>
           {/* -----  Illustration de Jean Moulin et sa légende -----  */}
-          <div>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
+            }}
+          >
             <Image
               className={styles.imgPortrait}
               src="jean_moulin.png"
@@ -41,7 +47,6 @@ export default function Home() {
               </p>
             </Link>
           </div>
-
           {/* -----  Contenu à droite de l'illustration  -----  */}
           <div className={styles.rightContent}>
             <div className={styles.comedienPhotos}>
@@ -58,7 +63,7 @@ export default function Home() {
                 textAlign: 'center',
                 display: 'flex',
                 flexDirection: 'column',
-                margin: 0,
+                marginBlock: '1rem',
               }}
             >
               <span>Littérature à Voix Haute présente</span>
@@ -67,24 +72,21 @@ export default function Home() {
 
             <Programme onComedienClick={setSelectedComedien} />
 
+            <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse</p>
+
             {/* -----  Informations sur les tarifs   -----  */}
-            <div className={styles.tarifEtGayLee}>
-              <div>
-                <p>
-                  Prix des places : <span>13 €</span>
-                </p>
-                <p>
-                  PASS : <span>75 € - CB</span> acceptée
-                </p>
-                <p>
-                  Tarif jeune public : <span>3 €</span>
-                </p>
-              </div>
-              <p className={styles.artistInfo}>
-                Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse
+            <div className={styles.tarifs}>
+              <p>
+                Prix des places : <span>13 €</span>
+              </p>
+              <p>
+                PASS : <span>75 € - CB</span> acceptée
+              </p>
+              <p>
+                Tarif jeune public : <span>3 €</span>
               </p>
             </div>
-
+            {/* -----  Logos LAVH et Partenaires   -----  */}
             <BandeauLogos />
           </div>
         </div>
