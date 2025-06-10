@@ -80,11 +80,12 @@ export default function Home() {
                 Prix des places : <span>13 €</span>
               </p>
               <p>
-                PASS : <span>75 € - CB</span> acceptée
+                PASS : <span>75 € </span>
               </p>
               <p>
                 Tarif jeune public : <span>3 €</span>
               </p>
+              <p>CB acceptée</p>
             </div>
             {/* -----  Logos LAVH et Partenaires   -----  */}
             <BandeauLogos />

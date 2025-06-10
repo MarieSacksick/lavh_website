@@ -4,17 +4,16 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding-top: 1rem;
 }
 
 .logoImg {
   width: auto;
-  height: 4.25rem;
+  height: 2.5rem;
 }
 
 .logoWrapper {
-  width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
 }
