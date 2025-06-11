@@ -30,30 +30,17 @@ Pour en savoir plus, [https://nextjs.org/learn/dashboard-app/creating-layouts-an
 - **Variables CSS** dans le fichier `app/globals.css`
 
 - **Breakpoints** :
+
   - Mobile : < 768px
   - Desktop : ≥ 768px
 
-## Installation
+## 🚀 Test en développement
 
-1. Cloner le repository :
-
-```bash
-git clone [URL_DU_REPO]
-```
-
-2. Installer les dépendances :
-
-```bash
-npm install
-```
-
-3. Lancer le serveur de développement :
+Pour lancer l'application en local, faire :
 
 ```bash
 npm run dev
 ```
-
-4. Ouvrir [http://localhost:3000](http://localhost:3000)
 
 ## 🚀 Déploiement
 
