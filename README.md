@@ -34,6 +34,12 @@ Pour en savoir plus, [https://nextjs.org/learn/dashboard-app/creating-layouts-an
   - Mobile : < 768px
   - Desktop : ≥ 768px
 
+
+## Installations
+
+- gestionnaire de version avec nvm, par exemple [nvm pour windows](https://github.com/coreybutler/nvm-windows)
+- installer les dépendances `npm install`
+
 ## 🚀 Test en développement
 
 Pour lancer l'application en local, faire :
