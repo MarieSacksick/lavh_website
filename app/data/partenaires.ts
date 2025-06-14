@@ -28,7 +28,7 @@ export const partenaires: Partenaire[] = [
   },
   {
     name: 'Friendly Home Bayeux',
-    logo: '/logos/friendly_home_bagneux.png',
+    logo: '/logos/friendly_home_bayeux.png',
     website: 'https://www.facebook.com/friendlyhomebayeux/',
   },
   {
