@@ -48,6 +48,8 @@ Pour lancer l'application en local, faire :
 npm run dev
 ```
 
+Puis ouvrir [http://localhost:3000](http://localhost:3000). 
+
 ## 🚀 Déploiement
 
 Pour créer le dossier `out` contenant les fichiers HTML/CSS/JS statiques, lancer :
