@@ -1,0 +1,101 @@
+.page h1 {
+  padding-block: 1rem;
+}
+
+.imgPortrait {
+  height: 100%;
+  width: auto;
+  max-height: 750px;
+}
+
+.imageCaption {
+  font-style: italic;
+  font-size: small;
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.artistInfo {
+  font-size: small;
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tarifs {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.comedienPhotos {
+  display: grid;
+  align-items: center;
+  justify-self: center;
+  grid-template-columns: repeat(auto-fill, 95px);
+  gap: 0.5rem;
+  font-size: x-small;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .tarifs {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 2rem;
+  }
+  .artistInfo {
+    display: none;
+  }
+  .comedienPhotos {
+    display: none;
+  }
+
+  .imgPortrait {
+    max-width: 100%;
+    height: auto;
+    margin-left: -1rem;
+  }
+
+  .page {
+    padding-inline: 1rem;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .page h1 {
+    font-size: x-large;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rightContent {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .imageCaption {
+    margin-top: 0rem;
+  }
+}
