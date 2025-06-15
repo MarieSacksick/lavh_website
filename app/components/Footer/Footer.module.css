@@ -1,0 +1,130 @@
+.footer {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+  border-top: 0.05rem solid var(--foreground);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footerContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconsAndTitleContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.iconLink {
+  color: var(--foreground);
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.iconLink:hover {
+  opacity: 0.8;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.iconText {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.headImage {
+  height: 6rem;
+  width: auto;
+  padding-left: 3rem;
+}
+
+.bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-size: small;
+}
+
+.legalLink {
+  font-size: small;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .iconsContainer {
+    gap: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .iconText {
+    display: none;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .bottom {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+  }
+
+  .copyright,
+  .legalLink {
+    font-size: 0.8rem;
+  }
+
+  .headImage {
+    padding-left: 0;
+  }
+}

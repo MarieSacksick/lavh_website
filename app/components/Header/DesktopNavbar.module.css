@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 0.25rem;
+  height: var(--header-height);
+}
+
+.activeLink {
+  color: var(--primary-color);
+}
+
+.linkImage {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.headImage {
+  transition: all 0.3s ease-in-out;
+  width: auto;
+  height: 4rem;
+  padding-inline: 1.5rem;
+}
+
+.scrolled .headImageContainer,
+.scrolled .headImage {
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled .container {
+  transition: all 0.4s ease-in-out;
+}
+
+.scrolled .headImage {
+  height: 3rem !important;
+}
+
+.scrolled .container {
+  height: var(--header-height-min);
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}

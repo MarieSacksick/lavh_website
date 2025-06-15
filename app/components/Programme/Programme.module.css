@@ -1,0 +1,89 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+  column-gap: 1rem;
+  row-gap: 0.25rem;
+  align-items: start;
+  justify-content: center;
+}
+
+.jour {
+  display: flex;
+  flex-direction: column;
+}
+
+.jour h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: larger;
+  margin: 0;
+}
+
+.jour h3 span {
+  font-size: small;
+  text-transform: lowercase;
+}
+
+.titreOeuvre {
+  font-style: italic;
+  font-size: small;
+  font-weight: 600;
+}
+
+.auteurOeuvre {
+  text-transform: uppercase;
+  color: var(--green);
+  font-weight: 600;
+  font-size: small;
+}
+
+.readerName {
+  font-size: smaller;
+}
+
+.jour p {
+  font-size: small;
+  margin: 0;
+}
+
+.eventTime {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.placeLink {
+  color: #004587;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.logoSldb {
+  width: auto;
+  height: 5.75rem;
+  position: relative;
+  top: -0.75rem;
+  left: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .jour {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoSldb {
+    width: auto;
+    height: 6rem;
+    position: static;
+  }
+}

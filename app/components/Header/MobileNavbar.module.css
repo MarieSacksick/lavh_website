@@ -1,0 +1,70 @@
+.navMobile {
+  display: none;
+}
+
+.burgerButton {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.logoMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--font-crimson), Georgia, serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem 0;
+  }
+
+  .burgerButton {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 1rem;
+    transform: translateY(-50%);
+  }
+
+  .mobileMenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .logoMobile {
+    display: block;
+    height: 7.5rem;
+    width: 100%;
+  }
+
+  .mobileMenu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-size: small;
+    font-weight: 600;
+    font-family: var(--font-crimson), Georgia, serif;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
