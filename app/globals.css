@@ -93,12 +93,6 @@ a:focus-visible::after {
   cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 button {
   background: none;
   border: none;

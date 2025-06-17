@@ -45,8 +45,8 @@
 
   .logoMobile {
     display: block;
-    height: 7.5rem;
-    width: 100%;
+    height: 7rem;
+    width: auto;
   }
 
   .mobileMenu ul {
