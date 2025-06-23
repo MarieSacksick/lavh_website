@@ -40,12 +40,14 @@
 }
 
 .readerName {
-  font-size: smaller;
+  font-size: small;
 }
 
 .jour p {
   font-size: small;
   margin: 0;
+  /* Ajout d'un peu d'espace entre les paragraphes */
+  margin-bottom: 0.3rem;
 }
 
 .eventTime {
