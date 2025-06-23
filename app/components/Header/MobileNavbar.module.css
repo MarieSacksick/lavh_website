@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 768px;
     margin: 0 auto;
     font-family: var(--font-crimson), Georgia, serif;
     text-transform: uppercase;

@@ -87,6 +87,7 @@ export default function Home() {
               </p>
               <p>CB acceptée</p>
             </div>
+            
             {/* -----  Logos LAVH et Partenaires   -----  */}
             <BandeauLogos />
           </div>
