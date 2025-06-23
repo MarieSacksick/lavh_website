@@ -6,5 +6,5 @@ export type ComedienPhotosProps = {
 
 export type Comedien = ComedienPhotosProps & {
   id: string;
-  description: string;
+  description: string; // HTML string
 };
