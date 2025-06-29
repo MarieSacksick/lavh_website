@@ -92,7 +92,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .iconsContainer {
@@ -112,11 +112,6 @@
   .icon {
     width: 20px;
     height: 20px;
-  }
-
-  .bottom {
-    margin-top: 1.5rem;
-    padding-top: 0.75rem;
   }
 
   .copyright,
