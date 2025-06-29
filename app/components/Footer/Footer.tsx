@@ -60,8 +60,8 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className={styles.bottom}>
-          <p className={styles.copyright}>
+        <div className={styles.copyright}>
+          <p>
             © {currentYear} Littérature à Voix Haute. Tous droits réservés.
           </p>
           <Link href="/cgu" className={styles.legalLink}>
