@@ -22,16 +22,11 @@
   .container {
     flex-direction: column;
     padding: 1.5rem 0;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .logoImg {
-    width: 100%;
-    height: auto;
-  }
-
-  .logoWrapper {
-    width: 10rem;
-    height: auto;
+    width: auto;
+    height: 5rem;
   }
 }

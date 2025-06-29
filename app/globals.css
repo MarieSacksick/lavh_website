@@ -1,6 +1,6 @@
 :root {
   --background: #ffffff;
-  --foreground: #303030;
+  --foreground: #000000;
   /* Couleur primaire, actuellement rouge */
   --primary-color: #9d2844;
   /* Couleur secondaire, actuellement vert-gris */
@@ -91,12 +91,6 @@ a:focus-visible::after {
   z-index: 2;
   border-radius: inherit;
   cursor: pointer;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 button {

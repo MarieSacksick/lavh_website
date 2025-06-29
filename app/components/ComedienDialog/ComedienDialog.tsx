@@ -57,7 +57,10 @@ export default function ComedienDialog({ comedien, onClose }: ComedienDialogProp
           </div>
           <div className={styles.textContainer}>
             <h2>{`${comedien.prenom} ${comedien.nom}`}</h2>
-            <p className={styles.description}>{comedien.description}</p>
+            <div
+              className={styles.description}
+              dangerouslySetInnerHTML={{ __html: comedien.description }}
+            />
           </div>
         </div>
       </div>

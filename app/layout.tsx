@@ -19,7 +19,7 @@ const ebGaramond = EB_Garamond({
 export const metadata: Metadata = {
   title: 'Littérature à Voix Haute | Festival de Lectures & Théâtre dans le Bessin',
   description:
-    "Découvrez les événements littéraires d'AVH : lectures et représentations théâtrales dans le Bessin. Festival annuel depuis 2010 et participation au Off d'Avignon. Vivez la littérature autrement !",
+    "Lectures de textes littéraires et représentations théâtrales dans le Bessin. Festival annuel depuis 2010 et participation au Off d'Avignon.",
 };
 
 export default function RootLayout({
