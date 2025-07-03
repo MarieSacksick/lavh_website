@@ -56,4 +56,15 @@ Pour créer le dossier `out` contenant les fichiers HTML/CSS/JS statiques, lance
 
 ```bash
 npm run build
+sftp user_name@ssh.strato.com
+```
+
+Entrer le mot de passe, et une fois en ssh:  
+```bash
+put -r out/
+```
+
+Ou avec scp: 
+```bash
+scp -r /path/to/local/directory username@remote_host:/path/to/remote/directory
 ```
