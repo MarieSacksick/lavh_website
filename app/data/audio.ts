@@ -1,0 +1,163 @@
+import { Audio } from '../types/audio';
+
+export type AudioYear = {
+  year: string;
+  title: string;
+  audios: Audio[];
+};
+
+export const audioByYear: AudioYear[] = [
+  {
+    year: "2020",
+    title: "EXTRAITS AUDIO - BESSIN ETE 2020",
+    audios: [
+      {
+        lecteur: "Thomas Sacksick",
+        lecteur_photo: "/comediens/Thomas_photo_4.jpg",
+        date: "Mardi 18 août",
+        audioSrc: "/audio/NEMESIS.mp3",
+        auteur: "Philip Roth",
+        titre: "Némésis",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Andrea Schieffer",
+        lecteur_photo: "/comediens/Andrea_Schieffert2.jpg",
+        date: "Mercredi 19 août",
+        audioSrc: "/audio/RILKE.mp3",
+        auteur: "Rilke",
+        titre: "Les Cahiers de Laurids Brigge",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Fabrice Hervé",
+        lecteur_photo: "/comediens/Fabrice_Herve2.jpg",
+        date: "Jeudi 20 août",
+        audioSrc: "/audio/OVIDE.mp3",
+        auteur: "Ovide",
+        titre: "Byblis",
+        lieu: "Creully",
+      },
+      {
+        lecteur: "Gérard Desarthe",
+        lecteur_photo: "/comediens/Gerard_Desarthe2.jpg",
+        date: "Vendredi 21 août",
+        audioSrc: "/audio/KAFKA.mp3",
+        auteur: "Kafka",
+        titre: "La lettre au père",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Dominique Valadié",
+        lecteur_photo: "/comediens/Dominique_Valadie.jpg",
+        date: "Samedi 22 août",
+        audioSrc: "/audio/GRISELIDIS.mp3",
+        auteur: "Perrault",
+        titre: "Griséldis",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Thomas Sacksick",
+        lecteur_photo: "/comediens/Thomas_Sacksick5.jpg",
+        date: "Dimanche 23 août",
+        audioSrc: "/audio/ENEIDE.mp3",
+        auteur: "Virgile",
+        titre: "Énéide",
+        lieu: "Asnelles",
+      },
+    ],
+  },
+  {
+    year: "2019",
+    title: "EXTRAITS AUDIO - BESSIN ETE 2019",
+    audios: [
+      {
+        lecteur: "Thomas Sacksick",
+        lecteur_photo: "/comediens/Thomas_photo_3.jpg",
+        date: "Samedi 17 août",
+        audioSrc: "/audio/THOMAS_SACKSICK_3.mp3",
+        auteur: "Dostoïevski",
+        titre: "Carnets de la Maison morte",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Gérard Desarthe",
+        lecteur_photo: "/comediens/Gerard_Desarthe2.jpg",
+        date: "Dimanche 18 août",
+        audioSrc: "/audio/GERARD_DESARTHE.mp3",
+        auteur: "Blaise Cendrars",
+        titre: "Les Pâques à New-York",
+        lieu: "Abbaye de Longues/Mer",
+      },
+      {
+        lecteur: "Andrea Schieffer",
+        lecteur_photo: "/comediens/Andrea_Schieffert2.jpg",
+        date: "Lundi 19 août",
+        audioSrc: "/audio/ANDREA_SCHIEFFER.mp3",
+        auteur: "Éric Vuillard",
+        titre: "14 juillet",
+        lieu: "Abbaye de Longues/Mer",
+      },
+      {
+        lecteur: "Catherine Salviat",
+        lecteur_photo: "/comediens/Catherine_Salviat_2.jpg",
+        date: "Mardi 20 août",
+        audioSrc: "/audio/CATHERINE_SALVIAT_2.mp3",
+        auteur: "",
+        titre: "De l'esprit des Lumières au délit d'ironie",
+        lieu: "Château de Creully",
+      },
+    ],
+  },
+  {
+    year: "2018",
+    title: "EXTRAITS AUDIO - BESSIN ETE 2018",
+    audios: [
+      {
+        lecteur: "Danièle Lebrun",
+        lecteur_photo: "/comediens/Daniele_Lebrun.jpg",
+        date: "Samedi 18 août",
+        audioSrc: "/audio/DANIELE_LEBRUN.mp3",
+        auteur: "Marivaux",
+        titre: "La Vie de Marianne",
+        lieu: "Bayeux",
+      },
+      {
+        lecteur: "Thomas Sacksick",
+        lecteur_photo: "/comediens/Thomas_photo.jpg",
+        date: "Dimanche 19 août",
+        audioSrc: "/audio/THOMAS_SACKSICK.mp3",
+        auteur: "Alexandre Soljenitsyne",
+        titre: "L'Archipel du Goulag",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Camille Tarot",
+        lecteur_photo: "/comediens/Camille_Tarot.jpg",
+        date: "Lundi 20 août",
+        audioSrc: "/audio/CAMILLE_TAROT.mp3",
+        auteur: "Jules Michelet",
+        titre: "La Sorcière",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Marion Rochmann",
+        lecteur_photo: "/comediens/Marion_Rochmann.jpg",
+        date: "Mardi 21 août",
+        audioSrc: "/audio/MARION_ROCHMANN.mp3",
+        auteur: "Karen Blixen",
+        titre: "La Ferme africaine",
+        lieu: "Asnelles",
+      },
+      {
+        lecteur: "Catherine Salviat",
+        lecteur_photo: "/comediens/Catherine_Salviat.jpg",
+        date: "Mercredi 22 août",
+        audioSrc: "/audio/CATHERINE_SALVIAT.mp3",
+        auteur: "Agota Kristof",
+        titre: "L'Analphabète",
+        lieu: "Creully",
+      },
+    ],
+  },
+];
