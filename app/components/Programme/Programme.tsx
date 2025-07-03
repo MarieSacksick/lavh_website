@@ -173,7 +173,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       <div className={styles.jour}>
         <h3>
           <a href={getPdfUrl('MARDI 20 AOÛT')} target="_blank" rel="noopener noreferrer">
-            MARDI 20 AOÛT
+            MARDI 20 AOÛT <span>16H</span>
           </a>
         </h3>
         <div className={styles.place}>
@@ -186,13 +186,8 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             VER-SUR-MER, Ancienne école des filles
           </a>
         </div>
-        <p>
-          <span className={styles.eventTime}>16H</span> -{' '}
           <span className={styles.titreOeuvre}>Petite sœur</span>
-        </p>
-        <p>
           <span className={styles.auteurOeuvre}>JON FOSSE</span> (prix Nobel 2023)
-        </p>
         <a className={styles.readerName} onClick={() => handleComedienClick('Marion Rochmann')}>
           lecture jeune-public de Marion Rochmann
         </a>
