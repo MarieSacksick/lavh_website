@@ -60,8 +60,11 @@ export default function NavLinks({ linkClassName = '', activeLinkClassName = '' 
       >
         Comédiens
       </Link>
-      <Link href="/pages_html/Bessin_audio.html" rel="noopener noreferrer" target="_blank">
-        Extraits Audio
+      <Link
+        href="/audio"
+        className={pathname === '/audio' ? activeLinkClassName : linkClassName}
+      >
+        Extraits audio
       </Link>
     </>
   );
