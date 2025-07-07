@@ -82,7 +82,7 @@ const DropDownMenu = ({ triggerTitle, contents }: DropDownMenuProps) => {
       </button>
       <div className={`${styles.content} ${isOpen ? styles.open : ''}`}>
         {contents.map((content, key) => (
-          <Link key={key} href={content.href}>
+          <Link key={key} href={content.href} onClick={() => setIsOpen(false)}>
             {content.title}
           </Link>
         ))}
