@@ -122,9 +122,9 @@ On a pu la voir récemment dans un très joli court-métrage intitulé <i>Les my
     years_present: [2020, 2022],
     imageSrc: '/comediens/Valadie_Dominique.jpg',
     description: `Ex-pensionnaire de la Comédie-Française, Dominique Valadié a joué et joue le répertoire classique et les auteurs contemporains auprès de metteurs en scène tels que Antoine Vitez, Claude Régy, Jean-Pierre Vincent, Alain Françon... Elle a obtenu plusieurs Molière dont celui de la meilleure comédienne pour son interprétation de <i>La Dame de chez Maxim's</i> de Georges Feydeau en 1991.
-
+<p>
 Dernièrement, on a pu la voir dans <i>Premier amour</i> de Samuel Beckett et dans <i>Les Fausses confidences</i> de Marivaux, où elle jouait le rôle de Mme Argante avec le sens du comique qu'on lui connaît.
-
+<p>
 Dominique Valadié sélectionne avec soin les rôles tout autant que les textes qu'elle porte. Pour notre session de 2020, elle a le fait le choix de cette Griselidis de Perrault. Avec le souvenir de son interprétation d'Agnès dans <i>L'École des femmes</i> ?`,
   },
 ].sort((a, b) => a.nom.localeCompare(b.nom));
