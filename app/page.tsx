@@ -39,7 +39,7 @@ export default function Home() {
           >
             <Image
               className={styles.imgPortrait}
-              src="virgina_woolf.png"
+              src="/virginia_woolf.jpg"
               alt="Portrait de Virginia Woolf"
               width={1000}
               height={1000}

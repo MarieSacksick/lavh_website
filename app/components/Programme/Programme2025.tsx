@@ -4,16 +4,6 @@ import { comediens } from '@/app/data/comediens';
 import { Comedien } from '@/app/types/comediens';
 
 /**
- * Génère l'URL Google Maps pour un lieu donné
- * @param {string} place - Le nom du lieu à rechercher
- * @returns {string} L'URL Google Maps pour le lieu spécifié
- */
-const getGoogleMapsUrl = (place: string) => {
-  const encodedPlace = encodeURIComponent(place);
-  return `https://www.google.com/maps/search/?api=1&query=${encodedPlace},France`;
-};
-
-/**
  * Génère l'URL du PDF du programme pour une date donnée
  * @param {string} date - La date du programme (ex: "SAMEDI 17 AOÛT")
  * @returns {string} L'URL du PDF correspondant à la date
@@ -21,11 +11,11 @@ const getGoogleMapsUrl = (place: string) => {
 const getPdfUrl = (date: string) => {
   const dateMap: { [key: string]: string } = {
     'SAMEDI 17 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'DIMANCHE 18 AOÛT': 'dossier-programme_SLdB24-dimanche-18.pdf',
-    'LUNDI 19 AOÛT': 'dossier-programme_SLdB24-4-lundi-19.pdf',
-    'MARDI 20 AOÛT': 'dossier-programme_SLdB24-5-mardi-20.pdf',
-    'MERCREDI 21 AOÛT': 'dossier-programme_SLdB24-7-mercredi-21.pdf',
-    'JEUDI 22 AOÛT': 'dossier-programme_SLdB24-8-jeudi-22.pdf',
+    'DIMANCHE 18 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
+    'LUNDI 19 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
+    'MARDI 20 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
+    'MERCREDI 21 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
+    'JEUDI 22 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
     'VENDREDI 23 AOÛT': 'dossier-programme_SLdB24-9-Vendredi-23.pdf',
     'SAMEDI 24 AOÛT': 'dossier-programme_SLdB24-10-samedi-24.pdf',
   };
@@ -100,13 +90,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Vendredi 15 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('SAMEDI 17 AOÛT')} target="_blank" rel="noopener noreferrer">
-            VENDREDI 15 AOÛT
-          </a>
+          VENDREDI 15 AOÛT
         </h3>
         <div className={styles.place}>
           <a
-            href={getGoogleMapsUrl('TRACY-SUR-MER, Château de Tracy')}
+            href="https://www.google.fr/maps/place/Ch%C3%A2teau+de+Tracy/@49.3263169,-0.6488937,17z/data=!3m1!4b1!4m6!3m5!1s0x480a55adbd9336ab:0x9445fa8f58be5dff!8m2!3d49.3263169!4d-0.6463188!16s%2Fg%2F11fs8tzwb2?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.placeLink}
@@ -124,18 +112,16 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Samedi 16 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('DIMANCHE 18 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Samedi 16 AOÛT
-          </a>
+          Samedi 16 AOÛT
         </h3>
         <div className={styles.place}>
           <a
-            href={getGoogleMapsUrl('TRACY-SUR-MER, Château de Tracy')}
+            href="https://www.google.fr/maps/place/Le+Ch%C3%A2teau,+14400+Esquay-sur-Seulles/@49.2725119,-0.6170714,17.46z/data=!4m6!3m5!1s0x480a53fcb480da4f:0x91a36214f91a7992!8m2!3d49.2725138!4d-0.6151544!16s%2Fg%2F1tvt9r9y?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.placeLink}
           >
-            TRACY-SUR-MER, Château de Tracy
+            Château d'Esquay
           </a>
         </div>
         <span className={styles.titreOeuvre}>La Chronique de Copenhague, Enfance</span>
@@ -148,13 +134,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Dimanche 17 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('LUNDI 19 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Dimanche 17 AOÛT
-          </a>
+          Dimanche 17 AOÛT
         </h3>
         <div className={styles.place}>
           <a
-            href={getGoogleMapsUrl('ASNELLES, Douce Souvenance')}
+            href="https://www.google.fr/maps/place/Ch%C3%A2teau+d'Audrieu/@49.2038803,-0.5974105,17z/data=!3m1!4b1!4m9!3m8!1s0x480a51e6c68bde81:0x285bff8889ef02c7!5m2!4m1!1i2!8m2!3d49.2038803!4d-0.5948356!16s%2Fg%2F11dykpkfz?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.placeLink}
@@ -172,9 +156,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Lundi 18 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('MARDI 20 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Lundi 18 AOÛT
-          </a>
+          Lundi 18 AOÛT
         </h3>
         <div className={styles.place}>
           <a
@@ -196,18 +178,16 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Mardi 19 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('MERCREDI 21 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Mardi 19 AOÛT
-          </a>
+          Mardi 19 AOÛT
         </h3>
         <div className={styles.place}>
           <a
-            href={getGoogleMapsUrl('LES VERGERS DE DUCY')}
+            href="https://www.google.fr/maps/place/Frm+de+l'%C3%89glise,+14480+Creully+sur+Seulles/@49.2934967,-0.5663944,18.11z/data=!4m6!3m5!1s0x480a5727d264e3f9:0xc75fb20ddf990ecd!8m2!3d49.2935156!4d-0.5652567!16s%2Fg%2F1tj7dfp5?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.placeLink}
           >
-            Villiers-le-sec, Ferme-Manoir
+            VILLIERS-LE-SEC, Ferme-Manoir
           </a>
         </div>
         <span className={styles.titreOeuvre}>Le Très-Bas</span>
@@ -220,13 +200,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Mercredi 20 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('JEUDI 22 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Mercredi 20 AOÛT
-          </a>
+          Mercredi 20 AOÛT
         </h3>
 
         <a
-          href={getGoogleMapsUrl('CHÂTEAU DE CREULLY')}
+          href="https://www.google.fr/maps/place/Saint-Gabriel-Br%C3%A9cy+Priory/@49.2790423,-0.5704204,17z/data=!4m14!1m7!3m6!1s0x480a50d5c7bf4651:0x3e4d911a365b7181!2sSaint-Gabriel-Br%C3%A9cy+Priory!8m2!3d49.2790424!4d-0.5655495!16s%2Fg%2F1hb_dvjwb!3m5!1s0x480a50d5c7bf4651:0x3e4d911a365b7181!8m2!3d49.2790424!4d-0.5655495!16s%2Fg%2F1hb_dvjwb?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.placeLink}
@@ -235,7 +213,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </a>
 
         <span className={styles.titreOeuvre}>Klara et le Soleil</span>
-        <span className={styles.auteurOeuvre}>KAZUO ISHIGURO</span>
+        <span className={styles.auteurOeuvre}>KAZUO ISHIGURO</span>  (prix Nobel de littérature 2017)
         <a className={styles.readerName} onClick={() => handleComedienClick('Yasmina Remil')}>
           lecture de Yasmina Remil
         </a>
@@ -244,13 +222,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Jeudi 21 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('VENDREDI 23 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Jeudi 21 AOÛT
-          </a>
+          Jeudi 21 AOÛT
         </h3>
         <div className={styles.place}>
           <a
-            href={getGoogleMapsUrl('ARROMANCHES, Salle des fêtes')}
+            href="https://www.google.fr/maps/place/Salle+des+F%C3%AAtes/@49.339945,-0.6238122,17z/data=!3m1!4b1!4m6!3m5!1s0x480a55dcee449c73:0xd601a8ba19596011!8m2!3d49.339945!4d-0.6212373!16s%2Fg%2F11cs2wy6vv?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.placeLink}
@@ -268,13 +244,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Vendredi 22 août -----  */}
       <div className={styles.jour}>
         <h3>
-          <a href={getPdfUrl('SAMEDI 24 AOÛT')} target="_blank" rel="noopener noreferrer">
-            Vendredi 22 AOÛT
-          </a>
+          Vendredi 22 AOÛT
         </h3>
         <div className={styles.place}>
           <a
-            href={getGoogleMapsUrl('GRAYE-SUR-MER, La grange aux dîmes')}
+            href="https://www.google.fr/maps/place/Ch%C3%A2teau+de+Vaulaville,+14400+Tour-en-Bessin/@49.3110778,-0.7719571,16.11z/data=!4m10!1m2!2m1!1sCh%C3%A2teau+de+Vaulaville,+Tour-en-Bessin!3m6!1s0x480babc5c2d541b1:0x7e9b959f0977f0fd!8m2!3d49.310576!4d-0.771936!15sCiZDaMOidGVhdSBkZSBWYXVsYXZpbGxlLCBUb3VyLWVuLUJlc3NpbpIBBnBhbGFjZeABAA!16s%2Fg%2F11f3y54k2c?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.placeLink}
