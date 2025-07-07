@@ -13,12 +13,11 @@ import { Comedien } from './types/comediens';
 export default function Home() {
   const [selectedComedien, setSelectedComedien] = useState<Comedien | null>(null);
 
-  // Example parameter: only show these comedians
-  const visibleComedienYear = "2024";
+  const year = 2024;
 
-  // Check that visibleComedienYear is inside the years_present array of each comedien
+  // Filter comediens and partners based on the current year
   const filteredComediens = comediens
-    .filter(comedien => comedien.years_present.includes(parseInt(visibleComedienYear))
+    .filter(comedien => comedien.years_present.includes(year)
   );
 
   return (
@@ -97,7 +96,7 @@ export default function Home() {
             </div>
             
             {/* -----  Logos LAVH et Partenaires   -----  */}
-            <BandeauLogos />
+            <BandeauLogos year={year} />
           </div>
         </div>
       </div>
