@@ -31,7 +31,7 @@ Les spectateurs de Littérature à Voix Haute se rappellent sa lecture magistral
     id: 'evelyne-istria',
     prenom: 'Évelyne',
     nom: 'Istria',
-    years_present: [2024, 2025],
+    years_present: [2024],
     imageSrc: '/comediens/Istria_Evelyne_24.jpg',
     description: `Évelyne Istria a consacré sa vie au théâtre. Avec un sens rare du tragique, elle y joue les grands rôles du répertoire sous la direction des plus grands metteurs en scène tels que Roger Planchon, Lucian Pintillié, Lluis Pasqual, Bernard Sobel, Stuart Seide, Yves Beaunesme...
 <p>
@@ -42,10 +42,18 @@ Au cinéma, Évelyne Istria joue notamment pour Jean Delannoy (<i>L'Affaire Sain
 Les spectateurs des deux dernières années se rappellent les très poignantes lectures qu'elle fit de <i>La Place du diamant</i> et de <i>La Guerre n'a pas un visage de femme</i>.`,
   },
   {
+    id: 'anne-kessler',
+    prenom: 'Anne',
+    nom: 'Kessler',
+    years_present: [2025],
+    imageSrc: '/comediens/Kessler_Anne_25.jpg',
+    description: `A venir.`
+  },
+  {
     id: 'guillaume-leveque',
     prenom: 'Guillaume',
     nom: 'Lévêque',
-    years_present: [2024, 2025],
+    years_present: [2024],
     imageSrc: '/comediens/guillaume_leveque.jpg',
     description: `Guillaume Lévêque joue des auteurs aussi divers que Shakespeare, Tchekhov, Bond, Feydeau, Marlowe, Vinaver, Gorki, Strauss, Tourgueniev, Handke, Beckett... sous la direction d'Arlette Téphany, Pierre Meyrand, Jacques Nichet, Stéphane Braunschweig, Jean-Pierre Vincent... et d'Alain Françon avec lequel, en tant qu'acteur et/ou dramaturge, il collabore sur plus d'une trentaine de spectacles. Au cinéma il tourne avec Jacques Rivette et à la télévision avec Hervé Baslé. Comme artiste associé à la Colline, il y met également en scène Kaiser, Bernhard, Vinaver, Strauss.
 <p>
@@ -59,7 +67,7 @@ Après <i>La Promesse de l'aube</i> en août dernier à Arromanches, Guillaume L
     id: 'andre-marcon',
     prenom: 'André',
     nom: 'Marcon',
-    years_present: [2024, 2025],
+    years_present: [2024],
     imageSrc: '/comediens/Marcon_Andre_24.jpg',
     description: `Au théâtre, André Marcon a travaillé avec les plus grands metteurs en scène actuels, tels que Didier Bezace, Frédéric Bélier-Garcia, Luc Bondy, Klaus Michael Grüber, Jacques Lassalle, Roger Planchon, etc. - tant dans un répertoire classique que contemporain. Au cinéma et pour la télévision, il tourne entre autres avec Olivier Assayas (<i>Les destinées sentimentales</i>), Alain Tanner (<i>Une flamme dans mon cœur</i>, <i>Requiem</i>), Bertrand Tavernier (<i>Des enfants gâtés</i>)... Il est Frydman dans la série <i>D'argent et de sang</i> de Xavier Giannoli.
 <p>
@@ -70,10 +78,26 @@ Sans composer ni se grimer, André Marcon semble curieusement empreindre ses per
 Avant de rejoindre les « Soirées Littéraires du Bessin », André Marcon participe cet été au « Festival Beckett en Roussillon ».`,
   },
   {
+    id: 'matthieu-marie',
+    prenom: 'Matthieu',
+    nom: 'Marie',
+    years_present: [2025],
+    imageSrc: '/comediens/Marie_Matthieu_25.jpg',
+    description: `A venir.`,
+  },
+  {
+    id: 'yasmina-remil',
+    prenom: 'Yasmina',
+    nom: 'Remil',
+    years_present: [2025],
+    imageSrc: '/comediens/Remil_Yasmina_25.jpg',
+    description: `A venir.`,
+  },
+  {
     id: 'melodie-richard',
     prenom: 'Mélodie',
     nom: 'Richard',
-    years_present: [2024, 2025],
+    years_present: [2024],
     imageSrc: '/comediens/Richard_melodie_24.jpg',
     description: `À sa sortie du Conservatoire, Mélodie Richard fait la rencontre décisive de Krystian Lupa, avec qui elle joue dans ses trois créations francophones -dont récemment <i>Les Émigrants</i>. Elle fait rapidement d'autres rencontres essentielles, comme Christophe Honoré, Thomas Ostermeier, Georges Lavaudant et Célie Pauthe, qui la dirigent dans les plus grands rôles du répertoire (<i>La Mouette</i>, <i>Bérénice</i>, <i>Cléopâtre</i>, <i>Électre</i>).
 <p>
@@ -89,15 +113,15 @@ Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance
     id: 'marion-rochmann',
     prenom: 'Marion',
     nom: 'Rochmann',
-    years_present: [2024, 2025],
-    imageSrc: '/comediens/Marion_Rochmann_20230827 copie.jpg',
+    years_present: [2024],
+    imageSrc: '/comediens/Rochmann_Marion_24.jpg',
     description: `Marion Rochmann est comédienne-amateur-impénitente. Enfant, elle est de tous les « ateliers théâtre », de toutes les « pièces pour parents » et prend ses premiers cours. Le bac en poche, elle est au cours Florent, puis au Charpentier Art Studio, ne faisant son droit que pour donner le change à ses parents, dit-elle... jusqu'à prêter serment ! C'est alors qu'elle rencontre Thomas Sacksick qui l'engage dans une belle aventure théâtrale. Elle mène alors de front sa carrière d'avocate et de nombreuses représentations théâtrales (<i>Les Amours de Don Perlimplin et Bélise en leur jardin</i> de Federico Garcia-Lorca notamment, mis en scène par Gilles Sacksick). Puis elle réserve ses talents de conteuse à ses filles ; elle leur lira presque l'intégralité des <i>Harry Potter</i> ! Active depuis leur création dans les Soirées Littéraires du Bessin, elle renoue ici avec la littérature enfantine.`,
   },
   {
     id: 'thomas-sacksick',
     prenom: 'Thomas',
     nom: 'Sacksick',
-    years_present: [2024, 2025],
+    years_present: [2021, 2022, 2023, 2024, 2025],
     imageSrc: '/comediens/Sacksick_Thomas.jpg',
     description: `Thomas Sacksick, comédien, metteur en scène et galériste ; lauréat de la Fondation de la Vocation.
 <p>
@@ -105,7 +129,7 @@ Après diverses réalisations théâtrales (dont <i>Les Amours de Don Perlimplin
 <p>
 Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale ainsi qu'en direction des scolaires -qui semblent s'en être bien trouvés...`,
   },
-{
+  {
     id: 'catherine-salviat',
     prenom: 'Catherine',
     nom: 'Salviat',
@@ -115,7 +139,15 @@ Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux 
 <p>
 On a pu la voir récemment dans un très joli court-métrage intitulé <i>Les mystérieuses aventures</i> de Claude Conseil, de Marie-Lola Terver et Paul Jousselin.`,
   },
-{
+  {
+    id: 'celine-samie',
+    prenom: 'Céline',
+    nom: 'Samie',
+    years_present: [2025],
+    imageSrc: '/comediens/Samie_Celine_25.jpg',
+    description: `A venir`
+  },
+  {
     id: 'dominique-valadié',
     prenom: 'Dominique',
     nom: 'Valadié',

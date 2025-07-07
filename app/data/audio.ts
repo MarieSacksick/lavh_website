@@ -22,7 +22,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Andrea Schieffer",
-        lecteur_photo: "/comediens/Andrea_Schieffert2.jpg",
+        lecteur_photo: "/comediens/Schieffer_Andrea.jpg",
         date: "Mercredi 19 août",
         audioSrc: "/audio/RILKE.mp3",
         auteur: "Rilke",
@@ -31,7 +31,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Fabrice Hervé",
-        lecteur_photo: "/comediens/Fabrice_Herve2.jpg",
+        lecteur_photo: "/comediens/Herve_Fabrice.jpg",
         date: "Jeudi 20 août",
         audioSrc: "/audio/OVIDE.mp3",
         auteur: "Ovide",
@@ -142,7 +142,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Marion Rochmann",
-        lecteur_photo: "/comediens/Marion_Rochmann.jpg",
+        lecteur_photo: "/comediens/Rochmann_Marion_18.jpg",
         date: "Mardi 21 août",
         audioSrc: "/audio/Marion_Rochmann_Blixen.mp3",
         auteur: "Karen Blixen",
