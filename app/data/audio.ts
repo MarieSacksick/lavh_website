@@ -22,7 +22,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Andrea Schieffer",
-        lecteur_photo: "/comediens/Andrea_Schieffert2.jpg",
+        lecteur_photo: "/comediens/Schieffer_Andrea.jpg",
         date: "Mercredi 19 août",
         audioSrc: "/audio/RILKE.mp3",
         auteur: "Rilke",
@@ -31,7 +31,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Fabrice Hervé",
-        lecteur_photo: "/comediens/Fabrice_Herve2.jpg",
+        lecteur_photo: "/comediens/Herve_Fabrice.jpg",
         date: "Jeudi 20 août",
         audioSrc: "/audio/OVIDE.mp3",
         auteur: "Ovide",
@@ -40,7 +40,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Gérard Desarthe",
-        lecteur_photo: "/comediens/Gerard_Desarthe2.jpg",
+        lecteur_photo: "/comediens/Desarthe_Gerard.jpg",
         date: "Vendredi 21 août",
         audioSrc: "/audio/KAFKA.mp3",
         auteur: "Kafka",
@@ -49,7 +49,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Dominique Valadié",
-        lecteur_photo: "/comediens/Dominique_Valadie.jpg",
+        lecteur_photo: "/comediens/Valadie_Dominique.jpg",
         date: "Samedi 22 août",
         audioSrc: "/audio/GRISELIDIS.mp3",
         auteur: "Perrault",
@@ -82,9 +82,9 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Gérard Desarthe",
-        lecteur_photo: "/comediens/Gerard_Desarthe2.jpg",
+        lecteur_photo: "/comediens/Desarthe_Gerard.jpg",
         date: "Dimanche 18 août",
-        audioSrc: "/audio/GERARD_DESARTHE.mp3",
+        audioSrc: "/audio/Desarthe_Gerard.mp3",
         auteur: "Blaise Cendrars",
         titre: "Les Pâques à New-York",
         lieu: "Abbaye de Longues/Mer",
@@ -100,7 +100,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Catherine Salviat",
-        lecteur_photo: "/comediens/Catherine_Salviat_2.jpg",
+        lecteur_photo: "/comediens/Salviat_Catherine.jpg",
         date: "Mardi 20 août",
         audioSrc: "/audio/CATHERINE_SALVIAT_2.mp3",
         auteur: "",
@@ -142,7 +142,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Marion Rochmann",
-        lecteur_photo: "/comediens/Marion_Rochmann.jpg",
+        lecteur_photo: "/comediens/Rochmann_Marion_18.jpg",
         date: "Mardi 21 août",
         audioSrc: "/audio/Marion_Rochmann_Blixen.mp3",
         auteur: "Karen Blixen",
@@ -151,7 +151,7 @@ export const audioByYear: AudioYear[] = [
       },
       {
         lecteur: "Catherine Salviat",
-        lecteur_photo: "/comediens/Catherine_Salviat.jpg",
+        lecteur_photo: "/comediens/Salviat_Catherine.jpg",
         date: "Mercredi 22 août",
         audioSrc: "/audio/Catherine_Salviat_Agota_Kristof.mp3",
         auteur: "Agota Kristof",

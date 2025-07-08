@@ -2,26 +2,34 @@
 import styles from './page.module.css';
 import Image from 'next/image';
 import BandeauLogos from './components/BandeauLogos/BandeauLogos';
-import Programme from './components/Programme/Programme';
 import Link from 'next/link';
 import { comediens } from './data/comediens';
 import ComedienPhoto from './components/ComedienPhoto/ComedienPhoto';
 import ComedienDialog from './components/ComedienDialog/ComedienDialog';
 import { useState } from 'react';
 import { Comedien } from './types/comediens';
+import { getProgrammeComponent } from './components/Programme';
 
 export default function Home() {
   const [selectedComedien, setSelectedComedien] = useState<Comedien | null>(null);
+
+  const year = 2025;
+
+  // Filter comediens and partners based on the current year
+  const filteredComediens = comediens
+    .filter(comedien => comedien.years_present.includes(year)
+  );
+
+  // Dynamically get the Programme component for the year
+  const Programme = getProgrammeComponent(year);
 
   return (
     <>
       {/* -----  Page d'accueil -----  */}
       <div className={styles.page}>
-        {/* -----  Titre de la page  -----  */}
-        <h1>Littérature à voix haute - Bessin 2024</h1>
         {/* -----  Contenu de la page  -----  */}
         <div className={styles.content}>
-          {/* -----  Illustration de Jean Moulin et sa légende -----  */}
+          {/* -----  Illustration de Virginia Woolf et sa légende -----  */}
           <div
             style={{
               display: 'flex',
@@ -31,8 +39,8 @@ export default function Home() {
           >
             <Image
               className={styles.imgPortrait}
-              src="jean_moulin.png"
-              alt="Portrait de Jean Moulin"
+              src="/virginia_woolf.jpg"
+              alt="Portrait de Virginia Woolf"
               width={1000}
               height={1000}
             />
@@ -43,14 +51,14 @@ export default function Home() {
               aria-label="Site de Gilles Sacksick"
             >
               <p className={styles.imageCaption}>
-                &ldquo;Jean Moulin&rdquo;, une peinture de Gilles Sacksick
+                &ldquo;Virginia Woolf&rdquo;, une peinture de Gilles Sacksick
               </p>
             </Link>
           </div>
           {/* -----  Contenu à droite de l'illustration  -----  */}
           <div className={styles.rightContent}>
             <div className={styles.comedienPhotos}>
-              {comediens.map(comedien => (
+              {filteredComediens.map(comedien => (
                 <ComedienPhoto
                   key={comedien.nom}
                   {...comedien}
@@ -58,38 +66,42 @@ export default function Home() {
                 />
               ))}
             </div>
-            <h2
+            <h2>
+              <span>Littérature à Voix Haute présente du 15 au 22 août 2025</span>
+            </h2>
+            <div 
               style={{
                 textAlign: 'center',
                 display: 'flex',
                 flexDirection: 'column',
-                marginBlock: '1rem',
-              }}
-            >
-              <span>Littérature à Voix Haute présente</span>
-              <span>Du 17 au 24 août 2024</span>
-            </h2>
+                color: '#00498b',
+                marginTop: '-1rem',
+              }}>
+              <span className={styles.scheduleLine}>
+                (tous les soirs à <span>19h30</span>, sauf le <span>lundi 18 août</span> à 15h30)
+              </span>
+            </div>
 
             <Programme onComedienClick={setSelectedComedien} />
 
-            <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte - Alice Heimstaedt, danse</p>
+            <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte</p>
 
             {/* -----  Informations sur les tarifs   -----  */}
             <div className={styles.tarifs}>
               <p>
-                Prix des places : <span>13 €</span>
+                Prix des places : <span>14 €</span>
               </p>
               <p>
-                PASS : <span>75 € </span>
+                Pass : <span>80 €</span>
               </p>
               <p>
-                Tarif jeune public : <span>3 €</span>
+                Lecture Andersen pour les enfants, tarif unique : <span>5 €</span>
               </p>
               <p>CB acceptée</p>
             </div>
             
             {/* -----  Logos LAVH et Partenaires   -----  */}
-            <BandeauLogos />
+            <BandeauLogos year={year} />
           </div>
         </div>
       </div>

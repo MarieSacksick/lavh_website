@@ -3,8 +3,8 @@
   --foreground: #000000;
   /* Couleur primaire, actuellement rouge */
   --primary-color: #9d2844;
-  /* Couleur secondaire, actuellement vert-gris */
-  --secondary-color: #575b5b;
+  /* Couleur secondaire, le bleu du logo */
+  --secondary-color: #00498b;
   --green: #22702f;
   /* Taille du header */
   --header-height: 5rem;

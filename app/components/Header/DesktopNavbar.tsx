@@ -24,7 +24,7 @@ export default function DesktopNavbar() {
         <NavLinks linkClassName={styles.link} activeLinkClassName={styles.activeLink} />
         <Link href="/" className={styles.linkImage}>
           <Image
-            src={'tete_du_logo.png'}
+            src={'/tete_du_logo.png'}
             alt=""
             width={100}
             height={150}

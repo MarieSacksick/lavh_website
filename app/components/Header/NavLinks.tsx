@@ -9,36 +9,29 @@ type NavLinksProps = {
 };
 
 export const SLDB_CONTENTS = [
-  { title: 'Session 2024', href: '/' },
+  {
+    title: 'Session 2024',
+    href: '/anciens_programmes/2024' 
+  },
   {
     title: 'Session 2023',
-    href: '/anciens_programmes/Asnelles_site_2023.jpg',
-    target: '_blank',
-    rel: 'noopener noreferrer',
+    href: '/anciens_programmes/2023',
   },
   {
     title: 'Session 2022',
-    href: '/anciens_programmes/Asnelles_site_2022.jpg',
-    target: '_blank',
-    rel: 'noopener noreferrer',
+    href: '/anciens_programmes/2022',
   },
   {
     title: 'Session 2021',
-    href: '/anciens_programmes/bessin_site_2021.jpg',
-    target: '_blank',
-    rel: 'noopener noreferrer',
+    href: '/anciens_programmes/2021',
   },
   {
     title: 'Session 2020',
-    href: '/anciens_programmes/bessin_site_2020.jpg',
-    target: '_blank',
-    rel: 'noopener noreferrer',
+    href: '/anciens_programmes/2020',
   },
   {
     title: 'Session 2019',
-    href: '/anciens_programmes/bessin_site_2019.jpg',
-    target: '_blank',
-    rel: 'noopener noreferrer',
+    href: '/anciens_programmes/2019',
   },
 ] as const;
 

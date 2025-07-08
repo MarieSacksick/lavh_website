@@ -2,6 +2,13 @@
   padding-block: 1rem;
 }
 
+.page h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: 'column';
+  color: var(--secondary-color);
+}
+
 .imgPortrait {
   width: 100%;
   height: auto;
@@ -48,12 +55,28 @@
 
 .comedienPhotos {
   display: grid;
-  align-items: center;
   justify-self: center;
   grid-template-columns: repeat(7, 95px);
   gap: 0.5rem;
   font-size: x-small;
   max-width: 100%;
+}
+
+.h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+  color: var(--secondary-color);
+}
+
+.primaryColor {
+  color: var(--primary-color);
+}
+
+.scheduleLine span:nth-of-type(1),
+.scheduleLine span:nth-of-type(2) {
+  color: var(--primary-color);
 }
 
 @media (max-width: 1300px) {

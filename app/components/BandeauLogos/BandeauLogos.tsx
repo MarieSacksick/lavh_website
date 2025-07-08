@@ -12,6 +12,7 @@ import Link from 'next/link';
  * - Les logos de tous les partenaires
  * - Chaque logo est cliquable et redirige vers le site du partenaire
  * - Les liens s'ouvrent dans un nouvel onglet
+ * filtré par l'année en cours
  *
  * Les logos sont redimensionnés automatiquement pour s'adapter à la largeur disponible
  *
@@ -22,10 +23,14 @@ import Link from 'next/link';
  *
  * @returns {JSX.Element} Le bandeau de logos des partenaires
  */
-export default function BandeauLogos() {
+export default function BandeauLogos({ year }: { year: number }) {
+  const filteredPartenaires = partenaires.filter(partenaire =>
+    partenaire.years_present.includes(year)
+  );
+
   return (
     <div className={styles.container}>
-      {partenaires.map(partenaire => (
+      {filteredPartenaires.map(partenaire => (
         <Link
           key={partenaire.name}
           href={partenaire.website}
