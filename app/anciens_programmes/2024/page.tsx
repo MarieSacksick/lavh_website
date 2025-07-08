@@ -29,7 +29,7 @@ export default function Home() {
       {/* -----  Page d'accueil -----  */}
       <div className={styles.page}>
         {/* -----  Titre de la page  -----  */}
-        <h1>Littérature à voix haute - Bessin 2025</h1>
+        <h1>Littérature à voix haute - Bessin 2024</h1>
         {/* -----  Contenu de la page  -----  */}
         <div className={styles.content}>
           {/* -----  Illustration de Jean Moulin et sa légende -----  */}

@@ -66,14 +66,7 @@ export default function Home() {
                 />
               ))}
             </div>
-            <h2
-              style={{
-                textAlign: 'center',
-                display: 'flex',
-                flexDirection: 'column',
-                color: '#00498b',
-              }}
-            >
+            <h2>
               <span>Littérature à Voix Haute présente du 15 au 22 août 2025</span>
             </h2>
             <div 

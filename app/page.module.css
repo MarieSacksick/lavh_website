@@ -2,6 +2,13 @@
   padding-block: 1rem;
 }
 
+.page h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: 'column';
+  color: var(--secondary-color);
+}
+
 .imgPortrait {
   width: 100%;
   height: auto;
@@ -48,7 +55,6 @@
 
 .comedienPhotos {
   display: grid;
-  align-items: center;
   justify-self: center;
   grid-template-columns: repeat(7, 95px);
   gap: 0.5rem;

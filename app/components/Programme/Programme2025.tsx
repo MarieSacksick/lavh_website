@@ -129,8 +129,8 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </div>
         <span className={styles.titreOeuvre}>Vers le phare</span>
         <span className={styles.auteurOeuvre}>Virginia Woolf</span>
-        <a className={styles.readerName} onClick={() => handleComedienClick('Anne Kesler')}>
-          {`lecture d'Anne Kesler`}
+        <a className={styles.readerName} onClick={() => handleComedienClick('Anne Kessler')}>
+          {`lecture d'Anne Kessler`}
         </a>
       </div>
 
@@ -190,7 +190,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           rel="noopener noreferrer"
           className={styles.placeLink}
         >
-          Saint-Gabriel Brécy, Prieuré
+          SAINT-GABRIEL BRECY, Prieuré
         </a>
 
         <span className={styles.titreOeuvre}>Klara et le Soleil</span>
@@ -234,7 +234,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             rel="noopener noreferrer"
             className={styles.placeLink}
           >
-            Château de Vaulaville
+            CHÂTEAU DE VAULAVILLE
           </a>
         </div>
         <span className={styles.titreOeuvre}>Odyssée</span>
