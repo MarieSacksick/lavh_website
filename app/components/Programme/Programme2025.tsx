@@ -4,25 +4,6 @@ import { comediens } from '@/app/data/comediens';
 import { Comedien } from '@/app/types/comediens';
 
 /**
- * Génère l'URL du PDF du programme pour une date donnée
- * @param {string} date - La date du programme (ex: "SAMEDI 17 AOÛT")
- * @returns {string} L'URL du PDF correspondant à la date
- */
-const getPdfUrl = (date: string) => {
-  const dateMap: { [key: string]: string } = {
-    'SAMEDI 17 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'DIMANCHE 18 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'LUNDI 19 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'MARDI 20 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'MERCREDI 21 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'JEUDI 22 AOÛT': 'dossier-programme_SLdB24-2-samedi-17.pdf',
-    'VENDREDI 23 AOÛT': 'dossier-programme_SLdB24-9-Vendredi-23.pdf',
-    'SAMEDI 24 AOÛT': 'dossier-programme_SLdB24-10-samedi-24.pdf',
-  };
-  return `/dossier-programme_SLdB24/${dateMap[date]}`;
-};
-
-/**
  * Propriétés du composant Programme
  * @interface ProgrammeProps
  * @property {function} onComedienClick - Fonction appelée lorsqu'un comédien est sélectionné
@@ -121,7 +102,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             rel="noopener noreferrer"
             className={styles.placeLink}
           >
-            Château d'Esquay
+            {`CHÂTEAU D'ESQUAY`}
           </a>
         </div>
         <span className={styles.titreOeuvre}>La Chronique de Copenhague, Enfance</span>
@@ -143,13 +124,13 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             rel="noopener noreferrer"
             className={styles.placeLink}
           >
-            Château d'Audrieu
+            {`CHÂTEAU D'AUDRIEU`}
           </a>
         </div>
         <span className={styles.titreOeuvre}>Vers le phare</span>
         <span className={styles.auteurOeuvre}>Virginia Woolf</span>
         <a className={styles.readerName} onClick={() => handleComedienClick('Anne Kesler')}>
-          lecture d'Anne Kessler
+          {`lecture d'Anne Kesler`}
         </a>
       </div>
 

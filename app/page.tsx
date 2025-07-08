@@ -71,13 +71,22 @@ export default function Home() {
                 textAlign: 'center',
                 display: 'flex',
                 flexDirection: 'column',
-                marginBlock: '1rem',
+                color: '#00498b',
               }}
             >
               <span>Littérature à Voix Haute présente du 15 au 22 août 2025</span>
             </h2>
-            <div>
-              (tous les soirs à 19h30, sauf le lundi 18 août à 15h30)
+            <div 
+              style={{
+                textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                color: '#00498b',
+                marginTop: '-1rem',
+              }}>
+              <span className={styles.scheduleLine}>
+                (tous les soirs à <span>19h30</span>, sauf le <span>lundi 18 août</span> à 15h30)
+              </span>
             </div>
 
             <Programme onComedienClick={setSelectedComedien} />
@@ -90,7 +99,7 @@ export default function Home() {
                 Prix des places : <span>14 €</span>
               </p>
               <p>
-                PASS : <span>80 €</span>
+                Pass : <span>80 €</span>
               </p>
               <p>
                 Lecture Andersen pour les enfants, tarif unique : <span>5 €</span>

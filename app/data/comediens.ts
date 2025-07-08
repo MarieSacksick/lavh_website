@@ -6,7 +6,7 @@ export const comediens: Comedien[] = [
     prenom: 'Louis',
     nom: 'Albertosi',
     years_present: [2024, 2025],
-    imageSrc: '/comediens/Albertosi_Louis.jpg',
+    imageSrc: '/comediens/Albertosi_Louis_25.jpg',
     description: `D'abord musicien, Louis Albertosi intègre l'École du Nord à Lille en 2018. À sa sortie en 2021, Christophe Rauck lui confie le rôle-titre du <i>Henry VI</i> de Shakespeare qu'il met en scène avec Cécile Garcia-Fogel au Théâtre du Nord et au théâtre Nanterre-Amandiers. Il retrouve Christophe Rauck pour son <i>Richard II</i> de Shakespeare créé au festival d'Avignon 2022 ; et Cécile Garcia-Fogel dans sa mise en scène du <i>Legs</i> de Marivaux aux Amandiers. Alain Françon fait appel à lui pour participer à la création du <i>Moment psychologique</i> de Nicolas Doutey à Vitry, Théâtre Ouvert et à la Scala. Constance de Saint Remy lui confie le rôle de Simone de Beauvoir dans sa <i>Lettre à une deuxième mère</i> au Théâtre de l'Athénée, et Jean Massé le met en scène dans <i>Paysage de pluie</i>, de Nicolas Girard-Michelotti à la Comédie de Béthune.
 <p>
 En 2024-2025, il jouera dans <i>4,7% de liberté</i> de Samuel Hercule et Métilde Weyergans.`,
@@ -122,7 +122,7 @@ Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance
     prenom: 'Thomas',
     nom: 'Sacksick',
     years_present: [2021, 2022, 2023, 2024, 2025],
-    imageSrc: '/comediens/Sacksick_Thomas.jpg',
+    imageSrc: '/comediens/Sacksick_Thomas_25.jpg',
     description: `Thomas Sacksick, comédien, metteur en scène et galériste ; lauréat de la Fondation de la Vocation.
 <p>
 Après diverses réalisations théâtrales (dont <i>Les Amours de Don Perlimplin et de Bélise en leur jardin</i> de Garcia-Lorca mis en scène par Gilles Sacksick), une maîtrise de lettres à Paris III sous la direction du latiniste Philippe Heuzé, et renouant avec le souvenir d'enfance d'enregistrements sur vinyle (<i>Napoléon à Austerlitz</i>, <i>Lucky Luke</i>, qu'il écoutait et réécoutait inlassablement), Thomas Sacksick crée ex nihilo l'association Littérature à Voix Haute au printemps 2010.
