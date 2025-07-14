@@ -7,4 +7,5 @@ export type ComedienPhotosProps = {
 export type Comedien = ComedienPhotosProps & {
   id: string;
   description: string; // HTML string
+  years_present: number[];
 };

@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import styles from './DropDownMenu.module.css';
+import Link from 'next/link'; // added import
 
 /**
  * Type représentant un élément du menu déroulant
@@ -81,9 +82,9 @@ const DropDownMenu = ({ triggerTitle, contents }: DropDownMenuProps) => {
       </button>
       <div className={`${styles.content} ${isOpen ? styles.open : ''}`}>
         {contents.map((content, key) => (
-          <a key={key} href={content.href} target={content.target} rel={content.rel}>
+          <Link key={key} href={content.href} onClick={() => setIsOpen(false)}>
             {content.title}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
