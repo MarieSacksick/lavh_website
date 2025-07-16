@@ -7,9 +7,14 @@ export const comediens: Comedien[] = [
     nom: 'Albertosi',
     years_present: [2024, 2025],
     imageSrc: '/comediens/Albertosi_Louis_25.jpg',
-    description: `D'abord musicien, Louis Albertosi intègre l'École du Nord à Lille en 2018. À sa sortie en 2021, Christophe Rauck lui confie le rôle-titre du <i>Henry VI</i> de Shakespeare qu'il met en scène avec Cécile Garcia-Fogel au Théâtre du Nord et au théâtre Nanterre-Amandiers. Il retrouve Christophe Rauck pour son <i>Richard II</i> de Shakespeare créé au festival d'Avignon 2022 ; et Cécile Garcia-Fogel dans sa mise en scène du <i>Legs</i> de Marivaux aux Amandiers. Alain Françon fait appel à lui pour participer à la création du <i>Moment psychologique</i> de Nicolas Doutey à Vitry, Théâtre Ouvert et à la Scala. Constance de Saint Remy lui confie le rôle de Simone de Beauvoir dans sa <i>Lettre à une deuxième mère</i> au Théâtre de l'Athénée, et Jean Massé le met en scène dans <i>Paysage de pluie</i>, de Nicolas Girard-Michelotti à la Comédie de Béthune.
+    description: `Musicien précoce, Louis Albertosi intègre l'École du Nord en 2018, à l'âge de 20 ans. À sa sortie, Christophe Rauck lui confie le rôle-titre du <i>Henry VI</i> de Shakespeare qu'il met en scène avec Cécile Garcia Fogel au Théâtre du Nord et au théâtre Nanterre-Amandiers.
 <p>
-En 2024-2025, il jouera dans <i>4,7% de liberté</i> de Samuel Hercule et Métilde Weyergans.`,
+Louis Albertosi retrouve Christophe Rauck pour son <i>Richard II</i> de Shakespeare créé au festival d'Avignon 2022 ; et Cécile Garcia Fogel dans sa mise en scène du <i>Legs</i> de Marivaux aux Amandiers de Nanterre. Il joue sous la direction d'Alain Françon dans la création du <i>Moment psychologique</i> de Nicolas Doutey, donné à Vitry, au Théâtre Ouvert et à la Scala-Paris. Constance de Saint Remy lui confie le rôle de Simone de Beauvoir dans sa <i>Lettre à une deuxième mère</i> au théâtre de l'Athénée. Depuis 2024 il joue dans <i>4,7%</i> de liberté de Samuel Hercule et Métilde Weyergans.
+<p>
+En mars 2026, Louis Albertosi créera son premier spectacle en tant qu'auteur et metteur en scène, <i>Veiller sur le sommeil des villes</i>, au Théâtre Ouvert puis aux Amandiers de Nanterre.
+<p>
+Les spectateurs des Soirées Littéraires du Bessin se rappellent sa lecture de Fritz Zorn donnée l'an dernier à Asnelles.
+`,
   },
   {
     id: 'gerard-desarthe',
@@ -47,7 +52,17 @@ Les spectateurs des deux dernières années se rappellent les très poignantes l
     nom: 'Kessler',
     years_present: [2025],
     imageSrc: '/comediens/Kessler_Anne_25.jpg',
-    description: `A venir.`
+    description: `Anne Kessler, sociétaire honoraire de la Comédie-Française.
+    <p>
+Formée à l'École du Théâtre national de Chaillot auprès d'Antoine Vitez, celui-ci lui proposera d'être pensionnaire à la Comédie-Française, qu'elle intègre à 24 ans, en 1989. Elle y alterne les rôles comiques, tragiques ou romantiques dans une soixantaine de pièces. Elle a été dirigée par Piotr Fomenko, Alain Françon, Jean-Pierre Vincent, Denis Podalydès, Jacques Lassalle, Christophe Rauck ou Arnaud Despleschin...
+Elle se lance dans la mise en scène en 2006, avec <i>Griefs</i> au Studio-Théâtre, puis enchaîne les mises en scène au sein du Français en parallèle à sa carrière d'actrice. 
+<p>
+Hors Comédie-Française, en 2012, elle met en scène <i>Des Fleurs pour Algernon</i> de Daniel Keyes, qui remporte le Prix du meilleur spectacle privé au Palmarès du Théâtre 2013, et le Molière du Seul-en-scène 2014 pour Grégory Gadebois. Une réussite, en effet !
+<p>
+Aujourd'hui, Anne Kessler signe une mise en scène de <i>Cyrano de Bergerac</i> au Théâtre Antoine qui tourne dans toute la France.
+<p>
+On a pu la voir récemment reprendre au Théâtre de la Concorde, <i>Ex-traits de femmes</i>, un ensemble de scènes du théâtre de Molière mettant, justement, les femmes à l'honneur.
+`
   },
   {
     id: 'guillaume-leveque',
@@ -83,7 +98,15 @@ Avant de rejoindre les « Soirées Littéraires du Bessin », André Marcon part
     nom: 'Marie',
     years_present: [2025],
     imageSrc: '/comediens/Marie_Matthieu_25.jpg',
-    description: `A venir.`,
+    description: `Formé auprès de Pierre Debauche de 1991 à 93, Matthieu Marie participe avec lui à la fondation du Théâtre du Jour à Agen et, pendant deux ans, à son animation. 
+    <p>
+Il joue ensuite sous la direction de Daniel Mesguich les rôles de Dom Juan, de Titus, de Marc Antoine..., sous la direction de Philippe Adrien celui d'Ivanov (Tchekhov), et celui de Philippe dans <i>Yvonne Princesse de Bourgogne</i> (Gombrowicz) dans une mise en scène d'Alain Ollivier. Matthieu Marie travaille également avec Georges Lavaudant, Michel Vinaver, Catherine Anne, Célie Pauthe, Clément Poirée...
+<p>
+Ces dernières années il poursuit une collaboration avec Bernard Sobel et reprend pour quatre saisons consécutives <i>La Mort d'Empédocle</i> (Hölderlin) qui reçoit le prix spécial de la critique. 
+<p>
+Il met en scène des textes de Michel Vinaver, Pierre Guyotat, Charlotte Delbo, Franz Kafka...
+<p>
+Par les extraits qu'il en lit, Matthieu Marie accompagne actuellement à travers la France Emmanuel Lascoux dans la présentation de ses nouvelles traductions de l'<i>Iliade</i> et de l'<i>Odyssée</i> chez P.O.L.`,
   },
   {
     id: 'yasmina-remil',
@@ -91,7 +114,18 @@ Avant de rejoindre les « Soirées Littéraires du Bessin », André Marcon part
     nom: 'Remil',
     years_present: [2025],
     imageSrc: '/comediens/Remil_Yasmina_25.jpg',
-    description: `A venir.`,
+    description: `Yasmina Remil rejoint en 2005 le Conservatoire pré-professionnel de Genève, et intègre en 2006 la promotion 68 de l'ENSATT à Lyon, où elle est dirigée par Christian Schiaretti, Bernard Sobel et Alain Françon.
+    <p>
+Elle fonde avec les camarades de sa promotion la compagnie La Nouvelle Fabrique à Lyon, puis rejoint la troupe du TNP (Villeurbanne) dirigée par Christian Schiaretti.
+<p>
+Elle y joue –entre autres– dans <i>La Célestine</i> de Fernando de Rojas, <i>Ruy Blas</i> de Victor Hugo, <i>Le Procès en séparation de l'Âme et du Corps</i> de Calderón de la Barca...
+<p>
+En 2013 / 2014, elle assiste Christian Schiaretti dans sa réalisation du <i>Roi Lear</i>, puis elle retrouve la Suisse où elle joue de nombreux spectacles.
+<p>
+Dernièrement, elle incarne Marton, la servante des <i>Fausses Confidences</i> de Marivaux, mise en scène par Alain Françon et jouée plus de 130 fois à Genève et à travers la France.
+<p>
+On peut l'entendre à la radio dans diverses dramatiques de France-Culture.
+`,
   },
   {
     id: 'melodie-richard',
@@ -127,7 +161,7 @@ Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance
 <p>
 Après diverses réalisations théâtrales (dont <i>Les Amours de Don Perlimplin et de Bélise en leur jardin</i> de Garcia-Lorca mis en scène par Gilles Sacksick), une maîtrise de lettres à Paris III sous la direction du latiniste Philippe Heuzé, et renouant avec le souvenir d'enfance d'enregistrements sur vinyle (<i>Napoléon à Austerlitz</i>, <i>Lucky Luke</i>, qu'il écoutait et réécoutait inlassablement), Thomas Sacksick crée ex nihilo l'association Littérature à Voix Haute au printemps 2010.
 <p>
-Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale ainsi qu'en direction des scolaires -qui semblent s'en être bien trouvés...`,
+Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale (<i>Cet amour-là</i>, au château d’Audrieu en avril dernier) ainsi qu'en direction du jeune public - qui semble s'en être bien trouvé.`,
   },
   {
     id: 'catherine-salviat',
@@ -145,7 +179,11 @@ On a pu la voir récemment dans un très joli court-métrage intitulé <i>Les my
     nom: 'Samie',
     years_present: [2025],
     imageSrc: '/comediens/Samie_Celine_25.jpg',
-    description: `A venir`
+    description: `Au Conservatoire national d'art dramatique, Céline Samie suit l'enseignement de Madeleine Marion, Catherine Hiegel et Pierre Vial. En fin d'études, à la suite de son interprétation dans <i>Les Bonnes</i> de Jean Genet, Antoine Vitez la fait entrer à la Comédie-Française pour jouer dans deux farces de Molière, mises en scène de Dario Fo, salle Richelieu.
+    <p>
+Elle y devient pensionnaire puis sera nommée sociétaire en 2004, et quitte la Maison en 2016. Durant ces 25 ans, elle a joué sous la direction de metteurs en scène étrangers tels que Alfredo Arias, Bob Wilson, Anatoli Vassiliev, Mathias Langhoff, Jorge Lavelli... et de metteurs en scène français comme Jacques Lassalle, Alain Françon, Jérôme Deschamps, Anne Delbée, Rocher Planchon...
+<p>
+Parmi ses nombreux rôles au cinéma, Céline Samie se plaît à se rappeler celui qu'elle a tenu pour Jacques Audiard dans <i>Sur mes lèvres</i>.`
   },
   {
     id: 'dominique-valadié',

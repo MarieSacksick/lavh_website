@@ -35,6 +35,8 @@ export default function Home() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-start',
+              marginRight: '1rem',
+              marginBottom: '4rem',
             }}
           >
             <Image
@@ -92,12 +94,17 @@ export default function Home() {
                 Prix des places : <span>14 €</span>
               </p>
               <p>
+                Moins de 26 ans : <span>8 €</span>
+              </p>
+              <p>
                 Pass : <span>80 €</span>
               </p>
               <p>
                 Lecture Andersen pour les enfants, tarif unique : <span>5 €</span>
               </p>
-              <p>CB acceptée</p>
+              <p>
+                CB acceptée
+              </p>
             </div>
             
             {/* -----  Logos LAVH et Partenaires   -----  */}

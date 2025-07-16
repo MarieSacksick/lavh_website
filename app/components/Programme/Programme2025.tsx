@@ -4,6 +4,25 @@ import { comediens } from '@/app/data/comediens';
 import { Comedien } from '@/app/types/comediens';
 
 /**
+ * Génère l'URL du PDF du programme pour une date donnée
+ * @param {string} date - La date du programme (ex: "SAMEDI 17 AOÛT")
+ * @returns {string} L'URL du PDF correspondant à la date
+ */
+const getPdfUrl = (date: string) => {
+  const dateMap: { [key: string]: string } = {
+    'VENDREDI 15 AOÛT': '2025-08-15.pdf',
+    'SAMEDI 16 AOÛT': '2025-08-16.pdf',
+    'DIMANCHE 17 AOÛT': '2025-08-17.pdf',
+    'LUNDI 18 AOÛT': '2025-08-18.pdf',
+    'MARDI 19 AOÛT': '2025-08-19.pdf',
+    'MERCREDI 20 AOÛT': '2025-08-20.pdf',
+    'JEUDI 21 AOÛT': '2025-08-21.pdf',
+    'VENDREDI 22 AOÛT': '2025-08-22.pdf',
+  };
+  return `/programme/${dateMap[date]}`;
+};
+
+/**
  * Propriétés du composant Programme
  * @interface ProgrammeProps
  * @property {function} onComedienClick - Fonction appelée lorsqu'un comédien est sélectionné
@@ -71,7 +90,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Vendredi 15 août -----  */}
       <div className={styles.jour}>
         <h3>
-          VENDREDI 15 AOÛT
+          <a href={getPdfUrl('VENDREDI 15 AOÛT')} target="_blank" rel="noopener noreferrer">
+            VENDREDI 15 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
@@ -93,7 +114,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Samedi 16 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Samedi 16 AOÛT
+          <a href={getPdfUrl('SAMEDI 16 AOÛT')} target="_blank" rel="noopener noreferrer">
+            SAMEDI 16 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
@@ -115,7 +138,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Dimanche 17 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Dimanche 17 AOÛT
+          <a href={getPdfUrl('DIMANCHE 17 AOÛT')} target="_blank" rel="noopener noreferrer">
+            DIMANCHE 17 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
@@ -137,7 +162,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Lundi 18 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Lundi 18 AOÛT
+          <a href={getPdfUrl('LUNDI 18 AOÛT')} target="_blank" rel="noopener noreferrer">
+            LUNDI 18 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
@@ -159,7 +186,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Mardi 19 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Mardi 19 AOÛT
+          <a href={getPdfUrl('MARDI 19 AOÛT')} target="_blank" rel="noopener noreferrer">
+            MARDI 19 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
@@ -181,7 +210,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Mercredi 20 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Mercredi 20 AOÛT
+          <a href={getPdfUrl('MERCREDI 20 AOÛT')} target="_blank" rel="noopener noreferrer">
+            MERCREDI 20 AOÛT
+          </a>
         </h3>
 
         <a
@@ -203,7 +234,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Jeudi 21 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Jeudi 21 AOÛT
+          <a href={getPdfUrl('JEUDI 21 AOÛT')} target="_blank" rel="noopener noreferrer">
+            JEUDI 21 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
@@ -225,7 +258,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       {/* -----  Vendredi 22 août -----  */}
       <div className={styles.jour}>
         <h3>
-          Vendredi 22 AOÛT
+          <a href={getPdfUrl('VENDREDI 22 AOÛT')} target="_blank" rel="noopener noreferrer">
+            VENDREDI 22 AOÛT
+          </a>
         </h3>
         <div className={styles.place}>
           <a
