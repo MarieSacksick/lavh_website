@@ -35,6 +35,8 @@ export default function Home() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-start',
+              marginRight: '1rem',
+              marginBottom: '4rem',
             }}
           >
             <Image
