@@ -29,7 +29,7 @@ const getPdfUrl = (date: string) => {
     'VENDREDI 23 AOÛT': 'dossier-programme_SLdB24-9-Vendredi-23.pdf',
     'SAMEDI 24 AOÛT': 'dossier-programme_SLdB24-10-samedi-24.pdf',
   };
-  return `/dossier-programme_SLdB24/${dateMap[date]}`;
+  return `/programme/${dateMap[date]}`;
 };
 
 /**
