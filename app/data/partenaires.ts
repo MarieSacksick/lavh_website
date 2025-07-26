@@ -49,4 +49,10 @@ export const partenaires: Partenaire[] = [
     website: 'https://www.arromanches.com/associations/details.php?assoc_id=32',
     years_present: [2024, 2025],
   },
+  {
+    name: "Château d'Adrieu",
+    logo: "/logos/CHATEAU-DAUDRIEU-QUADRI.png",
+    website: "https://chateaudaudrieu.com/",
+    years_present: [2025]
+  }
 ];
