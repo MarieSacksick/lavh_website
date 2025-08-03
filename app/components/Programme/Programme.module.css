@@ -12,7 +12,7 @@
 .jour {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem; /* Add space between each day */
+  margin-bottom: 0.5rem; /* Add space between each day */
 }
 
 .jour:last-child {
