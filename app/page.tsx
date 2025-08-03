@@ -28,6 +28,7 @@ export default function Home() {
       {/* -----  Page d'accueil -----  */}
       <div className={styles.page}>
         {/* -----  Contenu de la page  -----  */}
+        <br></br>
         <div className={styles.content}>
           {/* -----  Illustration de Virginia Woolf et sa légende -----  */}
           <div

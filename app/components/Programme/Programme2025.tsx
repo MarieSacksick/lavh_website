@@ -128,7 +128,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             {`CHÂTEAU D'ESQUAY`}
           </a>
         </div>
-        <span className={styles.titreOeuvre}>La Chronique de Copenhague, Enfance</span>
+        <span className={styles.titreOeuvre}>La Trilogie de Copenhague, Enfance</span>
         <span className={styles.auteurOeuvre}>Tove Ditlevsen</span>
         <a className={styles.readerName} onClick={() => handleComedienClick('Céline Samie')}>
           lecture de Céline Samie
@@ -176,7 +176,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             ASNELLES, Douce Souvenance
           </a>
         </div>
-          <span className={styles.titreOeuvre}>Le Vilan petit canard</span>
+          <span className={styles.titreOeuvre}>Le Vilain petit canard</span>
           <span className={styles.auteurOeuvre}>Hans Christian Andersen</span>
         <a className={styles.readerName} onClick={() => handleComedienClick('Louis Albertosi')}>
           lecture jeune-public de Louis Albertosi
