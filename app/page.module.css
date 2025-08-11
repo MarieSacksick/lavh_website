@@ -52,10 +52,19 @@
   align-items: flex-end;
 }
 
-.comedienPhotos {
+.comedienPhotosSix {
   display: grid;
   justify-self: center;
   grid-template-columns: repeat(6, 95px);
+  gap: 0.5rem;
+  font-size: x-small;
+  max-width: 100%;
+}
+
+.comedienPhotosSept {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(7, 95px);
   gap: 0.5rem;
   font-size: x-small;
   max-width: 100%;
@@ -79,7 +88,12 @@
 }
 
 @media (max-width: 1300px) {
-  .comedienPhotos {
+  .comedienPhotosSept {
+    grid-template-columns: repeat(4, 95px);
+  }
+}
+@media (max-width: 1300px) {
+  .comedienPhotosSix {
     grid-template-columns: repeat(4, 95px);
   }
 }
@@ -102,7 +116,10 @@
   .artistInfo {
     display: none;
   }
-  .comedienPhotos {
+  .comedienPhotosSix {
+    display: none;
+  }
+  .comedienPhotosSept {
     display: none;
   }
 

@@ -60,7 +60,7 @@ export default function Home() {
           </div>
           {/* -----  Contenu à droite de l'illustration  -----  */}
           <div className={styles.rightContent}>
-            <div className={styles.comedienPhotos}>
+            <div className={styles.comedienPhotosSix}>
               {filteredComediens.map(comedien => (
                 <ComedienPhoto
                   key={comedien.nom}
