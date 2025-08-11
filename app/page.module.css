@@ -55,7 +55,7 @@
 .comedienPhotos {
   display: grid;
   justify-self: center;
-  grid-template-columns: repeat(7, 95px);
+  grid-template-columns: repeat(6, 95px);
   gap: 0.5rem;
   font-size: x-small;
   max-width: 100%;
