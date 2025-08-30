@@ -1,14 +1,11 @@
-export type ComedienPhotosProps = {
+export type Comedien = {
+  id: string;
+  description: string; // HTML string
+  years_present: number[];
   prenom: string;
   nom: string;
   imageSrc: {
     default: string;
-    [year: number]: string;
+    [year: string]: string | undefined;
   };
-};
-
-export type Comedien = ComedienPhotosProps & {
-  id: string;
-  description: string; // HTML string
-  years_present: number[];
 };

@@ -8,8 +8,8 @@ export const comediens: Comedien[] = [
     years_present: [2024, 2025],
     imageSrc: {
       default: '/comediens/Albertosi_Louis.jpg',
-      2024: '/comediens/Albertosi_Louis.jpg',
-      2025: '/comediens/Albertosi_Louis_25.jpg',
+      '2024': '/comediens/Albertosi_Louis.jpg',
+      '2025': '/comediens/Albertosi_Louis_25.jpg',
     },
     description: `Musicien précoce, Louis Albertosi intègre l'École du Nord en 2018, à l'âge de 20 ans. À sa sortie, Christophe Rauck lui confie le rôle-titre du <i>Henry VI</i> de Shakespeare qu'il met en scène avec Cécile Garcia Fogel au Théâtre du Nord et au théâtre Nanterre-Amandiers.
 <p>
@@ -27,7 +27,6 @@ Les spectateurs des Soirées Littéraires du Bessin se rappellent sa lecture de 
     years_present: [2022],
     imageSrc: {
       default: '/comediens/Desarthe_Gerard.jpg',
-      2022: '/comediens/Desarthe_Gerard.jpg',
     },
     description: `Gérard Desarthe se forme sur les planches, au fil de ses rôles. Parmi ceux-ci, on peut citer celui de Lorenzaccio, en 1969, dans la pièce éponyme de Musset, montée par Guy Rétoré, où il se fait remarquer par Patrice Chéreau, qui à son tour le met en scène dans <i>Richard II</i> en 1970, mais aussi dans <i>Peer Gynt</i> en 1981 et <i>Hamlet</i> dès 1988. Il obtient d'ailleurs en 1989 le Molière du meilleur acteur pour ce rôle-titre.  Il a aussi joué sous la direction de Roger Planchon, Jean Jourdheuil, André Engel, Giorgo Strehler, Lucas Ronconi, Karge/Langhoff, Luc Bondy...
 <p>
@@ -46,7 +45,7 @@ Les spectateurs de Littérature à Voix Haute se rappellent sa lecture magistral
     years_present: [2024],
     imageSrc: {
       default: '/comediens/Istria_Evelyne_24.jpg',
-      2024: '/comediens/Istria_Evelyne_24.jpg',
+      '2024': '/comediens/Istria_Evelyne_24.jpg',
     },
     description: `Évelyne Istria a consacré sa vie au théâtre. Avec un sens rare du tragique, elle y joue les grands rôles du répertoire sous la direction des plus grands metteurs en scène tels que Roger Planchon, Lucian Pintillié, Lluis Pasqual, Bernard Sobel, Stuart Seide, Yves Beaunesme...
 <p>
@@ -63,7 +62,7 @@ Les spectateurs des deux dernières années se rappellent les très poignantes l
     years_present: [2025],
     imageSrc: {
       default: '/comediens/Kessler_Anne_25.jpg',
-      2025: '/comediens/Kessler_Anne_25.jpg',
+      '2025': '/comediens/Kessler_Anne_25.jpg',
     },
     description: `Anne Kessler, sociétaire honoraire de la Comédie-Française.
     <p>
@@ -84,7 +83,7 @@ On a pu la voir récemment reprendre au Théâtre de la Concorde, <i>Ex-traits d
     years_present: [2024],
     imageSrc: {
       default: '/comediens/guillaume_leveque.jpg',
-      2024: '/comediens/guillaume_leveque.jpg',
+      '2024': '/comediens/guillaume_leveque.jpg',
     },
     description: `Guillaume Lévêque joue des auteurs aussi divers que Shakespeare, Tchekhov, Bond, Feydeau, Marlowe, Vinaver, Gorki, Strauss, Tourgueniev, Handke, Beckett... sous la direction d'Arlette Téphany, Pierre Meyrand, Jacques Nichet, Stéphane Braunschweig, Jean-Pierre Vincent... et d'Alain Françon avec lequel, en tant qu'acteur et/ou dramaturge, il collabore sur plus d'une trentaine de spectacles. Au cinéma il tourne avec Jacques Rivette et à la télévision avec Hervé Baslé. Comme artiste associé à la Colline, il y met également en scène Kaiser, Bernhard, Vinaver, Strauss.
 <p>
@@ -101,7 +100,7 @@ Après <i>La Promesse de l'aube</i> en août dernier à Arromanches, Guillaume L
     years_present: [2024],
     imageSrc: {
       default: '/comediens/Marcon_Andre_24.jpg',
-      2024: '/comediens/Marcon_Andre_24.jpg',
+      '2024': '/comediens/Marcon_Andre_24.jpg',
     },
     description: `Au théâtre, André Marcon a travaillé avec les plus grands metteurs en scène actuels, tels que Didier Bezace, Frédéric Bélier-Garcia, Luc Bondy, Klaus Michael Grüber, Jacques Lassalle, Roger Planchon, etc. - tant dans un répertoire classique que contemporain. Au cinéma et pour la télévision, il tourne entre autres avec Olivier Assayas (<i>Les destinées sentimentales</i>), Alain Tanner (<i>Une flamme dans mon cœur</i>, <i>Requiem</i>), Bertrand Tavernier (<i>Des enfants gâtés</i>)... Il est Frydman dans la série <i>D'argent et de sang</i> de Xavier Giannoli.
 <p>
@@ -118,7 +117,7 @@ Avant de rejoindre les « Soirées Littéraires du Bessin », André Marcon part
     years_present: [2025],
     imageSrc: {
       default: '/comediens/Marie_Matthieu_25.jpg',
-      2025: '/comediens/Marie_Matthieu_25.jpg',
+      '2025': '/comediens/Marie_Matthieu_25.jpg',
     },
     description: `Formé auprès de Pierre Debauche de 1991 à 93, Matthieu Marie participe avec lui à la fondation du Théâtre du Jour à Agen et, pendant deux ans, à son animation. 
     <p>
@@ -137,7 +136,7 @@ Par les extraits qu'il en lit, Matthieu Marie accompagne actuellement à travers
     years_present: [2025],
     imageSrc: {
       default: '/comediens/Remil_Yasmina_25.jpg',
-      2025: '/comediens/Remil_Yasmina_25.jpg',
+      '2025': '/comediens/Remil_Yasmina_25.jpg',
     },
     description: `Yasmina Remil rejoint en 2005 le Conservatoire pré-professionnel de Genève, et intègre en 2006 la promotion 68 de l'ENSATT à Lyon, où elle est dirigée par Christian Schiaretti, Bernard Sobel et Alain Françon.
     <p>
@@ -159,7 +158,7 @@ On peut l'entendre à la radio dans diverses dramatiques de France-Culture.
     years_present: [2024],
     imageSrc: {
       default: '/comediens/Richard_melodie_24.jpg',
-      2024: '/comediens/Richard_melodie_24.jpg',
+      '2024': '/comediens/Richard_melodie_24.jpg',
     },
     description: `À sa sortie du Conservatoire, Mélodie Richard fait la rencontre décisive de Krystian Lupa, avec qui elle joue dans ses trois créations francophones -dont récemment <i>Les Émigrants</i>. Elle fait rapidement d'autres rencontres essentielles, comme Christophe Honoré, Thomas Ostermeier, Georges Lavaudant et Célie Pauthe, qui la dirigent dans les plus grands rôles du répertoire (<i>La Mouette</i>, <i>Bérénice</i>, <i>Cléopâtre</i>, <i>Électre</i>).
 <p>
@@ -178,7 +177,7 @@ Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance
     years_present: [2024],
     imageSrc: {
       default: '/comediens/Rochmann_Marion_24.jpg',
-      2024: '/comediens/Rochmann_Marion_24.jpg',
+      '2024': '/comediens/Rochmann_Marion_24.jpg',
     },
     description: `Marion Rochmann est comédienne-amateur-impénitente. Enfant, elle est de tous les « ateliers théâtre », de toutes les « pièces pour parents » et prend ses premiers cours. Le bac en poche, elle est au cours Florent, puis au Charpentier Art Studio, ne faisant son droit que pour donner le change à ses parents, dit-elle... jusqu'à prêter serment ! C'est alors qu'elle rencontre Thomas Sacksick qui l'engage dans une belle aventure théâtrale. Elle mène alors de front sa carrière d'avocate et de nombreuses représentations théâtrales (<i>Les Amours de Don Perlimplin et Bélise en leur jardin</i> de Federico Garcia-Lorca notamment, mis en scène par Gilles Sacksick). Puis elle réserve ses talents de conteuse à ses filles ; elle leur lira presque l'intégralité des <i>Harry Potter</i> ! Active depuis leur création dans les Soirées Littéraires du Bessin, elle renoue ici avec la littérature enfantine.`,
   },
@@ -189,8 +188,8 @@ Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance
     years_present: [2021, 2022, 2023, 2024, 2025],
     imageSrc: {
       default: '/comediens/Sacksick_Thomas.jpg',
-      2024: '/comediens/Sacksick_Thomas.jpg',
-      2025: '/comediens/Sacksick_Thomas_25.jpg',
+      '2024': '/comediens/Sacksick_Thomas.jpg',
+      '2025': '/comediens/Sacksick_Thomas_25.jpg',
     },
     description: `Thomas Sacksick, comédien, metteur en scène et galériste ; lauréat de la Fondation de la Vocation.
 <p>
@@ -205,7 +204,6 @@ Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux 
     years_present: [2019, 2021],
     imageSrc: {
       default: '/comediens/Salviat_Catherine.jpg',
-      2021: '/comediens/Salviat_Catherine.jpg',
     },
     description: `Les prix qu'elle obtient à l'issue de ses études au Conservatoire lui valent d'entrer à la Comédie-Française en 1969. Catherine Salviat y joue dans un premier temps des second rôles, des rôles d'ingénue ou de soubrette. Elle devient sociétaire en 1977. C'est le 461e sociétaire. Elle est remarquée par ses interprétations à plusieurs reprises, et se voit attribuer un Molière en 1988 pour un second rôle dans <i>Dialogues des carmélites</i> de Georges Bernanos, mis en scène par Gildas Bourdet. Finalement, elle doit quitter la Comédie-Française en décembre 2005, au même moment que Catherine Ferran et Alain Pralon, trois personnalités de cette maison y ayant effectué un long parcours. Elle devient sociétaire honoraire en janvier 2006 tout en se voyant proposer de nouveaux rôles au Français comme sur d'autres scènes, en pièce classique ou contemporaine.
 <p>
@@ -218,7 +216,7 @@ On a pu la voir récemment dans un très joli court-métrage intitulé <i>Les my
     years_present: [2025],
     imageSrc: {
       default: '/comediens/Samie_Celine_25.jpg',
-      2025: '/comediens/Samie_Celine_25.jpg',
+      '2025': '/comediens/Samie_Celine_25.jpg',
     },
     description: `Au Conservatoire national d'art dramatique, Céline Samie suit l'enseignement de Madeleine Marion, Catherine Hiegel et Pierre Vial. En fin d'études, à la suite de son interprétation dans <i>Les Bonnes</i> de Jean Genet, Antoine Vitez la fait entrer à la Comédie-Française pour jouer dans deux farces de Molière, mises en scène de Dario Fo, salle Richelieu.
     <p>
@@ -233,7 +231,6 @@ Parmi ses nombreux rôles au cinéma, Céline Samie se plaît à se rappeler cel
     years_present: [2020, 2022],
     imageSrc: {
       default: '/comediens/Valadie_Dominique.jpg',
-      2022: '/comediens/Valadie_Dominique.jpg',
     },
     description: `Ex-pensionnaire de la Comédie-Française, Dominique Valadié a joué et joue le répertoire classique et les auteurs contemporains auprès de metteurs en scène tels que Antoine Vitez, Claude Régy, Jean-Pierre Vincent, Alain Françon... Elle a obtenu plusieurs Molière dont celui de la meilleure comédienne pour son interprétation de <i>La Dame de chez Maxim's</i> de Georges Feydeau en 1991.
 <p>
