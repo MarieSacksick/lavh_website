@@ -1,7 +1,10 @@
 export type ComedienPhotosProps = {
   prenom: string;
   nom: string;
-  imageSrc: string;
+  imageSrc: {
+    default: string;
+    [year: number]: string;
+  };
 };
 
 export type Comedien = ComedienPhotosProps & {

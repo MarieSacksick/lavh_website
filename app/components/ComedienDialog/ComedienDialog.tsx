@@ -7,10 +7,12 @@ import Image from 'next/image';
  * @interface ComedienDialogProps
  * @property {Comedien} comedien - Les informations du comédien à afficher
  * @property {function} onClose - Fonction appelée pour fermer le dialog
+ * @property {number} [year] - L'année pour choisir la photo du comédien
  */
 type ComedienDialogProps = {
   comedien: Comedien;
   onClose: () => void;
+  year?: number;
 };
 
 /**
@@ -36,7 +38,8 @@ type ComedienDialogProps = {
  *
  * @returns {JSX.Element} Le dialog modal avec les informations du comédien
  */
-export default function ComedienDialog({ comedien, onClose }: ComedienDialogProps) {
+export default function ComedienDialog({ comedien, onClose, year }: ComedienDialogProps) {
+  const src = year && comedien.imageSrc[year] ? comedien.imageSrc[year] : comedien.imageSrc.default;
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.dialog} onClick={e => e.stopPropagation()}>
@@ -48,7 +51,7 @@ export default function ComedienDialog({ comedien, onClose }: ComedienDialogProp
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <Image
-              src={comedien.imageSrc}
+              src={src}
               alt={`Photo de ${comedien.prenom} ${comedien.nom}`}
               width={300}
               height={300}

@@ -30,13 +30,15 @@ const ComedienPhoto = ({
   prenom,
   imageSrc,
   onClick,
+  year,
 }: ComedienPhotosProps & { onClick?: () => void }) => {
+  const src = year && imageSrc[year] ? imageSrc[year] : imageSrc.default;
   return (
     <a className={styles.container} onClick={onClick}>
       <Image
         width={100}
         height={100}
-        src={imageSrc}
+        src={src}
         alt={`Photo de ${prenom} ${nom}`}
         className={styles.comedienPhoto}
       />

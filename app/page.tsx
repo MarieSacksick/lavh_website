@@ -65,6 +65,7 @@ export default function Home() {
                 <ComedienPhoto
                   key={comedien.nom}
                   {...comedien}
+                  year={year}
                   onClick={() => setSelectedComedien(comedien)}
                 />
               ))}
@@ -122,7 +123,7 @@ export default function Home() {
       </div>
       {/* -----  Boîte de Dialogue avec description des comédiens -----  */}
       {selectedComedien && (
-        <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} />
+        <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} year={year} />
       )}
     </>
   );
