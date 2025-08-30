@@ -111,7 +111,7 @@ export default function Home() {
             {/* -----  Informations sur les réservations   -----  */}
             <div className={styles.tarifs}>
               <p>
-                Réservations conseillées, par téléphone au <span>02 31 22 83 81</span> ou sur notre <a href="https://app.nocodb.com/p/reservations_sldb"> formulaire en ligne</a>.
+                Réservation conseillée, par téléphone au <span>02 31 22 83 81</span> ou sur notre <a href="https://app.nocodb.com/p/reservations_sldb"> formulaire en ligne</a>.
               </p>
             </div>
             
