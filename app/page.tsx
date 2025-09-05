@@ -60,11 +60,12 @@ export default function Home() {
           </div>
           {/* -----  Contenu à droite de l'illustration  -----  */}
           <div className={styles.rightContent}>
-            <div className={styles.comedienPhotos}>
+            <div className={styles.comedienPhotosSix}>
               {filteredComediens.map(comedien => (
                 <ComedienPhoto
                   key={comedien.nom}
                   {...comedien}
+                  year={year}
                   onClick={() => setSelectedComedien(comedien)}
                 />
               ))}
@@ -107,6 +108,13 @@ export default function Home() {
                 CB acceptée
               </p>
             </div>
+
+            {/* -----  Informations sur les réservations   -----  */}
+            <div className={styles.tarifs}>
+              <p>
+                Réservation conseillée, par téléphone au <span>02 31 22 83 81</span> ou sur notre <a href="https://app.nocodb.com/p/reservations_sldb"> formulaire en ligne</a>.
+              </p>
+            </div>
             
             {/* -----  Logos LAVH et Partenaires   -----  */}
             <BandeauLogos year={year} />
@@ -115,7 +123,7 @@ export default function Home() {
       </div>
       {/* -----  Boîte de Dialogue avec description des comédiens -----  */}
       {selectedComedien && (
-        <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} />
+        <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} year={year} />
       )}
     </>
   );

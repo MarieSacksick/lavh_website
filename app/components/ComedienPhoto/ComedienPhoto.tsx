@@ -1,42 +1,34 @@
 import Image from 'next/image';
 
 import styles from './ComedienPhoto.module.css';
-import { ComedienPhotosProps } from '@/app/types/comediens';
+import { Comedien } from '@/app/types/comediens';
+
+type ComedienPhotoProps = Comedien & {
+  onClick?: () => void;
+  year?: number;
+};
 
 /**
  * Composant affichant la photo et le nom d'un comédien
  *
  * @component
- * @param {ComedienPhotosProps & { onClick?: () => void }} props - Les propriétés du composant
- * @param {string} props.nom - Le nom du comédien
- * @param {string} props.prenom - Le prénom du comédien
- * @param {string} props.imageSrc - L'URL de la photo du comédien
- * @param {function} [props.onClick] - Fonction optionnelle appelée au clic sur la carte
- *
- * @example
- * ```tsx
- * <ComedienPhoto
- *   nom="Dupont"
- *   prenom="Jean"
- *   imageSrc="/photos/jean-dupont.jpg"
- *   onClick={() => handleComedienClick(comedien)}
- * />
- * ```
- *
+ * @param {ComedienPhotoProps} props - Les propriétés du composant
  * @returns {JSX.Element} La carte du comédien avec sa photo et son nom
  */
-const ComedienPhoto = ({
+function ComedienPhoto({
   nom,
   prenom,
   imageSrc,
   onClick,
-}: ComedienPhotosProps & { onClick?: () => void }) => {
+  year,
+}: ComedienPhotoProps) {
+  const src = year && imageSrc[year] ? imageSrc[year] : imageSrc.default;
   return (
     <a className={styles.container} onClick={onClick}>
       <Image
         width={100}
         height={100}
-        src={imageSrc}
+        src={src}
         alt={`Photo de ${prenom} ${nom}`}
         className={styles.comedienPhoto}
       />
@@ -46,6 +38,6 @@ const ComedienPhoto = ({
       </div>
     </a>
   );
-};
+}
 
 export default ComedienPhoto;
