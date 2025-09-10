@@ -8,7 +8,7 @@ export const comediens: Comedien[] = [
     years_present: [2024, 2025],
     imageSrc: {
       default: '/comediens/Albertosi_Louis.jpg',
-      '2024': '/comediens/Albertosi_Louis.jpg',
+      '2024': '/comediens/Albertosi_Louis_24.jpg',
       '2025': '/comediens/Albertosi_Louis_25.jpg',
     },
     description: `Musicien précoce, Louis Albertosi intègre l'École du Nord en 2018, à l'âge de 20 ans. À sa sortie, Christophe Rauck lui confie le rôle-titre du <i>Henry VI</i> de Shakespeare qu'il met en scène avec Cécile Garcia Fogel au Théâtre du Nord et au théâtre Nanterre-Amandiers.
@@ -61,7 +61,7 @@ Les spectateurs des deux dernières années se rappellent les très poignantes l
     nom: 'Kessler',
     years_present: [2025],
     imageSrc: {
-      default: '/comediens/Kessler_Anne_25.jpg',
+      default: '/comediens/Kessler_Anne.jpg',
       '2025': '/comediens/Kessler_Anne_25.jpg',
     },
     description: `Anne Kessler, sociétaire honoraire de la Comédie-Française.
@@ -116,7 +116,7 @@ Avant de rejoindre les « Soirées Littéraires du Bessin », André Marcon part
     nom: 'Marie',
     years_present: [2025],
     imageSrc: {
-      default: '/comediens/Marie_Matthieu_25.jpg',
+      default: '/comediens/Marie_Matthieu.jpg',
       '2025': '/comediens/Marie_Matthieu_25.jpg',
     },
     description: `Formé auprès de Pierre Debauche de 1991 à 93, Matthieu Marie participe avec lui à la fondation du Théâtre du Jour à Agen et, pendant deux ans, à son animation. 
@@ -135,7 +135,7 @@ Par les extraits qu'il en lit, Matthieu Marie accompagne actuellement à travers
     nom: 'Remil',
     years_present: [2025],
     imageSrc: {
-      default: '/comediens/Remil_Yasmina_25.jpg',
+      default: '/comediens/Remil_Yasmina.jpg',
       '2025': '/comediens/Remil_Yasmina_25.jpg',
     },
     description: `Yasmina Remil rejoint en 2005 le Conservatoire pré-professionnel de Genève, et intègre en 2006 la promotion 68 de l'ENSATT à Lyon, où elle est dirigée par Christian Schiaretti, Bernard Sobel et Alain Françon.
@@ -157,7 +157,7 @@ On peut l'entendre à la radio dans diverses dramatiques de France-Culture.
     nom: 'Richard',
     years_present: [2024],
     imageSrc: {
-      default: '/comediens/Richard_melodie_24.jpg',
+      default: '/comediens/Richard_melodie.jpg',
       '2024': '/comediens/Richard_melodie_24.jpg',
     },
     description: `À sa sortie du Conservatoire, Mélodie Richard fait la rencontre décisive de Krystian Lupa, avec qui elle joue dans ses trois créations francophones -dont récemment <i>Les Émigrants</i>. Elle fait rapidement d'autres rencontres essentielles, comme Christophe Honoré, Thomas Ostermeier, Georges Lavaudant et Célie Pauthe, qui la dirigent dans les plus grands rôles du répertoire (<i>La Mouette</i>, <i>Bérénice</i>, <i>Cléopâtre</i>, <i>Électre</i>).
@@ -215,7 +215,7 @@ On a pu la voir récemment dans un très joli court-métrage intitulé <i>Les my
     nom: 'Samie',
     years_present: [2025],
     imageSrc: {
-      default: '/comediens/Samie_Celine_25.jpg',
+      default: '/comediens/Samie_Celine.jpg',
       '2025': '/comediens/Samie_Celine_25.jpg',
     },
     description: `Au Conservatoire national d'art dramatique, Céline Samie suit l'enseignement de Madeleine Marion, Catherine Hiegel et Pierre Vial. En fin d'études, à la suite de son interprétation dans <i>Les Bonnes</i> de Jean Genet, Antoine Vitez la fait entrer à la Comédie-Française pour jouer dans deux farces de Molière, mises en scène de Dario Fo, salle Richelieu.
