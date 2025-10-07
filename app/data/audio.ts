@@ -26,7 +26,7 @@ export const audioByYear: AudioYear[] = [
         date: "Mercredi 19 août",
         audioSrc: "/audio/RILKE.mp3",
         auteur: "Rilke",
-        titre: "Les Cahiers de Laurids Brigge",
+        titre: "Les Cahiers de Malte Laurids Brigge",
         lieu: "Asnelles",
       },
       {
