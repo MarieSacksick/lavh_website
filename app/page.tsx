@@ -32,13 +32,7 @@ export default function Home() {
         <div className={styles.content}>
           {/* -----  Illustration de Virginia Woolf et sa légende -----  */}
           <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'flex-start',
-              marginRight: '1rem',
-              marginBottom: '4rem',
-            }}
+            className={styles.imageContainer}
           >
             <Image
               className={styles.imgPortrait}

@@ -16,6 +16,14 @@
   max-height: 750px;
 }
 
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 1rem;
+  margin-bottom: 4rem;
+}
+
 .imageCaption {
   font-style: italic;
   font-size: small;
@@ -112,7 +120,7 @@
 @media (max-width: 768px) {
   .tarifs {
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding-block: 2rem;
     gap: 0.25rem;
@@ -127,10 +135,14 @@
     display: none;
   }
 
+  .imageContainer {
+    align-items: center;
+    margin-right: 0;
+  }
+
   .imgPortrait {
     max-width: 100%;
     height: auto;
-    margin-left: -1rem;
   }
 
   .page {
