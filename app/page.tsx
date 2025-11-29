@@ -109,11 +109,11 @@ export default function Home() {
                 Réservation conseillée, par téléphone au <span>02 31 22 83 81</span> ou sur notre <a href="https://app.nocodb.com/p/reservations_sldb"> formulaire en ligne</a>.
               </p>
             </div>
-            
-            {/* -----  Logos LAVH et Partenaires   -----  */}
-            <BandeauLogos year={year} />
           </div>
         </div>
+
+        {/* -----  Logos LAVH et Partenaires   -----  */}
+        <BandeauLogos year={year} />
       </div>
       {/* -----  Boîte de Dialogue avec description des comédiens -----  */}
       {selectedComedien && (

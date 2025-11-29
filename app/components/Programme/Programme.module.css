@@ -27,13 +27,11 @@
 }
 
 .jour h3 span {
-  /*font-size: small;*/
   text-transform: lowercase;
 }
 
 .titreOeuvre {
   font-style: italic;
-  /*font-size: small;*/
   font-weight: 600;
 }
 
@@ -41,15 +39,12 @@
   text-transform: uppercase;
   color: var(--green);
   font-weight: 600;
-  /*font-size: small;*/
 }
 
 .readerName {
-  /*font-size: small;*/
 }
 
 .jour p {
-  /*font-size: small;*/
   margin: 0;
   /* Ajout d'un peu d'espace entre les paragraphes */
   margin-bottom: 0.5rem;

@@ -98,11 +98,11 @@ export default function Home() {
               </p>
               <p>CB acceptée</p>
             </div>
-            
-            {/* -----  Logos LAVH et Partenaires   -----  */}
-            <BandeauLogos year={year} />
           </div>
         </div>
+
+        {/* -----  Logos LAVH et Partenaires   -----  */}
+        <BandeauLogos year={year} />
       </div>
       {/* -----  Boîte de Dialogue avec description des comédiens -----  */}
       {selectedComedien && (
