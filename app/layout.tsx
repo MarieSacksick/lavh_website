@@ -31,6 +31,9 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${crimsonText.variable} ${ebGaramond.variable}`}>
         <div className="layout">
+          <div className="announcementBanner">
+            Les Soirées littéraires du Bessin 2026 auront lieu du 14 au 21 août — nous annoncerons les précisions très bientôt !
+          </div>
           <div className="spaceHeader"></div>
           <Header />
           {/* L'ensemble des contenus des pages est contenu entre les balises <main> */}
