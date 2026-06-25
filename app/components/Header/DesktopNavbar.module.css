@@ -6,7 +6,6 @@
   justify-content: center;
   gap: 1rem;
   padding-block: 0.25rem;
-  height: var(--header-height);
 }
 
 .activeLink {
@@ -39,7 +38,7 @@
 }
 
 .scrolled .container {
-  height: var(--header-height-min);
+  height: auto;
 }
 
 @media (max-width: 768px) {

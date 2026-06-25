@@ -16,23 +16,24 @@
 
 @media (max-width: 768px) {
   .navMobile {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: center;
+    padding: 0.75rem 1rem;
     max-width: 768px;
     margin: 0 auto;
     font-family: var(--font-crimson), Georgia, serif;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 1rem 0;
   }
 
   .burgerButton {
     display: block;
-    position: absolute;
-    top: 44px;
-    left: 1rem;
-    transform: translateY(-50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    justify-self: start;
   }
 
   .mobileMenu.active {
