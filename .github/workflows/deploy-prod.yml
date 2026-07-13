@@ -1,0 +1,39 @@
+name: Deploy to Production (Strato SFTP)
+
+on:
+  push:
+    branches: ['prod']
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Deploy via SFTP
+        uses: pressidium/lftp-mirror-action@v1
+        with:
+          host: '51474257.ssh.w1.strato.hosting'
+          port: 22
+          user: ${{ secrets.SFTP_MARIE_LAVH_EMAIL }}
+          password: ${{ secrets.SFTP_MARIE_LAVH_PWD }}
+          protocol: sftp
+          localDir: './out'
+          remoteDir: '/'
+          reverse: true
+          ignoreFile: '.lftp_ignore'
+          options: '--verbose'
