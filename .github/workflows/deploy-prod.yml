@@ -25,15 +25,16 @@ jobs:
         run: npm run build
 
       - name: Deploy via SFTP
-        uses: pressidium/lftp-mirror-action@v1
-        with:
-          host: '51474257.ssh.w1.strato.hosting'
-          port: 22
-          user: ${{ secrets.SFTP_MARIE_LAVH_EMAIL }}
-          password: ${{ secrets.SFTP_MARIE_LAVH_PWD }}
-          protocol: sftp
-          localDir: './out'
-          remoteDir: '/'
-          reverse: true
-          ignoreFile: '.lftp_ignore'
-          options: '--verbose'
+        env:
+          SFTP_HOST: '51474257.ssh.w1.strato.hosting'
+          SFTP_PORT: '22'
+          SFTP_USER: ${{ secrets.SFTP_MARIE_LAVH_EMAIL }}
+          SSHPASS: ${{ secrets.SFTP_MARIE_LAVH_PWD }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq sshpass
+          cd out
+          sshpass -e sftp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null \
+            -P "$SFTP_PORT" "$SFTP_USER@$SFTP_HOST" <<'EOF'
+          put -r .
+          bye
+          EOF
