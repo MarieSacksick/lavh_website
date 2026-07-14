@@ -332,11 +332,14 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           <p>Lecture Daudet pour les enfants <span style={{ fontWeight: 'bold', color: 'var(--primary-color)' }}>3 €</span></p>
           <p>CB acceptée</p>
           <p>
-            Réservations très recommandées au <span className={styles.eventTime}>02 31 22 83 81</span> ou sur notre{' '}
+            Réservations très recommandées au <span className={styles.eventTime}>02 31 22 83 81</span> 
+          <p>ou sur notre{' '}
             <a href="https://app.nocodb.com/nc/form/888ef5cf-9754-4324-a6c4-0d3ab9569e5c" target="_blank" rel="noopener noreferrer">
               formulaire en ligne
             </a>.
           </p>
+        </div>
+        <div className={styles.practicalInfo}>
           <p style={{fontSize: 'small' }}>Gay Lee Tischbirek, flûte</p>
           <p> <span style={{ fontStyle: 'italic'}}>Illustrations</span>, Gilles Sacksick</p>
         </div>
