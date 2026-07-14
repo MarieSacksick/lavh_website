@@ -1,19 +1,13 @@
 import type { Metadata } from 'next';
-import { Crimson_Text, EB_Garamond, STIX_Two_Text } from 'next/font/google';
+import { Libre_Baskerville, STIX_Two_Text } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-const crimsonText = Crimson_Text({
+const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-crimson',
-});
-
-const ebGaramond = EB_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-eb-garamond',
+  weight: ['400', '700'],
+  variable: '--font-baskerville',
 });
 
 const stixTwoText = STIX_Two_Text({
@@ -35,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${crimsonText.variable} ${ebGaramond.variable} ${stixTwoText.variable}`}>
+      <body className={`${libreBaskerville.variable} ${stixTwoText.variable}`}>
         <div className="layout">
           <div className="spaceHeader"></div>
           <Header />

@@ -22,7 +22,7 @@
     padding: 0.75rem 1rem;
     max-width: 768px;
     margin: 0 auto;
-    font-family: var(--font-crimson), Georgia, serif;
+    font-family: var(--font-baskerville), Georgia, serif;
     text-transform: uppercase;
     font-weight: 900;
   }
@@ -61,7 +61,7 @@
     padding: 1rem 0;
     font-size: small;
     font-weight: 600;
-    font-family: var(--font-crimson), Georgia, serif;
+    font-family: var(--font-baskerville), Georgia, serif;
   }
 
   .icon {

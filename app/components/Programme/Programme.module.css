@@ -12,6 +12,7 @@
 .jour {
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
   margin-bottom: 0.5rem; /* Add space between each day */
 }
 
@@ -77,7 +78,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
@@ -94,7 +95,7 @@
 .twoColumns {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -136,10 +137,18 @@
   gap: 0rem;
 }
 
-.headerAndColumns .jour h3,
 .headerAndColumns .placeLink,
 .headerAndColumns .readerName {
   font-family: var(--font-stix-two-text), serif;
+}
+
+.headerAndColumns .jour h3 {
+  font-family: var(--font-baskerville), Georgia, serif;
+}
+
+.introTitle {
+  text-transform: none;
+  font-weight: normal;
 }
 
 @media (max-width: 1200px) {

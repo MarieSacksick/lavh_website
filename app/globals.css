@@ -32,7 +32,7 @@ h1 {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-eb-garamond), Georgia, serif;
+  font-family: var(--font-baskerville), Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,7 +58,7 @@ h4,
 h5,
 h6,
 nav {
-  font-family: var(--font-crimson), Georgia, serif;
+  font-family: var(--font-baskerville), Georgia, serif;
   text-transform: uppercase;
   font-weight: 900;
 }

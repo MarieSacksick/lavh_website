@@ -7,7 +7,7 @@ export const comediens: Comedien[] = [
     nom: 'Duclos',
     years_present: [2026],
     imageSrc: {
-      default: '/comediens/Duclos_Philippe_26.jpg',
+      default: '/comediens/Duclos_Philippe.jpg',
       '2026': '/comediens/Duclos_Philippe_26.jpg',
     },
     description: `Philippe Duclos, est acteur. On l’a vu au cinéma dans les films de Claude Chabrol, Arnaud Desplechin ou Bertrand Tavernier. Pendant près de quinze ans, il a incarné aux yeux du grand public le rôle du juge d’instruction François Roban dans la série de Canal+, <i>Engrenages</i> ; une incarnation à ce point touchante qu’elle en a suscité des vocations de magistrat.
@@ -20,8 +20,8 @@ export const comediens: Comedien[] = [
     nom: 'Garel',
     years_present: [2026],
     imageSrc: {
-      default: '/comediens/Garel_Pierre-François.jpg',
-      '2026': '/comediens/Garel_Pierre-François.jpg',
+      default: '/comediens/Garel_Pierre-Francois.jpg',
+      '2026': '/comediens/Garel_Pierre-Francois_26.jpg',
     },
     description: `Formé au conservatoire de Rennes puis au CNSAD, Pierre-Francois Garel joue au théâtre dans <i>Cœur Ardent</i>, <i>Les Serments indiscrets</i>, <i>Phèdre</i> et <i>Comme il vous plaira</i>  sous la direction de Christophe Rauck. Dans les trois créations francophones de Krystian Lupa. Dans <i>Macbeth</i> et <i>Tartuffe</i> mis en scène par Éric Massé. 
 <p>Avec Alain Françon dans <i>Qui a peur de Virginia Woolf ?</i>, <i>Le Misanthrope</i>, <i>Moi, l’Inconnue et les innocents</i> au bord de la route départementale, <i>La Seconde Surprise de l’amour</i>, <i>Les Fausses Confidences</i> et <i>La Séparation</i> de Claude Simon.
@@ -35,7 +35,7 @@ export const comediens: Comedien[] = [
     nom: 'Stoléru',
     years_present: [2026],
     imageSrc: {
-      default: '/comediens/Stoleru_Josiane_26.jpg',
+      default: '/comediens/Stoleru_Josiane.jpg',
       '2026': '/comediens/Stoleru_Josiane_26.jpg',
     },
     description: `Josiane Stoléru a créé les pièces de nombreux auteurs contemporains, parmi lesquels Jean-Claude Grumberg, Yasmina Réza, Tilly, Éric-Emmanuel Schmitt, Florian Zeller, Jean-Claude
@@ -49,7 +49,7 @@ Carrière et dernièrement Ivan Calbérac. Elle a également joué Tennessee Wil
     nom: 'Tual',
     years_present: [2026],
     imageSrc: {
-      default: '/comediens/Tual_Christele_26.jpg',
+      default: '/comediens/Tual_Christele.jpg',
       '2026': '/comediens/Tual_Christele_26.jpg',
     },
     description: `Après une formation à l’école du Théâtre national de Strasbourg, Christèle Tual travaille entre autres avec Jean-Marie Villégier, Elfriede Jelinek (notamment pour l’adaptation de son roman <i>Les Amantes</i>), Élisabeth Chailloux, Xavier Marchand, Mikaël Serre,  Jean-François Sivadier (<i>Le Misanthrope de Molière</i>), Joël Jouanneau à plusieurs reprises, et Yasmina Reza (dont dernièrement <i>James Brown mettait des bigoudis</i>).

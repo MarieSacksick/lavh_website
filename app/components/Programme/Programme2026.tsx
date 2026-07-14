@@ -79,16 +79,17 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
             />
           ))}
         </div>
-        <h2>
-          <span>Littérature à Voix Haute présente du 14 au 21 août 2026</span>
+        <h2 className={styles.introTitle}>
+          Littérature à Voix Haute présente du 14 au 21 août 2026
         </h2>
         <div
           style={{
             textAlign: 'center',
-            display: 'flex',
-            flexDirection: 'column',
+            //display: 'flex',
+            //flexDirection: 'column',
             color: '#00498b',
-            marginTop: '-1rem',
+            fontSize: 'small',
+            marginTop: '-0.3rem',
           }}>
           <span className={pageStyles.scheduleLine}>
             (tous les soirs à <span>19h30</span>, sauf Alphonse Daudet à <span>15h30</span>)
@@ -202,7 +203,8 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           </div>
 
           <div className={styles.subEvent}>
-            <span className={styles.eventTime}>15h30</span> -{' '}
+            <span className={styles.eventTime}>15h30</span>
+            <br />
             <span className={styles.titreOeuvre}>La Chèvre de monsieur Seguin</span>
             <br />
             <span className={styles.auteurOeuvre}>Alphonse Daudet</span>
@@ -213,7 +215,8 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           </div>
 
           <div className={styles.subEvent} style={{ marginTop: '0.5rem' }}>
-            <span className={styles.eventTime}>19h30</span> -{' '}
+            <span className={styles.eventTime}>19h30</span>
+            <br />
             <span className={styles.titreOeuvre}>La Ferme africaine</span>
             <br />
             <span className={styles.auteurOeuvre}>Karen Blixen</span>
@@ -332,11 +335,13 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           <p>Lecture Daudet pour les enfants <span style={{ fontWeight: 'bold', color: 'var(--primary-color)' }}>3 €</span></p>
           <p>CB acceptée</p>
           <p>
-            Réservations très recommandées au <span className={styles.eventTime}>02 31 22 83 81</span> 
+            Réservations très recommandées
+            <br/>au <span className={styles.eventTime}>02 31 22 83 81</span> 
+          </p>
           <p>ou sur notre{' '}
             <a href="https://app.nocodb.com/nc/form/888ef5cf-9754-4324-a6c4-0d3ab9569e5c" target="_blank" rel="noopener noreferrer">
               formulaire en ligne
-            </a>.
+            </a>
           </p>
         </div>
         <div className={styles.practicalInfo}>

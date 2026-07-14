@@ -15,7 +15,7 @@
   text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  font-family: var(--font-eb-garamond), Georgia, serif;
+  font-family: var(--font-baskerville), Georgia, serif;
   width: 100%;
 }
 
@@ -34,7 +34,7 @@
   justify-content: center;
   gap: 2rem;
   font-weight: 600;
-  font-family: var(--font-crimson), Georgia, serif;
+  font-family: var(--font-baskerville), Georgia, serif;
   padding: 1rem;
 }
 
