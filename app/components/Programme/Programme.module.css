@@ -210,4 +210,9 @@
     justify-content: center;
     align-items: center;
   }
+
+  .columnIllustrationLarge {
+    width: 100%;
+    left: 0;
+  }
 }
