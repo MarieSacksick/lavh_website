@@ -1,10 +1,6 @@
 'use client';
 import styles from './page.module.css';
-import Image from 'next/image';
 import BandeauLogos from './components/BandeauLogos/BandeauLogos';
-import Link from 'next/link';
-import { comediens } from './data/comediens';
-import ComedienPhoto from './components/ComedienPhoto/ComedienPhoto';
 import ComedienDialog from './components/ComedienDialog/ComedienDialog';
 import { useState } from 'react';
 import { Comedien } from './types/comediens';
@@ -13,12 +9,7 @@ import { getProgrammeComponent } from './components/Programme';
 export default function Home() {
   const [selectedComedien, setSelectedComedien] = useState<Comedien | null>(null);
 
-  const year = 2025;
-
-  // Filter comediens and partners based on the current year
-  const filteredComediens = comediens
-    .filter(comedien => comedien.years_present.includes(year)
-  );
+  const year = 2026;
 
   // Dynamically get the Programme component for the year
   const Programme = getProgrammeComponent(year);
@@ -29,90 +20,11 @@ export default function Home() {
       <div className={styles.page}>
         {/* -----  Contenu de la page  -----  */}
         <br></br>
-        <div className={styles.content}>
-          {/* -----  Illustration de Virginia Woolf et sa légende -----  */}
-          <div
-            className={styles.imageContainer}
-          >
-            <Image
-              className={styles.imgPortrait}
-              src="/virginia_woolf.jpg"
-              alt="Portrait de Virginia Woolf"
-              width={1000}
-              height={1000}
-            />
-            <Link
-              href={'https://gillessacksick.com/'}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Site de Gilles Sacksick"
-            >
-              <p className={styles.imageCaption}>
-                &ldquo;Virginia Woolf&rdquo;, une peinture de Gilles Sacksick
-              </p>
-            </Link>
-          </div>
-          {/* -----  Contenu à droite de l'illustration  -----  */}
-          <div className={styles.rightContent}>
-            <div className={styles.comedienPhotosSix}>
-              {filteredComediens.map(comedien => (
-                <ComedienPhoto
-                  key={comedien.nom}
-                  {...comedien}
-                  year={year}
-                  onClick={() => setSelectedComedien(comedien)}
-                />
-              ))}
-            </div>
-            <h2>
-              <span>Littérature à Voix Haute présente du 15 au 22 août 2025</span>
-            </h2>
-            <div 
-              style={{
-                textAlign: 'center',
-                display: 'flex',
-                flexDirection: 'column',
-                color: '#00498b',
-                marginTop: '-1rem',
-              }}>
-              <span className={styles.scheduleLine}>
-                (tous les soirs à <span>19h30</span>, sauf le <span>lundi 18 août</span> à 15h30)
-              </span>
-            </div>
+        <div className={styles.rightContent}>
+          <Programme onComedienClick={setSelectedComedien} />
 
-            <Programme onComedienClick={setSelectedComedien} />
-
-            <p className={styles.artistInfo}>Gay Lee Tischbirek, flûte</p>
-
-            {/* -----  Informations sur les tarifs   -----  */}
-            <div className={styles.tarifs}>
-              <p>
-                Prix des places : <span>14 €</span>
-              </p>
-              <p>
-                Moins de 26 ans : <span>8 €</span>
-              </p>
-              <p>
-                Pass : <span>80 €</span>
-              </p>
-              <p>
-                Lecture Andersen pour les enfants, tarif unique : <span>5 €</span>
-              </p>
-              <p>
-                CB acceptée
-              </p>
-            </div>
-
-            {/* -----  Informations sur les réservations   -----  */}
-            <div className={styles.tarifs}>
-              <p>
-                Réservation conseillée, par téléphone au <span>02 31 22 83 81</span> ou sur notre <a href="https://app.nocodb.com/p/reservations_sldb"> formulaire en ligne</a>.
-              </p>
-            </div>
-            
-            {/* -----  Logos LAVH et Partenaires   -----  */}
-            <BandeauLogos year={year} />
-          </div>
+          {/* -----  Logos LAVH et Partenaires   -----  */}
+          <BandeauLogos year={year} />
         </div>
       </div>
       {/* -----  Boîte de Dialogue avec description des comédiens -----  */}

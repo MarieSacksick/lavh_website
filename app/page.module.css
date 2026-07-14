@@ -82,6 +82,15 @@
   max-width: 100%;
 }
 
+.comedienPhotosHuit {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(8, 78px);
+  gap: 0.5rem;
+  font-size: x-small;
+  max-width: 100%;
+}
+
 .h2 {
   text-align: center;
   display: flex;
@@ -109,6 +118,11 @@
     grid-template-columns: repeat(4, 95px);
   }
 }
+@media (max-width: 1300px) {
+  .comedienPhotosHuit {
+    grid-template-columns: repeat(4, 78px);
+  }
+}
 @media (max-width: 1000px) {
   .content {
     padding: 0;
@@ -132,6 +146,9 @@
     display: none;
   }
   .comedienPhotosSept {
+    display: none;
+  }
+  .comedienPhotosHuit {
     display: none;
   }
 

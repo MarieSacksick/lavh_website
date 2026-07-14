@@ -21,9 +21,6 @@ export default function Header() {
 
   return (
     <header ref={headerRef} className={styles.header}>
-      <div className={styles.announcementBanner}>
-        Les Soirées littéraires du Bessin 2026 auront lieu du 14 au 21 août — nous annoncerons les précisions très bientôt !
-      </div>
       <DesktopNavbar />
       <MobileNavbar />
     </header>

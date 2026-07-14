@@ -2,6 +2,63 @@ import { Comedien } from '../types/comediens';
 
 export const comediens: Comedien[] = [
   {
+    id: 'philippe-duclos',
+    prenom: 'Philippe',
+    nom: 'Duclos',
+    years_present: [2026],
+    imageSrc: {
+      default: '/comediens/Duclos_Philippe_26.jpg',
+      '2026': '/comediens/Duclos_Philippe_26.jpg',
+    },
+    description: `Philippe Duclos, est acteur. On l’a vu au cinéma dans les films de Claude Chabrol, Arnaud Desplechin ou Bertrand Tavernier. Pendant près de quinze ans, il a incarné aux yeux du grand public le rôle du juge d’instruction François Roban dans la série de Canal+, <i>Engrenages</i> ; une incarnation à ce point touchante qu’elle en a suscité des vocations de magistrat.
+<p>Au théâtre, il a joué, entre autres, sous la direction de Christiane Jatahy (<i>Entre chien et loup</i>), Julie Duclos (<i>Pelléas et Mélisande</i>, <i>Grandeur et misère du troisième Reich</i>) ou Denis Podalydès (<i>Le triomphe de l’amour</i>, <i>L’orage</i> – avec Mélodie Richard, qu’il retrouve ici autour de Dostoïevski). Il a été professeur au CNSAD de 2009 à 2011.
+<p>Philippe Duclos est l’auteur d’un livre <i>Le Juge et son fantôme</i>, publié aux éditions <i>Les Équateurs</i>, dans lequel il retrace sa longue fréquentation de ce rôle de juge, entremêlant journal fictif de son personnage et son carnet d’acteur.`,
+  },
+  {
+    id: 'pierre-francois-garel',
+    prenom: 'Pierre-François',
+    nom: 'Garel',
+    years_present: [2026],
+    imageSrc: {
+      default: '/comediens/Garel_Pierre-François.jpg',
+      '2026': '/comediens/Garel_Pierre-François.jpg',
+    },
+    description: `Formé au conservatoire de Rennes puis au CNSAD, Pierre-Francois Garel joue au théâtre dans <i>Cœur Ardent</i>, <i>Les Serments indiscrets</i>, <i>Phèdre</i> et <i>Comme il vous plaira</i>  sous la direction de Christophe Rauck. Dans les trois créations francophones de Krystian Lupa. Dans <i>Macbeth</i> et <i>Tartuffe</i> mis en scène par Éric Massé. 
+<p>Avec Alain Françon dans <i>Qui a peur de Virginia Woolf ?</i>, <i>Le Misanthrope</i>, <i>Moi, l’Inconnue et les innocents</i> au bord de la route départementale, <i>La Seconde Surprise de l’amour</i>, <i>Les Fausses Confidences</i> et <i>La Séparation</i> de Claude Simon.
+<p>Il travaille également avec René Loyon, Jean Pierre Vincent, Marcel Bozonnet, Yann Joël Collin et Stanislas Nordey...
+<p>La saison prochaine, Pierre-François Garel travaillera sur la prochaine création de Marc Lainé, <i>L’Inconnu du Vercors</i>.
+<p>On le voit dans de nombreux films au cinéma (par exemple, <i>Anatomie d’une chute</i>) et à la télévision. En outre, Il a enregistré une centaine de livres pour les éditions Thélème, Actes Sud, Audible et Gallimard, et prête sa voix à des podcasts et documentaires.`,
+  },
+  {
+    id: 'josiane-stoleru',
+    prenom: 'Josiane',
+    nom: 'Stoléru',
+    years_present: [2026],
+    imageSrc: {
+      default: '/comediens/Stoleru_Josiane_26.jpg',
+      '2026': '/comediens/Stoleru_Josiane_26.jpg',
+    },
+    description: `Josiane Stoléru a créé les pièces de nombreux auteurs contemporains, parmi lesquels Jean-Claude Grumberg, Yasmina Réza, Tilly, Éric-Emmanuel Schmitt, Florian Zeller, Jean-Claude
+Carrière et dernièrement Ivan Calbérac. Elle a également joué Tennessee Williams, Goldoni, Cervantès, Racine, etc…
+<p>Au cinéma, on l’a vue dans de nombreux films dont <i>Cyrano de Bergerac</i>, <i>Wild Side</i>, <i>Le Mystère Henri Pick</i>, <i>Alceste à bicyclette</i>... Et récemment dans <i>Dîtes-lui que je l’aime</i> de Romane Bohringer. On la retrouvera la saison prochaine dans deux films : <i>L’Adoption d’Ivan Calbérac</i> et <i>Instinct de famille</i> de Maurice Hermet, coup de cœur du Festival du Film Francophone d’Angoulême 2026.
+<p>Josiane Stoléru a été nommée huit fois aux Molières.`,
+  },
+  {
+    id: 'christele-tual',
+    prenom: 'Christèle',
+    nom: 'Tual',
+    years_present: [2026],
+    imageSrc: {
+      default: '/comediens/Tual_Christele_26.jpg',
+      '2026': '/comediens/Tual_Christele_26.jpg',
+    },
+    description: `Après une formation à l’école du Théâtre national de Strasbourg, Christèle Tual travaille entre autres avec Jean-Marie Villégier, Elfriede Jelinek (notamment pour l’adaptation de son roman <i>Les Amantes</i>), Élisabeth Chailloux, Xavier Marchand, Mikaël Serre,  Jean-François Sivadier (<i>Le Misanthrope de Molière</i>), Joël Jouanneau à plusieurs reprises, et Yasmina Reza (dont dernièrement <i>James Brown mettait des bigoudis</i>).
+<p>Elle a été plusieurs fois dirigée par Ludovic Lagarde, notamment dans <i>Oui dit le très jeune homme</i> de Gertrude Stein créé au Festival d’Avignon en 2004, et récemment dans <i>Des hommes endormis</i> de Martin Crimps, au théâtre de l’Athénée.
+<p>Au cinéma, elle tourne notamment sous la direction de Pascale Ferran, Éléonore Pourriat, Robert Guédiguian, Judith Godrèche..., et dernièrement dans les productions Netflix, <i>Balle perdue</i> par Guillaume Pierret et <i>Jusqu’au bout par Nawell Madani</i>. 
+<p>En 2025 Séverine Chavrier la distribue dans <i>Absalon, Absalon</i> au Théâtre de l'Odéon. 
+Elle vient de terminer le tournage du dernier film de Mathieu Amalric, <i>Autobiographie d’un poulpe</i>, où elle tient le premier rôle.`,
+  },
+  {
     id: 'louis-albertosi',
     prenom: 'Louis',
     nom: 'Albertosi',
@@ -133,10 +190,11 @@ Par les extraits qu'il en lit, Matthieu Marie accompagne actuellement à travers
     id: 'yasmina-remil',
     prenom: 'Yasmina',
     nom: 'Remil',
-    years_present: [2025],
+    years_present: [2025, 2026],
     imageSrc: {
       default: '/comediens/Remil_Yasmina.jpg',
       '2025': '/comediens/Remil_Yasmina_25.jpg',
+      '2026': '/comediens/Remil_Yasmina_26.jpg',
     },
     description: `Yasmina Remil rejoint en 2005 le Conservatoire pré-professionnel de Genève, et intègre en 2006 la promotion 68 de l'ENSATT à Lyon, où elle est dirigée par Christian Schiaretti, Bernard Sobel et Alain Françon.
     <p>
@@ -149,26 +207,25 @@ En 2013 / 2014, elle assiste Christian Schiaretti dans sa réalisation du <i>Roi
 Dernièrement, elle incarne Marton, la servante des <i>Fausses Confidences</i> de Marivaux, mise en scène par Alain Françon et jouée plus de 130 fois à Genève et à travers la France.
 <p>
 On peut l'entendre à la radio dans diverses dramatiques de France-Culture.
+<p>
+Elle enseigne au cours Florent.
 `,
   },
   {
     id: 'melodie-richard',
     prenom: 'Mélodie',
     nom: 'Richard',
-    years_present: [2024],
+    years_present: [2024, 2026],
     imageSrc: {
       default: '/comediens/Richard_melodie.jpg',
       '2024': '/comediens/Richard_melodie_24.jpg',
+      '2026': '/comediens/Richard_Melodie_26.jpg',
     },
     description: `À sa sortie du Conservatoire, Mélodie Richard fait la rencontre décisive de Krystian Lupa, avec qui elle joue dans ses trois créations francophones -dont récemment <i>Les Émigrants</i>. Elle fait rapidement d'autres rencontres essentielles, comme Christophe Honoré, Thomas Ostermeier, Georges Lavaudant et Célie Pauthe, qui la dirigent dans les plus grands rôles du répertoire (<i>La Mouette</i>, <i>Bérénice</i>, <i>Cléopâtre</i>, <i>Électre</i>).
 <p>
-Dans le monde gris de <i>l'Orage</i> d'Ostrovski (mis en scène aux Bouffes du Nord par Denis Podalydès), elle révèle toute la poésie et l'indépendance de son personnage Katherina. Deux qualités que les spectateurs ont retrouvées l'an passé lors de sa lecture de <i>Jane Eyre</i> dans ce même château de Tracy où elle revient.
+Dans le monde gris de <i>l'Orage</i> d'Ostrovski (mis en scène aux Bouffes du Nord par Denis Podalydès), elle révèle toute la poésie et l'indépendance de son personnage Katherina. Deux qualités que les spectateurs ont retrouvées l'an passé lors de sa lecture de <i>Jane Eyre</i>  et du <i>Moulin sur la Floss</i>, au château de Tracy.
 <p>
-On a pu la voir aussi à la télévision et au cinéma chez Arnaud Desplechin, Abdellatif Kechiche, Olivier Assayas.
-<p>
-Pour la saison 2024/25, Mélodie Richard travaille sur l'adaptation du <i>Martin Eden</i> de Jack London par Alice Zeniter, et le <i>Misanthrope</i> (pour le rôle de Célimène) mis en scène par Georges Lavaudant.
-<p>
-Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance dans un moulin au bord d'une rivière...`,
+En 2024/25, Mélodie Richard joue Célimène au côté d’Éric Elmosnino, dans le <i>Misanthrope</i> mis en scène par Georges Lavaudant, au théâtre de l’Athénée et en tournée. Sous cette même direction, et avec ce même acteur, Mélodie Richard explore le monde de Roberto Bolaño dans <i>Stella Maris</i>.`,
   },
   {
     id: 'marion-rochmann',
@@ -185,29 +242,32 @@ Coïncidence ! comme Maggie, Mélodie Richard a passé une partie de son enfance
     id: 'thomas-sacksick',
     prenom: 'Thomas',
     nom: 'Sacksick',
-    years_present: [2021, 2022, 2023, 2024, 2025],
+    years_present: [2021, 2022, 2023, 2024, 2025, 2026],
     imageSrc: {
       default: '/comediens/Sacksick_Thomas.jpg',
       '2024': '/comediens/Sacksick_Thomas.jpg',
       '2025': '/comediens/Sacksick_Thomas_25.jpg',
+      '2026': '/comediens/Sacksick_Thomas_26.jpg',
     },
     description: `Thomas Sacksick, comédien, metteur en scène et galériste ; lauréat de la Fondation de la Vocation.
 <p>
 Après diverses réalisations théâtrales (dont <i>Les Amours de Don Perlimplin et de Bélise en leur jardin</i> de Garcia-Lorca mis en scène par Gilles Sacksick), une maîtrise de lettres à Paris III sous la direction du latiniste Philippe Heuzé, et renouant avec le souvenir d'enfance d'enregistrements sur vinyle (<i>Napoléon à Austerlitz</i>, <i>Lucky Luke</i>, qu'il écoutait et réécoutait inlassablement), Thomas Sacksick crée ex nihilo l'association Littérature à Voix Haute au printemps 2010.
 <p>
-Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale (<i>Cet amour-là</i>, au château d’Audrieu en avril dernier) ainsi qu'en direction du jeune public - qui semble s'en être bien trouvé.`,
+Depuis cette date, chaque été, il s'emploie à proposer un programme de beaux textes lus ou dits par des comédiens de talent qu'il choisit et dont il aime s'entourer. Il développe également ces lectures en dehors de la saison estivale (<i>La Messe de l’Athée</i>, au château de Creullet en avril dernier) ainsi qu'en direction du jeune public - qui semble s'en être bien trouvé.`,
   },
   {
     id: 'catherine-salviat',
     prenom: 'Catherine',
     nom: 'Salviat',
-    years_present: [2019, 2021],
+    years_present: [2019, 2021, 2026],
     imageSrc: {
       default: '/comediens/Salviat_Catherine.jpg',
+      '2026': '/comediens/Salviat_Catherine_26.jpg',
     },
     description: `Les prix qu'elle obtient à l'issue de ses études au Conservatoire lui valent d'entrer à la Comédie-Française en 1969. Catherine Salviat y joue dans un premier temps des second rôles, des rôles d'ingénue ou de soubrette. Elle devient sociétaire en 1977. C'est le 461e sociétaire. Elle est remarquée par ses interprétations à plusieurs reprises, et se voit attribuer un Molière en 1988 pour un second rôle dans <i>Dialogues des carmélites</i> de Georges Bernanos, mis en scène par Gildas Bourdet. Finalement, elle doit quitter la Comédie-Française en décembre 2005, au même moment que Catherine Ferran et Alain Pralon, trois personnalités de cette maison y ayant effectué un long parcours. Elle devient sociétaire honoraire en janvier 2006 tout en se voyant proposer de nouveaux rôles au Français comme sur d'autres scènes, en pièce classique ou contemporaine.
 <p>
-On a pu la voir récemment dans un très joli court-métrage intitulé <i>Les mystérieuses aventures</i> de Claude Conseil, de Marie-Lola Terver et Paul Jousselin.`,
+Récemment, elle a joué dans un très joli court-métrage intitulé <i>Les mystérieuses aventures</i> de Claude Conseil, de Marie-Lola Terver et Paul Jousselin.
+<p>Pour ses participations répétées aux Soirées Littéraires du Bessin (<i>L’Analphabète</i>, <i>Lettres de George Sand à Delacroix</i>, etc), les spectateurs de Littérature à Voix Haute connaissent bien Catherine Salviat. Elle revient aujourd’hui avec une lecture qu’elle a donné sur de multiples scènes de <i>Lettres</i> de Mme de Sévigné, sélectionnées par Patrice Soler.`,
   },
   {
     id: 'celine-samie',

@@ -5,25 +5,25 @@ export const partenaires: Partenaire[] = [
     name: 'Littérature à Voix Haute',
     logo: '/logos/logo_LAVH.jpg',
     website: 'https://www.litteratureavoixhaute.com/',
-    years_present: [2024, 2025],
+    years_present: [2024, 2025, 2026],
   },
   {
     name: 'Belle Normandy',
     logo: '/logos/Belle-Normandie.png',
     website: 'https://www.bellenormandy.com/',
-    years_present: [2025],
+    years_present: [2025, 2026],
   },
   {
     name: 'Seulles Terre et Mer',
     logo: '/logos/Logo_Seulles_terre et mer copie.jpg',
     website: 'https://seulles-terre-mer.fr/',
-    years_present: [2024, 2025],
+    years_present: [2024, 2025, 2026],
   },
   {
     name: 'Conseil Général du Calvados',
     logo: '/logos/conseil_général_calvados.jpeg',
     website: 'https://www.calvados.fr/accueil.html',
-    years_present: [2024, 2025],
+    years_present: [2024, 2025, 2026],
   },
   {
     name: 'Creully sur Seulles',
@@ -35,7 +35,7 @@ export const partenaires: Partenaire[] = [
     name: 'Tracy sur Mer',
     logo: '/logos/Logo Tracy copie.jpg',
     website: 'https://tracy-sur-mer.fr/',
-    years_present: [2024, 2025],
+    years_present: [2024, 2025, 2026],
   },
   {
     name: 'Friendly Home Bayeux',
@@ -47,7 +47,7 @@ export const partenaires: Partenaire[] = [
     name: 'Arromanches Loisirs Culture',
     logo: '/logos/Arromanches Loisirs Culture.jpg',
     website: 'https://www.arromanches.com/associations/details.php?assoc_id=32',
-    years_present: [2024, 2025],
+    years_present: [2024, 2025, 2026],
   },
   {
     name: "Château d'Adrieu",

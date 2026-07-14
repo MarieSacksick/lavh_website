@@ -1,5 +1,6 @@
 import Programme2024 from './Programme2024';
 import Programme2025 from './Programme2025';
+import Programme2026 from './Programme2026';
 
 export function getProgrammeComponent(year: number) {
   switch (year) {
@@ -7,6 +8,8 @@ export function getProgrammeComponent(year: number) {
       return Programme2024;
     case 2025:
       return Programme2025;
+    case 2026:
+      return Programme2026;
     default:
       return Programme2024
   }

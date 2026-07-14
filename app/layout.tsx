@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Crimson_Text, EB_Garamond } from 'next/font/google';
+import { Crimson_Text, EB_Garamond, STIX_Two_Text } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -16,6 +16,12 @@ const ebGaramond = EB_Garamond({
   variable: '--font-eb-garamond',
 });
 
+const stixTwoText = STIX_Two_Text({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-stix-two-text',
+});
+
 export const metadata: Metadata = {
   title: 'Littérature à Voix Haute | Festival de Lectures & Théâtre dans le Bessin',
   description:
@@ -29,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${crimsonText.variable} ${ebGaramond.variable}`}>
+      <body className={`${crimsonText.variable} ${ebGaramond.variable} ${stixTwoText.variable}`}>
         <div className="layout">
           <div className="spaceHeader"></div>
           <Header />
