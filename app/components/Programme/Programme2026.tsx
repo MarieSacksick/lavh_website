@@ -109,7 +109,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Vendredi 14 août -----  */}
         <div className={styles.jour}>
-          <h3>VENDREDI 14 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/Gaspard_des_Montagnes.pdf" target="_blank" rel="noopener noreferrer">
+              VENDREDI 14 AOÛT
+            </a>
+          </h3>
           <div className={styles.place}>
             <a
               href="https://maps.app.goo.gl/6ch31nTj7Q9FeDoD6"
@@ -129,7 +133,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Samedi 15 août -----  */}
         <div className={styles.jour}>
-          <h3>SAMEDI 15 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/Aime_Pache.pdf" target="_blank" rel="noopener noreferrer">
+              SAMEDI 15 AOÛT
+            </a>
+          </h3>
           <div className={styles.place}>
             <a
               href="https://www.google.fr/maps/place/Ch%C3%A2teau+de+Vaulaville,+14400+Tour-en-Bessin/@49.3110778,-0.7719571,16.11z/data=!4m10!1m2!2m1!1sCh%C3%A2teau+de+Vaulaville,+Tour-en-Bessin!3m6!1s0x480babc5c2d541b1:0x7e9b959f0977f0fd!8m2!3d49.310576!4d-0.771936!15sCiZDaMOidGVhdSBkZSBWYXVsYXZpbGxlLCBUb3VyLWVuLUJlc3NpbpIBBnBhbGFjZeABAA!16s%2Fg%2F11f3y54k2c?entry=ttu"
@@ -149,7 +157,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Dimanche 16 août -----  */}
         <div className={styles.jour}>
-          <h3>DIMANCHE 16 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/Une_jolie_paienne.pdf" target="_blank" rel="noopener noreferrer">
+              DIMANCHE 16 AOÛT
+            </a>
+          </h3>
           <div className={styles.place}>
             <a
               href="https://www.google.fr/maps/place/Ch%C3%A2teau+de+Tracy/@49.3263169,-0.6488937,17z/data=!3m1!4b1!4m6!3m5!1s0x480a55adbd9336ab:0x9445fa8f58be5dff!8m2!3d49.3263169!4d-0.6463188!16s%2Fg%2F11fs8tzwb2?entry=ttu"
@@ -190,7 +202,9 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
       <div className={styles.column}>
         {/* -----  Lundi 17 août -----  */}
         <div className={styles.jour}>
-          <h3>LUNDI 17 AOÛT</h3>
+          <h3>
+              LUNDI 17 AOÛT
+            </h3>
           <div className={styles.place}>
             <a
               href={`https://maps.app.goo.gl/TgS74ydGzDqap5C29`}
@@ -203,7 +217,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           </div>
 
           <div className={styles.subEvent}>
-            <span className={styles.eventTime}>15h30</span>
+            <span className={styles.eventTime}><a href="https://www.litteratureavoixhaute.com/La_Chevre_de_monsieur_Seguin.pdf" target="_blank" rel="noopener noreferrer">15h30</a></span>
             <br />
             <span className={styles.titreOeuvre}>La Chèvre de monsieur Seguin</span>
             <br />
@@ -215,7 +229,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
           </div>
 
           <div className={styles.subEvent} style={{ marginTop: '0.5rem' }}>
-            <span className={styles.eventTime}>19h30</span>
+            <span className={styles.eventTime}><a href="https://www.litteratureavoixhaute.com/La_Ferme_africaine.pdf" target="_blank" rel="noopener noreferrer">19h30</a></span>
             <br />
             <span className={styles.titreOeuvre}>La Ferme africaine</span>
             <br />
@@ -229,7 +243,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Mardi 18 août -----  */}
         <div className={styles.jour}>
-          <h3>MARDI 18 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/Bambi.pdf" target="_blank" rel="noopener noreferrer">
+              MARDI 18 AOÛT
+            </a>
+          </h3>
           <div className={styles.place}>
             <a
               href="https://www.google.fr/maps/search/Ferme+culturelle+du+Bessin"
@@ -249,7 +267,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Mercredi 19 août -----  */}
         <div className={styles.jour}>
-          <h3>MERCREDI 19 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/La_Vagabonde.pdf" target="_blank" rel="noopener noreferrer">
+              MERCREDI 19 AOÛT
+            </a>
+            </h3>
           <div className={styles.place}>
             <a
               href="https://maps.app.goo.gl/eoRyPV9iy71SZKZw9"
@@ -269,7 +291,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Jeudi 20 août -----  */}
         <div className={styles.jour}>
-          <h3>JEUDI 20 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/Les_Pauvres_gens.pdf" target="_blank" rel="noopener noreferrer">
+              JEUDI 20 AOÛT
+            </a>
+          </h3>
           <div className={styles.place}>
             <a
               href="https://www.google.fr/maps/place/Salle+des+F%C3%AAtes/@49.339945,-0.6238122,17z/data=!3m1!4b1!4m6!3m5!1s0x480a55dcee449c73:0xd601a8ba19596011!8m2!3d49.339945!4d-0.6212373!16s%2Fg%2F11cs2wy6vv?entry=ttu"
@@ -309,7 +335,11 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
 
         {/* -----  Vendredi 21 août -----  */}
         <div className={styles.jour}>
-          <h3>VENDREDI 21 AOÛT</h3>
+          <h3>
+            <a href="https://www.litteratureavoixhaute.com/La_Marche_de_Radetsky.pdf" target="_blank" rel="noopener noreferrer">
+              VENDREDI 21 AOÛT
+            </a>
+          </h3>
           <div className={styles.place}>
             <a
               href="https://www.google.fr/maps/search/Ch%C3%A2teau+de+Goville"
