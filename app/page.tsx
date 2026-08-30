@@ -1,33 +1,26 @@
 'use client';
 import styles from './page.module.css';
-import BandeauLogos from './components/BandeauLogos/BandeauLogos';
 import ComedienDialog from './components/ComedienDialog/ComedienDialog';
+import EvenementPeguy from './components/EvenementPeguy/EvenementPeguy';
 import { useState } from 'react';
 import { Comedien } from './types/comediens';
-import { getProgrammeComponent } from './components/Programme';
 
 export default function Home() {
   const [selectedComedien, setSelectedComedien] = useState<Comedien | null>(null);
 
   const year = 2026;
 
-  // Dynamically get the Programme component for the year
-  const Programme = getProgrammeComponent(year);
-
   return (
     <>
-      {/* -----  Page d'accueil -----  */}
+      {/* -----  Page d'accueil : annonce de la lecture "Charles Péguy" à la Cathédrale de Bayeux -----  */}
       <div className={styles.page}>
         {/* -----  Contenu de la page  -----  */}
         <br></br>
         <div className={styles.rightContent}>
-          <Programme onComedienClick={setSelectedComedien} />
-
-          {/* -----  Logos LAVH et Partenaires   -----  */}
-          <BandeauLogos year={year} />
+          <EvenementPeguy onComedienClick={setSelectedComedien} />
         </div>
       </div>
-      {/* -----  Boîte de Dialogue avec description des comédiens -----  */}
+      {/* -----  Boîte de Dialogue avec description de la comédienne -----  */}
       {selectedComedien && (
         <ComedienDialog comedien={selectedComedien} onClose={() => setSelectedComedien(null)} year={year} />
       )}

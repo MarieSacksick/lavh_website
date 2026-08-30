@@ -10,6 +10,10 @@ type NavLinksProps = {
 
 export const SLDB_CONTENTS = [
   {
+    title: 'Session 2026',
+    href: '/anciens_programmes/2026',
+  },
+  {
     title: 'Session 2025',
     href: '/anciens_programmes/2025',
   },

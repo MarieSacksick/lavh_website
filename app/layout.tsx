@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Libre_Baskerville, STIX_Two_Text } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -8,6 +9,11 @@ const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-baskerville',
+});
+
+const baskervald = localFont({
+  src: './fonts/BaskervaldADFStd.otf',
+  variable: '--font-baskervald',
 });
 
 const stixTwoText = STIX_Two_Text({
@@ -29,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${libreBaskerville.variable} ${stixTwoText.variable}`}>
+      <body className={`${libreBaskerville.variable} ${stixTwoText.variable} ${baskervald.variable}`}>
         <div className="layout">
           <div className="spaceHeader"></div>
           <Header />
