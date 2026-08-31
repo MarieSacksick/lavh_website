@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { comediens } from '@/app/data/comediens';
 import { Comedien } from '@/app/types/comediens';
 
-const YEAR = 2026;
-
 /**
  * Propriétés du composant EvenementPeguy
  * @interface EvenementPeguyProps
@@ -47,7 +45,7 @@ export default function EvenementPeguy({ onComedienClick }: EvenementPeguyProps)
 
         <h1 className={styles.title}>Charles Péguy</h1>
         <p className={styles.subtitle}>
-          Le Mystère de la charité de Jeanne d'Arc
+          Le Mystère de la charité de Jeanne d&apos;Arc
         </p>
 
         <h2 className={styles.location}>Cathédrale de Bayeux</h2>
