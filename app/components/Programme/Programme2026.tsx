@@ -376,7 +376,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
         </div>
         <div className={styles.practicalInfo}>
           <p style={{fontSize: 'small' }}>Gay Lee Tischbirek, flûte</p>
-          <p> <span style={{ fontStyle: 'italic'}}>Illustrations</span>, Gilles Sacksick</p>
+          <p>Gilles Sacksick, <span style={{ fontStyle: 'italic'}}>illustrations</span></p>
         </div>
       </div>
     </div>
