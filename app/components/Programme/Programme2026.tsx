@@ -255,7 +255,7 @@ export default function Programme({ onComedienClick }: ProgrammeProps) {
               rel="noopener noreferrer"
               className={styles.placeLink}
             >
-              Ferme culturelle du Bessin
+              ESQUAY-SUR-SEULLES, Ferme culturelle du Bessin
             </a>
           </div>
           <span className={styles.titreOeuvre}>Bambi, histoire d’une vie dans les bois</span>
