@@ -31,3 +31,17 @@
     height: 5rem;
   }
 }
+
+/* -----  Variante 2026 : frise plus espacée et calée sur le bord droit des colonnes -----  */
+/* -----  Uniquement sur ordinateur : le mobile garde la mise en page commune -----  */
+/* -----  max-width et margin-inline reprennent ceux de .headerAndColumns (Programme.module.css)
+         pour que la frise se termine exactement au bord droit de la dernière colonne -----  */
+@media (min-width: 769px) {
+  .container2026 {
+    gap: 3rem;
+    max-width: 1100px;
+    margin-inline: auto;
+    justify-content: flex-end;
+    margin-top: -3rem;
+  }
+}

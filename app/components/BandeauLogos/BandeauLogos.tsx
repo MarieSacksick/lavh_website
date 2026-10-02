@@ -29,7 +29,9 @@ export default function BandeauLogos({ year }: { year: number }) {
   );
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container}${year === 2026 ? ` ${styles.container2026}` : ''}`}
+    >
       {filteredPartenaires.map(partenaire => (
         <Link
           key={partenaire.name}
